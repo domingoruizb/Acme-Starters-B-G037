@@ -6,25 +6,30 @@ import javax.persistence.Entity;
 import javax.validation.Valid;
 
 import acme.client.components.basis.AbstractEntity;
+import acme.client.components.validation.Mandatory;
+import lombok.Getter;
+import lombok.Setter;
 
 @Entity
 @Getter
 @Setter
 public class Fundraiser extends AbstractEntity {
 
+	private static final long	serialVersionUID	= 1L;
+
 	@Mandatory
 	// @ValidHeader	
 	@Column
-	private String	bank;
+	private String				bank;
 
 	@Mandatory
 	// @ValidText
 	@Column
-	private String	statement;
+	private String				statement;
 
 	@Mandatory
 	@Valid
 	@Column
-	private Boolean	agent;
+	private Boolean				agent;
 
 }

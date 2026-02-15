@@ -3,10 +3,14 @@ package acme.strategy;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.ManyToOne;
 import javax.validation.Valid;
-import javax.validation.ValidScore;
 
 import acme.client.components.basis.AbstractEntity;
+import acme.client.components.validation.Mandatory;
+import acme.client.components.validation.ValidScore;
+import lombok.Getter;
+import lombok.Setter;
 
 @Entity
 @Getter

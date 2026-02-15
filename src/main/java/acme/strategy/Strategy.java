@@ -1,8 +1,6 @@
 
 package acme.strategy;
 
-import java.beans.Transient;
-import java.time.temporal.ChronoUnit;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -11,10 +9,9 @@ import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
-import javax.persistence.Temporal;
-import javax.persistence.TemporalType;
 import javax.validation.Valid;
 
+import acme.client.components.basis.AbstractEntity;
 import acme.client.components.datatypes.Moment;
 import acme.client.components.validation.Mandatory;
 import acme.client.components.validation.Optional;
@@ -27,7 +24,7 @@ import lombok.Setter;
 @Entity
 @Getter
 @Setter
-public class Strategy {
+public class Strategy extends AbstractEntity {
 
 	private static final long	serialVersionUID	= 1L;
 
@@ -48,12 +45,12 @@ public class Strategy {
 
 	@Mandatory
 	@ValidMoment(constraint = Constraint.ENFORCE_FUTURE)
-	@Temporal(TemporalType.TIMESTAMP)
+	// @Temporal(TemporalType.TIMESTAMP)
 	private Moment				startMoment;
 
 	@Mandatory
 	@ValidMoment(constraint = Constraint.ENFORCE_FUTURE)
-	@Temporal(TemporalType.TIMESTAMP)
+	// @Temporal(TemporalType.TIMESTAMP)
 	private Moment				endMoment;
 
 	@Optional
@@ -61,42 +58,20 @@ public class Strategy {
 	@Column
 	private String				moreInfo;
 
-
-	@Valid
-	@Transient
-	public Double getMonthsActive() {
-
-		if (this.startMoment == null || this.endMoment == null)
-			return 0.0;
-
-		long days = ChronoUnit.DAYS.between(this.startMoment.toInstant(), this.endMoment.toInstant());
-
-		double months = days / 30.0;
-
-		return Math.round(months * 10.0) / 10.0;
-	}
-
-	@Transient
-	public Double getExpectedPercentage() {
-
-		if (this.tactics == null || this.tactics.isEmpty())
-			return 0.0;
-
-		return this.tactics.stream().mapToDouble(Tactic::getExpectedPercentage).sum();
-	}
-
+	//getMonthsActive() 
+	//getExpectedPercentage() 
 
 	@Mandatory
 	@Valid
 	@Column
-	private Boolean			draftMode;
+	private Boolean				draftMode;
 
 	@ManyToOne(optional = false)
 	@Valid
-	private Fundraiser		fundraiser;
+	private Fundraiser			fundraiser;
 
 	@OneToMany(mappedBy = "strategy", cascade = CascadeType.ALL, orphanRemoval = true)
 	@Valid
-	private List<Tactic>	tactics	= new ArrayList<>();
+	private List<Tactic>		tactics				= new ArrayList<>();
 
 }
