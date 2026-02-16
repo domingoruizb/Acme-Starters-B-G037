@@ -1,5 +1,5 @@
 
-package acme.strategy;
+package acme.entities.Tactic;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -9,6 +9,7 @@ import javax.validation.Valid;
 import acme.client.components.basis.AbstractEntity;
 import acme.client.components.validation.Mandatory;
 import acme.client.components.validation.ValidScore;
+import acme.entities.strategy.Strategy;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -17,27 +18,29 @@ import lombok.Setter;
 @Setter
 public class Tactic extends AbstractEntity {
 
+	private static final long	serialVersionUID	= 1L;
+
 	@Mandatory
 	// @ValidHeader
 	@Column
-	private String		name;
+	private String				name;
 
 	@Mandatory
 	// @ValidText
 	@Column
-	private String		notes;
+	private String				notes;
 
 	@Mandatory
 	@ValidScore
 	@Column
-	private Double		expectedPercentage;
+	private Double				expectedPercentage;
 
 	@Mandatory
 	@Valid
 	@Column
-	private TacticKind	tacticKind;
+	private TacticKind			tacticKind;
 
 	@ManyToOne(optional = false)
-	private Strategy	strategy;
+	private Strategy			strategy;
 
 }

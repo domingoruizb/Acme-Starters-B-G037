@@ -1,5 +1,5 @@
 
-package acme.strategy;
+package acme.entities.strategy;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -18,6 +18,8 @@ import acme.client.components.validation.Optional;
 import acme.client.components.validation.ValidMoment;
 import acme.client.components.validation.ValidMoment.Constraint;
 import acme.client.components.validation.ValidUrl;
+import acme.entities.Tactic.Tactic;
+import acme.realms.Fundraiser;
 import lombok.Getter;
 import lombok.Setter;
 
