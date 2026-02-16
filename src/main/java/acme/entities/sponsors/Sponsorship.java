@@ -1,24 +1,28 @@
 
-package acme.entities.sponsorships;
+package acme.entities.sponsors;
 
-import java.util.List;
+import java.time.Duration;
+import java.time.temporal.ChronoUnit;
+import java.util.Date;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.ManyToOne;
-import javax.persistence.OneToMany;
+import javax.persistence.Temporal;
+import javax.persistence.TemporalType;
 import javax.persistence.Transient;
 import javax.validation.Valid;
 
+import org.springframework.beans.factory.annotation.Autowired;
+
 import acme.client.components.basis.AbstractEntity;
-import acme.client.components.datatypes.Moment;
 import acme.client.components.datatypes.Money;
 import acme.client.components.validation.Mandatory;
 import acme.client.components.validation.Optional;
 import acme.client.components.validation.ValidMoment;
 import acme.client.components.validation.ValidMoment.Constraint;
 import acme.client.components.validation.ValidUrl;
-import acme.entities.donations.Donation;
+import acme.client.helpers.MomentHelper;
 import acme.realms.Sponsor;
 import lombok.Getter;
 import lombok.Setter;
@@ -29,62 +33,69 @@ import lombok.Setter;
 @Setter
 public class Sponsorship extends AbstractEntity {
 
-	private static final long	serialVersionUID	= 1L;
+	private static final long		serialVersionUID	= 1L;
 
 	@Mandatory
 	// @ValidTicker
 	@Column(unique = true)
-	private String				ticker;
+	private String					ticker;
 
 	@Mandatory
 	// @ValidHeader
 	@Column
-	private String				name;
+	private String					name;
 
 	@Mandatory
 	// @ValidText
 	@Column
-	private String				description;
+	private String					description;
 
 	@Mandatory
 	@ValidMoment(constraint = Constraint.ENFORCE_FUTURE)
-	// @Temporal(TemporalType.TIMESTAMP)
-	private Moment				startMoment;
+	@Temporal(TemporalType.TIMESTAMP)
+	private Date					startMoment;
 
 	@Mandatory
 	@ValidMoment(constraint = Constraint.ENFORCE_FUTURE)
-	// @Temporal(TemporalType.TIMESTAMP)
-	private Moment				endMoment;
+	@Temporal(TemporalType.TIMESTAMP)
+	private Date					endMoment;
 
 	@Optional
 	@ValidUrl
 	@Column
-	private String				moreInfo;
+	private String					moreInfo;
 
 	@Mandatory
 	@Valid
 	@Column
-	private Boolean				draftMode;
+	private Boolean					draftMode;
 
 	@Mandatory
 	@Valid
 	@ManyToOne(optional = false)
-	private Sponsor				sponsor;
+	private Sponsor					sponsor;
 
-	@Mandatory
-	@Valid
-	@OneToMany
-	private List<Donation>		donations;
+	@Transient
+	@Autowired
+	private SponsorshipRepository	repository;
 
 
 	@Transient
 	public Double getMonthsActive() {
-		return null;
+		if (this.startMoment == null || this.endMoment == null)
+			return null;
+
+		Duration duration = MomentHelper.computeDuration(this.startMoment, this.endMoment);
+		return (double) duration.get(ChronoUnit.MONTHS);
 	}
 
 	@Transient
 	public Money getTotalMoney() {
-		return null;
+		Double total = this.repository.computeTotalMoney(this.getId());
+		Money money = new Money();
+		money.setAmount(total);
+		// money.setCurrency("EUR"); Not needed for now
+		return money;
 	}
 
 }
