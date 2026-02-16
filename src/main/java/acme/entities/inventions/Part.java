@@ -1,5 +1,5 @@
 
-package acme.entities.parts;
+package acme.entities.inventions;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -10,7 +10,6 @@ import acme.client.components.basis.AbstractEntity;
 import acme.client.components.datatypes.Money;
 import acme.client.components.validation.Mandatory;
 import acme.client.components.validation.ValidMoney;
-import acme.entities.inventions.Invention;
 import lombok.Getter;
 import lombok.Setter;
 

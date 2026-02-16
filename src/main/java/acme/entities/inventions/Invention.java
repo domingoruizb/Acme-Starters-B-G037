@@ -1,17 +1,25 @@
 
 package acme.entities.inventions;
 
+import java.time.Duration;
+import java.time.temporal.ChronoUnit;
+import java.util.Date;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.ManyToOne;
+import javax.persistence.Transient;
 import javax.validation.Valid;
 
+import org.springframework.beans.factory.annotation.Autowired;
+
 import acme.client.components.basis.AbstractEntity;
-import acme.client.components.datatypes.Moment;
+import acme.client.components.datatypes.Money;
 import acme.client.components.validation.Mandatory;
 import acme.client.components.validation.ValidMoment;
 import acme.client.components.validation.ValidMoment.Constraint;
 import acme.client.components.validation.ValidUrl;
+import acme.client.helpers.MomentHelper;
 import acme.realms.Inventor;
 import lombok.Getter;
 import lombok.Setter;
@@ -44,13 +52,13 @@ public class Invention extends AbstractEntity {
 
 	@Mandatory
 	@ValidMoment(constraint = Constraint.ENFORCE_FUTURE)
-	@Column
-	private Moment				startMoment;
+	//@Temporal(TemporalType.TIMESTAMP)
+	private Date				startMoment;
 
 	@Mandatory
 	@ValidMoment(constraint = Constraint.ENFORCE_FUTURE)
-	@Column
-	private Moment				endMoment;
+	//@Temporal(TemporalType.TIMESTAMP)
+	private Date				endMoment;
 
 	@Mandatory
 	@ValidUrl
@@ -63,29 +71,34 @@ public class Invention extends AbstractEntity {
 	private Boolean				draftMode;
 
 	// Derived attributes
-	/*
-	 * @Mandatory
-	 * 
-	 * @Valid
-	 * 
-	 * @Transient
-	 * private Double getMonthsActive() {
-	 * }
-	 * 
-	 * @Mandatory
-	 * 
-	 * @ValidMoney(min = 0)
-	 * 
-	 * @Transient
-	 * private Money getCost() {
-	 * }
-	 */
+
+
+	@Transient
+	public Double getMonthsActive() {
+		if (this.startMoment == null || this.endMoment == null)
+			return null;
+
+		Duration duration = MomentHelper.computeDuration(this.startMoment, this.endMoment);
+		return (double) duration.get(ChronoUnit.MONTHS);
+	}
+
+
+	@Transient
+	@Autowired
+	private InventionRepository repo;
+
+
+	@Transient
+	private Money getCost() {
+		return this.repo.computeCost(this.getId());
+	}
 
 	// Relationships
+
 
 	@Mandatory
 	@Valid
 	@ManyToOne(optional = false)
-	private Inventor			inventor;
+	private Inventor inventor;
 
 }
