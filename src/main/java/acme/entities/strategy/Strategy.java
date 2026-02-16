@@ -1,24 +1,21 @@
 
 package acme.entities.strategy;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.Date;
 
-import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.ManyToOne;
-import javax.persistence.OneToMany;
+import javax.persistence.Temporal;
+import javax.persistence.TemporalType;
 import javax.validation.Valid;
 
 import acme.client.components.basis.AbstractEntity;
-import acme.client.components.datatypes.Moment;
 import acme.client.components.validation.Mandatory;
 import acme.client.components.validation.Optional;
 import acme.client.components.validation.ValidMoment;
 import acme.client.components.validation.ValidMoment.Constraint;
 import acme.client.components.validation.ValidUrl;
-import acme.entities.Tactic.Tactic;
 import acme.realms.Fundraiser;
 import lombok.Getter;
 import lombok.Setter;
@@ -47,13 +44,13 @@ public class Strategy extends AbstractEntity {
 
 	@Mandatory
 	@ValidMoment(constraint = Constraint.ENFORCE_FUTURE)
-	// @Temporal(TemporalType.TIMESTAMP)
-	private Moment				startMoment;
+	@Temporal(TemporalType.TIMESTAMP)
+	private Date				startMoment;
 
 	@Mandatory
 	@ValidMoment(constraint = Constraint.ENFORCE_FUTURE)
-	// @Temporal(TemporalType.TIMESTAMP)
-	private Moment				endMoment;
+	@Temporal(TemporalType.TIMESTAMP)
+	private Date				endMoment;
 
 	@Optional
 	@ValidUrl
@@ -68,12 +65,9 @@ public class Strategy extends AbstractEntity {
 	@Column
 	private Boolean				draftMode;
 
+	@Mandatory
+	@Valid
 	@ManyToOne(optional = false)
-	@Valid
 	private Fundraiser			fundraiser;
-
-	@OneToMany(mappedBy = "strategy", cascade = CascadeType.ALL, orphanRemoval = true)
-	@Valid
-	private List<Tactic>		tactics				= new ArrayList<>();
 
 }
