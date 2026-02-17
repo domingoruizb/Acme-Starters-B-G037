@@ -4,7 +4,6 @@ package acme.entities.inventions;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;
 
-import acme.client.components.datatypes.Money;
 import acme.client.repositories.AbstractRepository;
 
 @Repository
@@ -15,6 +14,6 @@ public interface InventionRepository extends AbstractRepository {
 		from Part p
 		where p.invention.id = :inventionId
 		""")
-	Money computeCost(int inventionId);
+	Double computeCost(int inventionId);
 
 }

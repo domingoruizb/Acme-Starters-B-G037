@@ -90,7 +90,13 @@ public class Invention extends AbstractEntity {
 
 	@Transient
 	private Money getCost() {
-		return this.repo.computeCost(this.getId());
+		Double cost = this.repo.computeCost(this.getId());
+		Money money = new Money();
+
+		money.setAmount(cost);
+		money.setCurrency("EUR");
+
+		return money;
 	}
 
 	// Relationships
