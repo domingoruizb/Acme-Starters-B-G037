@@ -1,5 +1,5 @@
 
-package acme.entities.Tactic;
+package acme.entities.tactic;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -9,6 +9,8 @@ import javax.validation.Valid;
 import acme.client.components.basis.AbstractEntity;
 import acme.client.components.validation.Mandatory;
 import acme.client.components.validation.ValidScore;
+import acme.constraints.ValidHeader;
+import acme.constraints.ValidText;
 import acme.entities.strategy.Strategy;
 import lombok.Getter;
 import lombok.Setter;
@@ -21,12 +23,12 @@ public class Tactic extends AbstractEntity {
 	private static final long	serialVersionUID	= 1L;
 
 	@Mandatory
-	// @ValidHeader
+	@ValidHeader
 	@Column
 	private String				name;
 
 	@Mandatory
-	// @ValidText
+	@ValidText
 	@Column
 	private String				notes;
 
