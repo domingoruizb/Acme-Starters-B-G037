@@ -1,5 +1,5 @@
 
-package acme.entities.donations;
+package acme.entities.inventions;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -10,41 +10,47 @@ import acme.client.components.basis.AbstractEntity;
 import acme.client.components.datatypes.Money;
 import acme.client.components.validation.Mandatory;
 import acme.client.components.validation.ValidMoney;
-import acme.entities.sponsorships.Sponsorship;
+import acme.constraints.ValidHeader;
+import acme.constraints.ValidText;
 import lombok.Getter;
 import lombok.Setter;
 
-// TODO: Implement @Valid
 @Entity
 @Getter
 @Setter
-public class Donation extends AbstractEntity {
+public class Part extends AbstractEntity {
+
+	// Serialisation version
 
 	private static final long	serialVersionUID	= 1L;
 
+	// attributes
+
 	@Mandatory
-	// @ValidHeader
+	@ValidHeader
 	@Column
 	private String				name;
 
 	@Mandatory
-	// @ValidText
+	@ValidText
 	@Column
-	private String				notes;
+	private String				description;
 
 	@Mandatory
-	@ValidMoney
+	@ValidMoney(min = 0)
 	@Column
-	private Money				money;
+	private Money				cost;
 
 	@Mandatory
 	@Valid
 	@Column
-	private DonationKind		kind;
+	private PartKind			kind;
+
+	// Relationships
 
 	@Mandatory
 	@Valid
 	@ManyToOne(optional = false)
-	private Sponsorship			sponsorship;
+	private Invention			invention;
 
 }
