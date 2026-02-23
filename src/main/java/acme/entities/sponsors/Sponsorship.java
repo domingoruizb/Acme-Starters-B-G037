@@ -81,6 +81,8 @@ public class Sponsorship extends AbstractEntity {
 	private SponsorshipRepository	repository;
 
 
+  // @Mandatory
+  // @ValidNumber(min = 0)
 	@Transient
 	public Double getMonthsActive() {
 		if (this.startMoment == null || this.endMoment == null)
