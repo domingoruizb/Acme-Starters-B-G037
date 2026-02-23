@@ -42,6 +42,8 @@ public class Tactic extends AbstractEntity {
 	@Column
 	private TacticKind			tacticKind;
 
+	@Mandatory
+	@Valid
 	@ManyToOne(optional = false)
 	private Strategy			strategy;
 

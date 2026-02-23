@@ -2,7 +2,6 @@
 package acme.entities.strategy;
 
 import java.time.Duration;
-import java.time.temporal.ChronoUnit;
 import java.util.Date;
 
 import javax.persistence.Column;
@@ -79,7 +78,9 @@ public class Strategy extends AbstractEntity {
 
 		Duration duration = MomentHelper.computeDuration(this.startMoment, this.endMoment);
 
-		return (double) duration.get(ChronoUnit.MONTHS);
+		// Double res = (double) duration.get(ChronoUnit.MONTHS);
+
+		return 0.0;
 
 	}
 
