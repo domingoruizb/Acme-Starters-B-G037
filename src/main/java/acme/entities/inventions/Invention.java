@@ -2,7 +2,6 @@
 package acme.entities.inventions;
 
 import java.time.Duration;
-import java.time.temporal.ChronoUnit;
 import java.util.Date;
 
 import javax.persistence.Column;
@@ -84,7 +83,8 @@ public class Invention extends AbstractEntity {
 			return null;
 
 		Duration duration = MomentHelper.computeDuration(this.startMoment, this.endMoment);
-		return (double) duration.get(ChronoUnit.MONTHS);
+		// return (double) duration.get(ChronoUnit.MONTHS);
+		return 0.0;
 	}
 
 
@@ -99,7 +99,7 @@ public class Invention extends AbstractEntity {
 		Money money = new Money();
 
 		money.setAmount(cost);
-		// money.setCurrency("EUR");
+		money.setCurrency("EUR");
 
 		return money;
 	}

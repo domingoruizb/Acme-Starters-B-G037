@@ -1,0 +1,3 @@
+acme.validation.invalid-header = The header is not valid
+acme.validation.invalid-ticker = The ticker is not valid
+acme.validation.invalid-text = The text is not valid
