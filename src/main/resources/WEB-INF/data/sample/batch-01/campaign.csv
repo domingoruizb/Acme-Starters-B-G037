@@ -60,11 +60,12 @@ campaign-45,AA00-00045,"Lorem ipsum dolor sit amet, consectetur adipiscing elit"
 campaign-46,AA00-00046,"Lorem ipsum dolor sit amet, consectetur adipiscing elit","Lorem ipsum dolor sit amet, consectetur adipiscing elit",2025/01/08 0:00,2200/12/31 23:59,http://example.org/a,TRUE,spokesperson-01
 campaign-47,AA00-00047,"Lorem ipsum dolor sit amet, consectetur adipiscing elit","Lorem ipsum dolor sit amet, consectetur adipiscing elit",2025/01/08 0:00,2200/12/31 23:59,http://example.org/a/b,TRUE,spokesperson-01
 campaign-48,AA00-00048,"Lorem ipsum dolor sit amet, consectetur adipiscing elit","Lorem ipsum dolor sit amet, consectetur adipiscing elit",2025/01/08 0:00,2200/12/31 23:59,http://example.org/a/b?,TRUE,spokesperson-01
+campaign-49,AA00-00049,"Lorem ipsum dolor sit amet, consectetur adipiscing elit","Lorem ipsum dolor sit amet, consectetur adipiscing elit",2025/01/08 0:00,2200/12/31 23:59,null,TRUE,spokesperson-01
 # more-info - no singular values
 # draft-mode - standard values
-campaign-49,AA00-00049,"Lorem ipsum dolor sit amet, consectetur adipiscing elit","Lorem ipsum dolor sit amet, consectetur adipiscing elit",2025/01/08 0:00,2200/12/31 23:59,http://lorem.com/ipsum,FALSE,spokesperson-01
+campaign-50,AA00-00050,"Lorem ipsum dolor sit amet, consectetur adipiscing elit","Lorem ipsum dolor sit amet, consectetur adipiscing elit",2025/01/08 0:00,2200/12/31 23:59,http://lorem.com/ipsum,FALSE,spokesperson-01
 # draft-mode - no singular values
 # spokesperson - standard values
-campaign-50,AA00-00050,"Lorem ipsum dolor sit amet, consectetur adipiscing elit","Lorem ipsum dolor sit amet, consectetur adipiscing elit",2025/01/08 0:00,2200/12/31 23:59,http://lorem.com/ipsum,TRUE,spokesperson-02
-campaign-51,AA00-00051,"Lorem ipsum dolor sit amet, consectetur adipiscing elit","Lorem ipsum dolor sit amet, consectetur adipiscing elit",2025/01/08 0:00,2200/12/31 23:59,http://lorem.com/ipsum,TRUE,spokesperson-03
+campaign-51,AA00-00051,"Lorem ipsum dolor sit amet, consectetur adipiscing elit","Lorem ipsum dolor sit amet, consectetur adipiscing elit",2025/01/08 0:00,2200/12/31 23:59,http://lorem.com/ipsum,TRUE,spokesperson-02
+campaign-52,AA00-00052,"Lorem ipsum dolor sit amet, consectetur adipiscing elit","Lorem ipsum dolor sit amet, consectetur adipiscing elit",2025/01/08 0:00,2200/12/31 23:59,http://lorem.com/ipsum,TRUE,spokesperson-03
 # spokesperson - no singular values
