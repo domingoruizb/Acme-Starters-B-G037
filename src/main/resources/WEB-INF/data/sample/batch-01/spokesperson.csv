@@ -1,5 +1,5 @@
 key,key:userAccount,cv,achievements,licensed
 #base entity
-spokesperson-01,user-account-provider-01,Senior PR expert with 15 years of experience in tech,Successfully managed the 2024 global product launch,TRUE
-spokesperson-02,user-account-provider-02,Journalist specialized in corporate crisis management,Received the Excellence in Communication Award in 2022,FALSE
-spokesperson-03,user-account-provider-03,PhD in Marketing and Social Media Strategy,Increased brand awareness by 50% in the last quarter,TRUE
+spokesperson-01,user-account-spokesperson-01,Senior PR expert with 15 years of experience in tech,Successfully managed the 2024 global product launch,TRUE
+spokesperson-02,user-account-spokesperson-02,Journalist specialized in corporate crisis management,Received the Excellence in Communication Award in 2022,FALSE
+spokesperson-03,user-account-spokesperson-03,PhD in Marketing and Social Media Strategy,Increased brand awareness by 50% in the last quarter,TRUE
