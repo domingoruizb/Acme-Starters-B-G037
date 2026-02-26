@@ -7,6 +7,11 @@ user-account-provider-02,true,"UserIdentity{name: 'Martina', surname: 'коза 
 user-account-provider-03,true,"UserIdentity{name: 'Antonia', surname: 'אבטיח Æløzå', email: 'antonia@acme.com'}",provider3,provider3
 user-account-administrator1,true,"UserIdentity{name: 'Administrator', surname: 'Acme', email: 'administrator1@acme.com'}",administrator1,administrator1
 user-account-administrator2,true,"UserIdentity{name: 'Administrator', surname: 'Acme', email: 'administrator2@acme.com'}",administrator2,administrator2
+# Sponsors
+user-account-sponsor1,true,"UserIdentity{name: 'Sponsor', surname: 'One', email: 'sponsor1@acme.com'}",sponsor1,sponsor1
+user-account-sponsor2,true,"UserIdentity{name: 'Sponsor', surname: 'Two', email: 'sponsor2@acme.com'}",sponsor2,sponsor2
+user-account-sponsor3,true,"UserIdentity{name: 'Sponsor', surname: 'Three', email: 'sponsor3@acme.com'}",sponsor3,sponsor3
+# Spokepersons
 user-account-spokesperson-01,true,"UserIdentity{name: 'Аристарх', surname: 'Вырвикишка', email: 'aristarkh@acme.com'}",spokesperson1,spokesperson1
 user-account-spokesperson-02,true,"UserIdentity{name: 'ამირან', surname: 'პაპასქუა', email: 'amiran@acme.com'}",spokesperson2,spokesperson2
 user-account-spokesperson-03,true,"UserIdentity{name: 'ព្រហ្ម', surname: 'ចត្វារី', email: 'brahm@acme.com'}",spokesperson3,spokesperson3
