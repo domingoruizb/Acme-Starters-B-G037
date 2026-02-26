@@ -1,0 +1,41 @@
+key,key:campaign,title,achievements,effort,kind
+# base entity
+milestone-00,campaign-00,"Lorem ipsum dolor sit amet, consectetur adipiscing elit","Lorem ipsum dolor sit amet, consectetur adipiscing elit",50.00,TEASER
+# campaign - standard variations
+milestone-01,campaign-01,"Lorem ipsum dolor sit amet, consectetur adipiscing elit","Lorem ipsum dolor sit amet, consectetur adipiscing elit",50.00,TEASER
+milestone-02,campaign-02,"Lorem ipsum dolor sit amet, consectetur adipiscing elit","Lorem ipsum dolor sit amet, consectetur adipiscing elit",50.00,TEASER
+# campaign - no singular values
+# title - standard variations
+milestone-03,campaign-00,L,"Lorem ipsum dolor sit amet, consectetur adipiscing elit",50.00,TEASER
+milestone-04,campaign-00,Lo,"Lorem ipsum dolor sit amet, consectetur adipiscing elit",50.00,TEASER
+milestone-05,campaign-00,"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmo","Lorem ipsum dolor sit amet, consectetur adipiscing elit",50.00,TEASER
+milestone-06,campaign-00,"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod","Lorem ipsum dolor sit amet, consectetur adipiscing elit",50.00,TEASER
+milestone-07,campaign-00,โลเร็ม อิปซัม,"Lorem ipsum dolor sit amet, consectetur adipiscing elit",50.00,TEASER
+milestone-08,campaign-00,لوريم إيبسوم,"Lorem ipsum dolor sit amet, consectetur adipiscing elit",50.00,TEASER
+milestone-09,campaign-00,洛伦·伊普森,"Lorem ipsum dolor sit amet, consectetur adipiscing elit",50.00,TEASER
+milestone-10,campaign-00,<marquee>Hacked</marquee>,"Lorem ipsum dolor sit amet, consectetur adipiscing elit",50.00,TEASER
+milestone-11,campaign-00,<script>alert(‘Hacked!’);</script>,"Lorem ipsum dolor sit amet, consectetur adipiscing elit",50.00,TEASER
+milestone-12,campaign-00,' or 'A' = 'A,"Lorem ipsum dolor sit amet, consectetur adipiscing elit",50.00,TEASER
+# title - no singular values
+# achievements - standard variations
+milestone-13,campaign-00,"Lorem ipsum dolor sit amet, consectetur adipiscing elit",L,50.00,TEASER
+milestone-14,campaign-00,"Lorem ipsum dolor sit amet, consectetur adipiscing elit",Lo,50.00,TEASER
+milestone-15,campaign-00,"Lorem ipsum dolor sit amet, consectetur adipiscing elit","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor*",50.00,TEASER
+milestone-16,campaign-00,"Lorem ipsum dolor sit amet, consectetur adipiscing elit","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor i",50.00,TEASER
+milestone-17,campaign-00,"Lorem ipsum dolor sit amet, consectetur adipiscing elit",โลเร็ม อิปซัม,50.00,TEASER
+milestone-18,campaign-00,"Lorem ipsum dolor sit amet, consectetur adipiscing elit",لوريم إيبسوم‎,50.00,TEASER
+milestone-19,campaign-00,"Lorem ipsum dolor sit amet, consectetur adipiscing elit",洛伦·伊普森,50.00,TEASER
+milestone-20,campaign-00,"Lorem ipsum dolor sit amet, consectetur adipiscing elit",<marquee>Hacked</marquee>,50.00,TEASER
+milestone-21,campaign-00,"Lorem ipsum dolor sit amet, consectetur adipiscing elit",<script>alert(‘Hacked!’);</script>,50.00,TEASER
+milestone-22,campaign-00,"Lorem ipsum dolor sit amet, consectetur adipiscing elit",' or 'A' = 'A,50.00,TEASER
+# achievements - no singular values
+# effort - standard variations
+milestone-23,campaign-00,"Lorem ipsum dolor sit amet, consectetur adipiscing elit","Lorem ipsum dolor sit amet, consectetur adipiscing elit",0.00,TEASER
+milestone-24,campaign-00,"Lorem ipsum dolor sit amet, consectetur adipiscing elit","Lorem ipsum dolor sit amet, consectetur adipiscing elit",0.01,TEASER
+milestone-25,campaign-00,"Lorem ipsum dolor sit amet, consectetur adipiscing elit","Lorem ipsum dolor sit amet, consectetur adipiscing elit",99.00,TEASER
+milestone-26,campaign-00,"Lorem ipsum dolor sit amet, consectetur adipiscing elit","Lorem ipsum dolor sit amet, consectetur adipiscing elit",100.00,TEASER
+# effort - no singular values
+# kind - standard variations
+milestone-27,campaign-00,"Lorem ipsum dolor sit amet, consectetur adipiscing elit","Lorem ipsum dolor sit amet, consectetur adipiscing elit",50.00,ENGAGING
+milestone-28,campaign-00,"Lorem ipsum dolor sit amet, consectetur adipiscing elit","Lorem ipsum dolor sit amet, consectetur adipiscing elit",50.00,CONVERSION
+# kind - no singular values
