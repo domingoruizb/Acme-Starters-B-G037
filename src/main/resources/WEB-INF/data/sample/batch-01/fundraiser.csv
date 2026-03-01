@@ -1,0 +1,6 @@
+key,key:userAccount,bank,statement,agent
+
+# Base entity
+fundraiser-01,user-account-fundraiser-01,"Banco Santander","Raising funds to support educational innovation programs across rural communities.",TRUE
+fundraiser-02,user-account-fundraiser-02,"BBVA","Supporting environmental sustainability initiatives and climate action projects.",FALSE
+fundraiser-03,user-account-fundraiser-03,"CaixaBank","Funding medical research for rare diseases and public health improvement.",TRUE

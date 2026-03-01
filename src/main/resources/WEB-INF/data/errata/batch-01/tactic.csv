@@ -1,0 +1,17 @@
+key,key:strategy,name,notes,expectedPercentage,kind
+# Base
+tactic-01,"","","","",""
+# Name
+tactic-02,strategy-01,"","Lorem ipsum dolor sit amet",10.00,SUBTLE
+tactic-03,strategy-01,"Lorem ipsum dolor sit amet, consectetur adipiscing elit Sed do: eiusmod tem","Lorem ipsum dolor sit amet",10.00,SUBTLE
+# Notes
+tactic-04,strategy-01,"Lorem ipsum dolor sit amet","",10.00,SUBTLE
+tactic-05,strategy-01,"Lorem ipsum dolor sit amet","Lorem ipsum dolor sit amet, consectetur adipiscing elit extra",10.00,SUBTLE
+# ExpectedPercentage
+tactic-06,strategy-01,"Lorem ipsum dolor sit amet","Lorem ipsum dolor sit amet","",SUBTLE
+tactic-07,strategy-01,"Lorem ipsum dolor sit amet","Lorem ipsum dolor sit amet",-0.01,SUBTLE
+tactic-08,strategy-01,"Lorem ipsum dolor sit amet","Lorem ipsum dolor sit amet",100.01,SUBTLE
+# Kind
+tactic-09,strategy-01,"Lorem ipsum dolor sit amet","Lorem ipsum dolor sit amet",10.00,""
+# Strategy
+tactic-10,strategy-02,"Lorem ipsum dolor sit amet","Lorem ipsum dolor sit amet",10.00,SUBTLE
