@@ -1,0 +1,5 @@
+key,key:user-account,firm,highlights,solicitor
+# base entity
+auditor-01,user-account-auditor1,"Acme","Lorem ipsum dolor sit amet, consectetu",0
+auditor-02,user-account-auditor2,"Газпром","Это контрольная фраза",0
+auditor-03,user-account-auditor3,"トヨタ自動車株式会社","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut enim ad minim veniam? Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor*",1

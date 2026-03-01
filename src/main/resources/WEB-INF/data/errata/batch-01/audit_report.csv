@@ -1,0 +1,25 @@
+key,key:auditor,ticker,name,description,startMoment,endMoment,moreInfo,draftMode
+# Base
+report-01,"","","","","","","",""
+# Ticker
+report-02,auditor-01,"","Reporte de prueba","Descripción válida",2025/01/08 0:00,2200/12/31 23:59,"http://lorem.com",1
+report-03,auditor-01,"aa00-abcde","Reporte de prueba","Descripción válida",2025/01/08 0:00,2200/12/31 23:59,"http://lorem.com",1
+report-04,auditor-01,"AA00-ABCDEFGHIJKLMNO","Reporte de prueba","Descripción válida",2025/01/08 0:00,2200/12/31 23:59,"http://lorem.com",1
+# Name
+report-05,auditor-01,AA01-AAAAAA,"","Descripción válida",2025/01/08 0:00,2200/12/31 23:59,"http://lorem.com",1
+report-06,auditor-01,AA01-AAAAAA,"Este es un nombre que intenta ser tan largo que rompe la validación del encabezado en el sistema","Descripción válida",2025/01/08 0:00,2200/12/31 23:59,"http://lorem.com",1
+# Description
+report-07,auditor-01,AA01-AAAAAA,"Reporte válido","",2025/01/08 0:00,2200/12/31 23:59,"http://lorem.com",1
+# StartMoment
+report-08,auditor-01,AA01-AAAAAA,"Reporte válido","Descripción válida","",2200/12/31 23:59,"http://lorem.com",1
+report-09,auditor-01,AA01-AAAAAA,"Reporte válido","Descripción válida",2020/01/01 10:00,2200/12/31 23:59,"http://lorem.com",1
+# EndMoment
+report-10,auditor-01,AA01-AAAAAA,"Reporte válido","Descripción válida",2025/01/08 0:00,"","http://lorem.com",1
+report-11,auditor-01,AA01-AAAAAA,"Reporte válido","Descripción válida",2025/01/08 0:00,2025/01/07 23:59,"http://lorem.com",1
+# MoreInfo
+report-12,auditor-01,AA01-AAAAAA,"Reporte válido","Descripción válida",2025/01/08 0:00,2200/12/31 23:59,"invalid-url",1
+report-13,auditor-01,AA01-AAAAAA,"Reporte válido","Descripción válida",2025/01/08 0:00,2200/12/31 23:59,"ftp://archivo.zip",1
+# DraftMode
+report-14,auditor-01,AA01-AAAAAA,"Reporte válido","Descripción válida",2025/01/08 0:00,2200/12/31 23:59,"http://lorem.com",0
+# Auditor
+report-15,"",AA01-AAAAAA,"Reporte válido","Descripción válida",2025/01/08 0:00,2200/12/31 23:59,"http://lorem.com",1

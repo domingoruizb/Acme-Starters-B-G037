@@ -15,3 +15,7 @@ user-account-sponsor3,true,"UserIdentity{name: 'Sponsor', surname: 'Three', emai
 user-account-spokesperson-01,true,"UserIdentity{name: 'Аристарх', surname: 'Вырвикишка', email: 'aristarkh@acme.com'}",spokesperson1,spokesperson1
 user-account-spokesperson-02,true,"UserIdentity{name: 'ამირან', surname: 'პაპასქუა', email: 'amiran@acme.com'}",spokesperson2,spokesperson2
 user-account-spokesperson-03,true,"UserIdentity{name: 'ព្រហ្ម', surname: 'ចត្វារី', email: 'brahm@acme.com'}",spokesperson3,spokesperson3
+# Auditors
+user-account-auditor1,true,"UserIdentity{name: 'Auditor', surname: 'One', email: 'auditor1@acme.com'}",auditor1,auditor1
+user-account-auditor2,true,"UserIdentity{name: 'Auditor', surname: 'Two', email: 'auditor2@acme.com'}",auditor2,auditor2
+user-account-auditor3,true,"UserIdentity{name: 'Auditor', surname: 'Three', email: 'auditor3@acme.com'}",auditor3,auditor3

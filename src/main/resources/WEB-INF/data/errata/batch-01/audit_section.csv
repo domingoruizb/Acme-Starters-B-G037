@@ -1,0 +1,16 @@
+key,key:audit_report,name,notes,hours,kind
+# Base
+section-err-01,"","","","",""
+# Name
+section-err-02,report-01,"","Nota válida sobre la sección.",8,PRELIMINARY
+section-err-03,report-01,"Este nombre de sección es tan extremadamente largo que debería fallar al intentar procesarse como un encabezado de columna válido en el sistema de auditoría","Nota válida.",4,CONCLUSION
+# Notes
+section-err-04,report-01,"Revisión de Gastos","",12,EVALUATION
+section-err-05,report-01,"Revisión de Gastos","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. [Texto adicional para forzar el error de longitud]",10,PRELIMINARY
+# Hours
+section-err-06,report-01,"Conteo de activos","Verificación física de maquinaria.","",CONCLUSION
+section-err-07,report-01,"Conteo de activos","Verificación física de maquinaria.",-1,CONCLUSION
+section-err-08,report-01,"Conteo de activos","Verificación física de maquinaria.",0,CONCLUSION
+section-err-09,report-01,"Conteo de activos","Verificación física de maquinaria.",999999,CONCLUSION
+# Kind
+section-err-10,report-01,"Cierre de auditoría","Preparación de documentos finales.",5,""

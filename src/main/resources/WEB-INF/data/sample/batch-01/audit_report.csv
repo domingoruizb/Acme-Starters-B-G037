@@ -1,0 +1,48 @@
+key,key:auditor,ticker,name,description,startMoment,endMoment,moreInfo,draftMode
+# Base
+report-01,auditor-01,AA00-AAAAAA,"Reporte Base Estándar","Este es el registro de referencia con datos normales para validar el funcionamiento básico del sistema.",2025/01/08 0:00,2200/12/31 23:59,"http://lorem.com/ipsum",1
+# Ticker
+report-02,auditor-01,CI54-D9PlkQcSF,"Validación Ticker Largo","Prueba de descripción para un ticker con alta entropía y longitud extendida para verificar límites de columna.",2025/01/08 0:00,2200/12/31 23:59,"http://lorem.com/ipsum",1
+report-03,auditor-01,IM62-R64ZndWNs,"Validación Ticker Alfanumérico","Verificación de que el sistema acepta caracteres alfanuméricos complejos en el campo identificador principal.",2025/01/08 0:00,2200/12/31 23:59,"http://lorem.com/ipsum",1
+report-04,auditor-01,TR85-IEEpvJ6_no,"Validación Ticker Guion Bajo","Comprobación de caracteres especiales permitidos como el guion bajo dentro de la cadena del ticker.",2025/01/08 0:00,2200/12/31 23:59,"http://lorem.com/ipsum",1
+report-05,auditor-01,QT84-SWWMn,"Validación Ticker Corto","Uso de un ticker con formato reducido para asegurar que no hay una longitud mínima restrictiva inesperada.",2025/01/08 0:00,2200/12/31 23:59,"http://lorem.com/ipsum",1
+# Name
+report-12,auditor-01,BB12-NAME-L,"A","Descripción para nombre de un solo carácter. Caso de borde de longitud mínima.",2025/01/08 0:00,2200/12/31 23:59,"http://lorem.com/ipsum",1
+report-13,auditor-01,BB13-NAME-LO,"Ab","Descripción para nombre de dos caracteres. Validación de cadenas extremadamente cortas.",2025/01/08 0:00,2200/12/31 23:59,"http://lorem.com/ipsum",1
+report-14,auditor-01,BB14-NAME-MAX,"Nombre al límite de capacidad de caracteres permitido por el esquema","Validación de truncado o error al insertar un nombre que ocupa el máximo espacio definido en la base de datos.",2025/01/08 0:00,2200/12/31 23:59,"http://lorem.com/ipsum",1
+report-15,auditor-01,BB15-NAME-OVR,"Nombre que excede por un poco el límite de longitud establecido","Esta prueba busca forzar un error de desbordamiento de buffer o una excepción de persistencia por longitud.",2025/01/08 0:00,2200/12/31 23:59,"http://lorem.com/ipsum",1
+report-16,auditor-01,BB16-NAME-THI,"รายงานการตรวจสอบ","Prueba de soporte para caracteres Unicode del alfabeto tailandés en el nombre del reporte.",2025/01/08 0:00,2200/12/31 23:59,"http://lorem.com/ipsum",1
+report-17,auditor-01,BB17-NAME-ARA,"تقرير المراجعة","Verificación de renderizado y almacenamiento de caracteres árabes (derecha a izquierda) en el campo nombre.",2025/01/08 0:00,2200/12/31 23:59,"http://lorem.com/ipsum",1
+report-18,auditor-01,BB18-NAME-CHI,"审计报告","Prueba de caracteres chinos simplificados para validar la codificación UTF-8 en la capa de persistencia.",2025/01/08 0:00,2200/12/31 23:59,"http://lorem.com/ipsum",1
+report-19,auditor-01,BB19-NAME-MAR,"<marquee>Hacked</marquee>","Inyección de etiquetas HTML decorativas para verificar si el frontend escapa correctamente el contenido.",2025/01/08 0:00,2200/12/31 23:59,"http://lorem.com/ipsum",1
+report-20,auditor-01,BB20-NAME-SCR,"<script>alert(1);</script>","Prueba de Cross-Site Scripting (XSS) básico para asegurar que el script no se ejecute en el navegador.",2025/01/08 0:00,2200/12/31 23:59,"http://lorem.com/ipsum",1
+report-21,auditor-01,BB21-NAME-SQL,"' OR 1=1 --","Prueba de inyección SQL en el campo nombre para verificar la seguridad de las consultas parametrizadas.",2025/01/08 0:00,2200/12/31 23:59,"http://lorem.com/ipsum",1
+# Description
+report-22,auditor-01,CC22-DESC-L,"Descripción Corta A","X",2025/01/08 0:00,2200/12/31 23:59,"http://lorem.com/ipsum",1
+report-23,auditor-01,CC23-DESC-LO,"Descripción Corta B","XY",2025/01/08 0:00,2200/12/31 23:59,"http://lorem.com/ipsum",1
+report-24,auditor-01,CC24-DESC-MAX,"Descripción de Longitud Máxima","Texto extendido diseñado para llenar exactamente el límite del campo de descripción y verificar que no se pierda el último carácter.",2025/01/08 0:00,2200/12/31 23:59,"http://lorem.com/ipsum",1
+report-25,auditor-01,CC25-DESC-OVR,"Descripción con Exceso","Texto que supera intencionadamente el límite de caracteres para probar el manejo de excepciones en la capa de servicio.",2025/01/08 0:00,2200/12/31 23:59,"http://lorem.com/ipsum",1
+report-26,auditor-01,CC26-DESC-THI,"Descripción Tailandesa","คำอธิบายสั้นๆ เป็นภาษาไทย เพื่อทดสอบการรองรับอักขระพิเศษในเนื้อหาที่มีความยาว.",2025/01/08 0:00,2200/12/31 23:59,"http://lorem.com/ipsum",1
+report-27,auditor-01,CC27-DESC-ARA,"Descripción Árabe","وصف قصير باللغة العربية لاختبار تخزين النصوص ثنائية الاتجاه داخل قاعدة البيانات.",2025/01/08 0:00,2200/12/31 23:59,"http://lorem.com/ipsum",1
+report-28,auditor-01,CC28-DESC-CHI,"Descripción China","这是一个中文简短说明，用于测试系统对多字节字符的处理能力是否正确。",2025/01/08 0:00,2200/12/31 23:59,"http://lorem.com/ipsum",1
+report-29,auditor-01,CC29-DESC-MAR,"Descripción HTML","<div style='color:red'>Texto con estilo inyectado para probar sanitización de CSS/HTML.</div>",2025/01/08 0:00,2200/12/31 23:59,"http://lorem.com/ipsum",1
+report-30,auditor-01,CC30-DESC-SCR,"Descripción XSS","<img src=x onerror=alert('xss')> Prueba de ejecución automática de scripts mediante atributos de imagen.",2025/01/08 0:00,2200/12/31 23:59,"http://lorem.com/ipsum",1
+report-31,auditor-01,CC31-DESC-SQL,"Descripción SQLi","'; DROP TABLE audit_reports; -- Intento de borrado de tabla mediante inyección en el campo descripción.",2025/01/08 0:00,2200/12/31 23:59,"http://lorem.com/ipsum",1
+# StartMoment
+report-32,auditor-01,DD32-TIME-A,"Inicio Medianoche","Prueba de fecha con hora exacta en el inicio del día para verificar comparaciones de límites temporales.",2025/01/08 0:00,2200/12/31 23:59,"http://lorem.com/ipsum",1
+report-33,auditor-01,DD33-TIME-B,"Inicio 1 Minuto","Variación de un minuto en el inicio para validar la precisión de la granularidad temporal del sistema.",2025/01/08 0:01,2200/12/31 23:59,"http://lorem.com/ipsum",1
+report-34,auditor-01,DD34-TIME-C,"Inicio Futuro Lejano","Validación de fechas en el siglo XXIII para asegurar que el sistema no tiene el problema del año 2038.",2200/12/31 23:58,2200/12/31 23:59,"http://lorem.com/ipsum",1
+report-35,auditor-01,DD35-TIME-D,"Inicio Simultáneo","Caso de prueba donde la fecha de inicio es idéntica a la fecha de fin para validar periodos de duración cero.",2200/12/31 23:59,2200/12/31 23:59,"http://lorem.com/ipsum",1
+# EndMoment
+report-36,auditor-01,EE36-END-A,"Fin Inmediato","Prueba donde el reporte expira en el mismo momento en que comienza.",2025/01/08 0:00,2025/01/08 0:00,"http://lorem.com/ipsum",1
+report-37,auditor-01,EE37-END-B,"Fin 1 Minuto Después","Periodo de validez mínimo de un minuto para probar filtros de reportes activos.",2025/01/08 0:00,2025/01/08 0:01,"http://lorem.com/ipsum",1
+report-38,auditor-01,EE38-END-C,"Fin Casi Máximo","Fecha de finalización situada un minuto antes del límite máximo permitido en este set de datos.",2025/01/08 0:00,2200/12/31 23:58,"http://lorem.com/ipsum",1
+report-39,auditor-01,EE39-END-D,"Fin Máximo Estándar","Uso de la fecha de fin lejana estándar para reportes permanentes o de larga duración.",2025/01/08 0:00,2200/12/31 23:59,"http://lorem.com/ipsum",1
+# MoreInfo
+report-40,auditor-01,FF40-URL-SHORT,"URL Minimalista","Uso de una URL extremadamente corta para validar el regex de validación de campos link.",2025/01/08 0:00,2200/12/31 23:59,"http://a.b",1
+report-41,auditor-01,FF41-URL-LONG,"URL Compleja","Validación de URLs con múltiples subdirectorios y caracteres especiales permitidos en la ruta.",2025/01/08 0:00,2200/12/31 23:59,"http://www.lorem-ipsum.org/dolor/sit/consectetur/adipiscing/elit",1
+report-56,auditor-01,FF56-URL-NULL,"Sin Información Adicional","Caso donde el campo opcional de información externa se deja como nulo para verificar integridad.",2025/01/08 0:00,2200/12/31 23:59,null,1
+# DraftMode
+report-57,auditor-01,GG57-DRAFT-OFF,"Reporte Publicado","Cambio de estado a modo no-borrador para verificar la visibilidad pública del recurso.",2025/01/08 0:00,2200/12/31 23:59,"http://lorem.com/ipsum",0
+# auditor
+report-58,auditor-02,HH58-AUDIT-02,"Cambio de Auditor","Prueba de asociación a un usuario auditor diferente para validar permisos y propiedad de datos.",2025/01/08 0:00,2200/12/31 23:59,"http://lorem.com/ipsum",1
