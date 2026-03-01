@@ -1,0 +1,21 @@
+key,key:audit_report,name,notes,hours,kind
+# base entity
+section-01,report-01,"Revisión de Inventario","Se procede a realizar el conteo físico anual de mercancías en el almacén central.",8,PRELIMINARY
+# Ticker
+section-02,report-02,"A","Nota para sección con nombre de un solo carácter.",1,CONCLUSION
+section-03,report-14,"Límites de nombre extendidos","Verificación de truncado en nombres de sección extremadamente largos.",4,EVALUATION
+section-04,report-16,"การตรวจสอบบัญชี","Prueba de caracteres tailandeses en el encabezado de la sección.",2,PRELIMINARY
+section-05,report-20,"<script>alert('xss')</script>","Prueba de XSS en el campo name para validar sanitización.",3,CONCLUSION
+# Notes
+section-06,report-22,"Notas Cortas","X",5,PRELIMINARY
+section-07,report-27,"Notas Unicode","Descripción con caracteres árabes: تقرير شامل de la auditoría.",6,EVALUATION
+section-08,report-31,"Notas SQLi","'; DROP TABLE audit_sections; -- Intento de inyección en notas.",10,CONCLUSION
+section-09,report-30,"Notas XSS","<img src=x onerror=alert('notes')> Validación de ejecución de scripts.",7,PRELIMINARY
+# Hours
+section-10,report-32,"Mínimo de Horas","Validación del límite inferior positivo.",1,PRELIMINARY
+section-11,report-35,"Carga de Trabajo Alta","Prueba con un número de horas elevado (intensivo).",160,CONCLUSION
+section-12,report-39,"Horas Extraordinarias","Cálculo de horas para una sección de revisión profunda.",24,EVALUATION
+# Section Kinds
+section-13,report-40,"Estado Preliminar","Validación del tipo PRELIMINARY.",2,PRELIMINARY
+section-14,report-56,"Estado Conclusión","Validación del tipo CONCLUSION.",40,CONCLUSION
+section-15,report-57,"Estado Evaluación","Validación del tipo EVALUATION.",15,EVALUATION
