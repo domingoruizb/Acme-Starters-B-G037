@@ -17,6 +17,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import acme.client.components.basis.AbstractEntity;
 import acme.client.components.datatypes.Money;
 import acme.client.components.validation.Mandatory;
+import acme.client.components.validation.Optional;
 import acme.client.components.validation.ValidMoment;
 import acme.client.components.validation.ValidMoment.Constraint;
 import acme.client.components.validation.ValidUrl;
@@ -64,7 +65,7 @@ public class Invention extends AbstractEntity {
 	@Temporal(TemporalType.TIMESTAMP)
 	private Date				endMoment;
 
-	@Mandatory
+	@Optional
 	@ValidUrl
 	@Column
 	private String				moreInfo;
