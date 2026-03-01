@@ -1,5 +1,5 @@
 
-package acme.entities.auditsections;
+package acme.entities.audits;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -9,7 +9,6 @@ import javax.validation.Valid;
 import acme.client.components.basis.AbstractEntity;
 import acme.client.components.validation.Mandatory;
 import acme.client.components.validation.ValidNumber;
-import acme.entities.auditreports.AuditReport;
 import lombok.Getter;
 import lombok.Setter;
 

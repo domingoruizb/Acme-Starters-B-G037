@@ -2,7 +2,6 @@
 package acme.entities.sponsors;
 
 import java.time.Duration;
-import java.time.temporal.ChronoUnit;
 import java.util.Date;
 
 import javax.persistence.Column;
@@ -82,13 +81,16 @@ public class Sponsorship extends AbstractEntity {
 	private SponsorshipRepository	repository;
 
 
+  // @Mandatory
+  // @ValidNumber(min = 0)
 	@Transient
 	public Double getMonthsActive() {
 		if (this.startMoment == null || this.endMoment == null)
 			return null;
 
 		Duration duration = MomentHelper.computeDuration(this.startMoment, this.endMoment);
-		return (double) duration.get(ChronoUnit.MONTHS);
+		// return (double) duration.get(ChronoUnit.MONTHS);
+		return 0.0;
 	}
 
 	@Transient
@@ -96,7 +98,7 @@ public class Sponsorship extends AbstractEntity {
 		Double total = this.repository.computeTotalMoney(this.getId());
 		Money money = new Money();
 		money.setAmount(total);
-		// money.setCurrency("EUR"); Not needed for now
+		money.setCurrency("EUR");
 		return money;
 	}
 

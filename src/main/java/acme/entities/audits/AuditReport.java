@@ -1,18 +1,27 @@
 
-package acme.entities.auditreports;
+package acme.entities.audits;
+
+import java.time.Duration;
+import java.time.temporal.ChronoUnit;
+import java.util.Date;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.ManyToOne;
+import javax.persistence.Temporal;
+import javax.persistence.TemporalType;
+import javax.persistence.Transient;
 import javax.validation.Valid;
 
+import org.springframework.beans.factory.annotation.Autowired;
+
 import acme.client.components.basis.AbstractEntity;
-import acme.client.components.datatypes.Moment;
 import acme.client.components.validation.Mandatory;
 import acme.client.components.validation.Optional;
 import acme.client.components.validation.ValidMoment;
 import acme.client.components.validation.ValidMoment.Constraint;
 import acme.client.components.validation.ValidUrl;
+import acme.client.helpers.MomentHelper;
 import acme.realms.Auditor;
 import lombok.Getter;
 import lombok.Setter;
@@ -45,13 +54,13 @@ public class AuditReport extends AbstractEntity {
 
 	@Mandatory
 	@ValidMoment(constraint = Constraint.ENFORCE_FUTURE)
-	@Column
-	private Moment				startMoment;
+	@Temporal(TemporalType.TIMESTAMP)
+	private Date				startMoment;
 
 	@Mandatory
 	@ValidMoment(constraint = Constraint.ENFORCE_FUTURE)
-	@Column
-	private Moment				endMoment;
+	@Temporal(TemporalType.TIMESTAMP)
+	private Date				endMoment;
 
 	@Optional
 	@ValidUrl
@@ -64,27 +73,29 @@ public class AuditReport extends AbstractEntity {
 	private Boolean				draftMode;
 
 	// Derived attributes
-	/*
-	 * @Mandatory
-	 * 
-	 * @Valid
-	 * 
-	 * @Transient
-	 * private Double getMonthsActive() {
-	 * }
-	 * 
-	 * @Mandatory
-	 * 
-	 * @ValidNumber(min = 0)
-	 * 
-	 * @Transient
-	 * private Integer getHours() {
-	 * }
-	 */
+	@Transient
+	@Autowired
+	private AuditRepository		repository;
+
+
+	@Transient
+	public Double getMonthsActive() {
+		if (this.startMoment == null || this.endMoment == null)
+			return null;
+
+		Duration duration = MomentHelper.computeDuration(this.startMoment, this.endMoment);
+		return (double) duration.get(ChronoUnit.MONTHS);
+	}
+
+	@Transient
+	private Integer getHours() {
+		return this.repository.findTotalNumberOfHoursBySection(this.getId());
+	}
+
 
 	// Relationships
 	@Mandatory
 	@Valid
 	@ManyToOne(optional = false)
-	private Auditor				auditor;
+	private Auditor auditor;
 }

@@ -1,5 +1,5 @@
 
-package acme.entities.milestones;
+package acme.entities.campaigns;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -9,7 +9,8 @@ import javax.validation.Valid;
 import acme.client.components.basis.AbstractEntity;
 import acme.client.components.validation.Mandatory;
 import acme.client.components.validation.ValidNumber;
-import acme.entities.campaigns.Campaign;
+import acme.constraints.ValidHeader;
+import acme.constraints.ValidText;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -25,12 +26,12 @@ public class Milestone extends AbstractEntity {
 	// Attributes -------------------------------------------------------------
 
 	@Mandatory
-	//@ValidHeader
+	@ValidHeader
 	@Column
 	private String				title;
 
 	@Mandatory
-	//@ValidText
+	@ValidText
 	@Column
 	private String				achievements;
 

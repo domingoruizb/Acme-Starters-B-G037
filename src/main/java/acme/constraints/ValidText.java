@@ -19,12 +19,13 @@ import org.hibernate.validator.constraints.Length;
 @Retention(RetentionPolicy.RUNTIME)
 @Constraint(validatedBy = {})
 @NotBlank
-@Length(min = 1, max = 255)
 @ReportAsSingleViolation
+
+@Length(min = 1, max = 255)
 
 public @interface ValidText {
 
-	String message() default ""; // TODO
+	String message() default "{acme.validation.invalid-text}";
 
 	Class<?>[] groups() default {};
 

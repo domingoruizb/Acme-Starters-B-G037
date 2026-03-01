@@ -9,6 +9,7 @@ import java.lang.annotation.Target;
 import javax.validation.Constraint;
 import javax.validation.Payload;
 import javax.validation.ReportAsSingleViolation;
+import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.Pattern;
 
 @Target({
@@ -16,6 +17,7 @@ import javax.validation.constraints.Pattern;
 })
 @Retention(RetentionPolicy.RUNTIME)
 @Constraint(validatedBy = {})
+@NotBlank
 @ReportAsSingleViolation
 
 @Pattern(regexp = "^[A-Z]{2}[0-9]{2}-\\w{5,10}$")
@@ -23,7 +25,7 @@ import javax.validation.constraints.Pattern;
 public @interface ValidTicker {
 
 	//Standard validation properties --------------------
-	String message() default "{acme.validation.ticker.message}";
+	String message() default "{acme.validation.invalid-ticker}";
 
 	Class<?>[] groups() default {};
 	Class<? extends Payload>[] payload() default {};
