@@ -19,6 +19,10 @@ user-account-inventor3,true,"UserIdentity{name: 'Inventor', surname: 'Three', em
 user-account-spokesperson-01,true,"UserIdentity{name: 'Аристарх', surname: 'Вырвикишка', email: 'aristarkh@acme.com'}",spokesperson1,spokesperson1
 user-account-spokesperson-02,true,"UserIdentity{name: 'ამირან', surname: 'პაპასქუა', email: 'amiran@acme.com'}",spokesperson2,spokesperson2
 user-account-spokesperson-03,true,"UserIdentity{name: 'ព្រហ្ម', surname: 'ចត្វារី', email: 'brahm@acme.com'}",spokesperson3,spokesperson3
+# Fundraisers
+user-account-fundraiser-01,true,"UserIdentity{name: 'Elena', surname: 'Fundraiser', email: 'elena.fundraiser@acme.com'}",fundraiser1,fundraiser1
+user-account-fundraiser-02,true,"UserIdentity{name: 'Carlos', surname: 'Fundraiser', email: 'carlos.fundraiser@acme.com'}",fundraiser2,fundraiser2
+user-account-fundraiser-03,true,"UserIdentity{name: 'Lucia', surname: 'Fundraiser', email: 'lucia.fundraiser@acme.com'}",fundraiser3,fundraiser3
 # Auditors
 user-account-auditor1,true,"UserIdentity{name: 'Auditor', surname: 'One', email: 'auditor1@acme.com'}",auditor1,auditor1
 user-account-auditor2,true,"UserIdentity{name: 'Auditor', surname: 'Two', email: 'auditor2@acme.com'}",auditor2,auditor2
