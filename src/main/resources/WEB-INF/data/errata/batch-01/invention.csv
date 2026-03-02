@@ -1,0 +1,31 @@
+key,key:inventor,ticker,name,description,startMoment,endMoment,moreInfo,draftMode
+# Base
+invention-01,"","","","","","","",""
+# Ticker
+invention-02,inventor-01,"","Lorem ipsum dolor sit amet, consectetu","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut*",2025/01/08 0:00,2200/12/31 23:59,"http://lorem.com/ipsum",1
+invention-03,inventor-01,"A00-abcde","Lorem ipsum dolor sit amet, consectetu","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut*",2025/01/08 0:00,2200/12/31 23:59,"http://lorem.com/ipsum",1
+invention-04,inventor-01,"aa00-abcde","Lorem ipsum dolor sit amet, consectetu","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut*",2025/01/08 0:00,2200/12/31 23:59,"http://lorem.com/ipsum",1
+invention-05,inventor-01,"aa00-abcdefghijk","Lorem ipsum dolor sit amet, consectetu","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut*",2025/01/08 0:00,2200/12/31 23:59,"http://lorem.com/ipsum",1
+# Name
+invention-06,inventor-01,AA01-AAAAAA,"","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut*",2025/01/08 0:00,2200/12/31 23:59,"http://lorem.com/ipsum",1
+invention-07,inventor-01,AA02-AAAAAA,"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tem","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut*",2025/01/08 0:00,2200/12/31 23:59,"http://lorem.com/ipsum",1
+# Description
+invention-08,inventor-01,AA03-AAAAAA,"Lorem ipsum dolor sit amet, consectetu","",2025/01/08 0:00,2200/12/31 23:59,"http://lorem.com/ipsum",1
+invention-09,inventor-01,AA04-AAAAAA,"Lorem ipsum dolor sit amet, consectetu","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut enim ad minim veniam? Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor i",2025/01/08 0:00,2200/12/31 23:59,"http://lorem.com/ipsum",1
+# StartMoment
+invention-10,inventor-01,AA05-AAAAAA,"Lorem ipsum dolor sit amet, consectetu","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut*","",2200/12/31 23:59,"http://lorem.com/ipsum",1
+invention-11,inventor-01,AA06-AAAAAA,"Lorem ipsum dolor sit amet, consectetu","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut*",2022/09/01 10:00,2200/12/31 23:59,"http://lorem.com/ipsum",1
+invention-12,inventor-01,AA07-AAAAAA,"Lorem ipsum dolor sit amet, consectetu","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut*",2025/01/07 23:59,2200/12/31 23:59,"http://lorem.com/ipsum",1
+invention-13,inventor-01,AA08-AAAAAA,"Lorem ipsum dolor sit amet, consectetu","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut*",2201/01/01 0:01,2200/12/31 23:59,"http://lorem.com/ipsum",1
+# EndMoment
+invention-14,inventor-01,AA09-AAAAAA,"Lorem ipsum dolor sit amet, consectetu","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut*",2025/01/08 0:00,"","http://lorem.com/ipsum",1
+invention-15,inventor-01,AA10-AAAAAA,"Lorem ipsum dolor sit amet, consectetu","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut*",2025/01/08 0:00,2022/09/01 10:00,"http://lorem.com/ipsum",1
+invention-16,inventor-01,AA11-AAAAAA,"Lorem ipsum dolor sit amet, consectetu","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut*",2025/01/08 0:00,2025/01/07 23:59,"http://lorem.com/ipsum",1
+invention-17,inventor-01,AA12-AAAAAA,"Lorem ipsum dolor sit amet, consectetu","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut*",2025/01/08 0:00,2201/01/01 0:01,"http://lorem.com/ipsum",1
+# MoreInfo
+invention-18,inventor-01,AA13-AAAAAA,"Lorem ipsum dolor sit amet, consectetu","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut*",2025/01/08 0:00,2200/12/31 23:59,"",1
+invention-19,inventor-01,AA14-AAAAAA,"Lorem ipsum dolor sit amet, consectetu","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut*",2025/01/08 0:00,2200/12/31 23:59,"http://",1
+invention-20,inventor-01,AA15-AAAAAA,"Lorem ipsum dolor sit amet, consectetu","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut*",2025/01/08 0:00,2200/12/31 23:59,"ftp://",1
+invention-21,inventor-01,AA16-AAAAAA,"Lorem ipsum dolor sit amet, consectetu","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut*",2025/01/08 0:00,2200/12/31 23:59,"http://a",1
+invention-22,inventor-01,AA17-AAAAAA,"Lorem ipsum dolor sit amet, consectetu","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut*",2025/01/08 0:00,2200/12/31 23:59,"ftp://a",1
+invention-23,inventor-01,AA18-AAAAAA,"Lorem ipsum dolor sit amet, consectetu","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut*",2025/01/08 0:00,2200/12/31 23:59,"http://www.lorem-ipsum.org/dolor/sit/amet,/consectetur/adipiscing/elit,/sed/do/eiusmod/tempor/incididunt/ut/labore/et/dolore/magna/aliqua/Ut/enim/ad/minim/veniam/quis/nostrud/exercitation/ullamco/laboris/nisi/ut/aliquip/ex/ea/commodo/consequat/duis/aute/x",1
