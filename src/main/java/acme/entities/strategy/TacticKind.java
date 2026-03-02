@@ -1,5 +1,5 @@
 
-package acme.entities.tactic;
+package acme.entities.strategy;
 
 public enum TacticKind {
 	SUBTLE, AGGRESSIVE, TENDER

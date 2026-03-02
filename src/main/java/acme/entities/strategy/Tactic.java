@@ -1,5 +1,5 @@
 
-package acme.entities.tactic;
+package acme.entities.strategy;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -11,7 +11,6 @@ import acme.client.components.validation.Mandatory;
 import acme.client.components.validation.ValidScore;
 import acme.constraints.ValidHeader;
 import acme.constraints.ValidText;
-import acme.entities.strategy.Strategy;
 import lombok.Getter;
 import lombok.Setter;
 
