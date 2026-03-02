@@ -12,14 +12,16 @@ report-06,auditor-01,AA01-AAAAAA,"Este es un nombre que intenta ser tan largo qu
 report-07,auditor-01,AA01-AAAAAA,"Reporte válido","",2025/01/08 0:00,2200/12/31 23:59,"http://lorem.com",1
 # StartMoment
 report-08,auditor-01,AA01-AAAAAA,"Reporte válido","Descripción válida","",2200/12/31 23:59,"http://lorem.com",1
-report-09,auditor-01,AA01-AAAAAA,"Reporte válido","Descripción válida",2020/01/01 10:00,2200/12/31 23:59,"http://lorem.com",1
+report-09,auditor-01,AA01-AAAAAA,"Reporte válido","Descripción válida",1999/12/31 23:59,2200/12/31 23:59,"http://lorem.com",1
+report-10,auditor-01,AA01-AAAAAA,"Reporte válido","Descripción válida",2201/01/01 00:00,2200/12/31 23:59,"http://lorem.com",1
 # EndMoment
-report-10,auditor-01,AA01-AAAAAA,"Reporte válido","Descripción válida",2025/01/08 0:00,"","http://lorem.com",1
-report-11,auditor-01,AA01-AAAAAA,"Reporte válido","Descripción válida",2025/01/08 0:00,2025/01/07 23:59,"http://lorem.com",1
+report-11,auditor-01,AA01-AAAAAA,"Reporte válido","Descripción válida",2025/01/01 0:00,"","http://lorem.com",1
+report-12,auditor-01,AA01-AAAAAA,"Reporte válido","Descripción válida",2025/01/01 0:00,1999/12/31 23:59,"http://lorem.com",1
+report-13,auditor-01,AA01-AAAAAA,"Reporte válido","Descripción válida",2025/01/01 0:00,2201/01/01 00:00,"http://lorem.com",1
 # MoreInfo
-report-12,auditor-01,AA01-AAAAAA,"Reporte válido","Descripción válida",2025/01/08 0:00,2200/12/31 23:59,"invalid-url",1
-report-13,auditor-01,AA01-AAAAAA,"Reporte válido","Descripción válida",2025/01/08 0:00,2200/12/31 23:59,"ftp://archivo.zip",1
+report-14,auditor-01,AA01-AAAAAA,"Reporte válido","Descripción válida",2025/01/08 0:00,2200/12/31 23:59,"invalid-url",1
+report-15,auditor-01,AA01-AAAAAA,"Reporte válido","Descripción válida",2025/01/08 0:00,2200/12/31 23:59,"ftp://archivo.zip",1
 # DraftMode
-report-14,auditor-01,AA01-AAAAAA,"Reporte válido","Descripción válida",2025/01/08 0:00,2200/12/31 23:59,"http://lorem.com",0
+report-16,auditor-01,AA01-AAAAAA,"Reporte válido","Descripción válida",2025/01/08 0:00,2200/12/31 23:59,"http://lorem.com",0
 # Auditor
-report-15,"",AA01-AAAAAA,"Reporte válido","Descripción válida",2025/01/08 0:00,2200/12/31 23:59,"http://lorem.com",1
+report-17,"",AA01-AAAAAA,"Reporte válido","Descripción válida",2025/01/08 0:00,2200/12/31 23:59,"http://lorem.com",1
