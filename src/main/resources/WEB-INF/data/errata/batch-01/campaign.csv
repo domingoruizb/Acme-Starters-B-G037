@@ -23,12 +23,12 @@ campaign-15,AA00-00015,"Lorem ipsum dolor sit amet, consectetu","Lorem ipsum dol
 # description - no singular values
 # start-moment - standard variations
 campaign-16,AA00-00016,"Lorem ipsum dolor sit amet, consectetu","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut*",,2200/12/31 23:59,http://lorem.com/ipsum,TRUE,spokesperson-01
-campaign-17,AA00-00017,"Lorem ipsum dolor sit amet, consectetu","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut*",2025/01/07 23:59,2200/12/31 23:59,http://lorem.com/ipsum,TRUE,spokesperson-01
+campaign-17,AA00-00017,"Lorem ipsum dolor sit amet, consectetu","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut*",1999/12/31 23:59,2200/12/31 23:59,http://lorem.com/ipsum,TRUE,spokesperson-01
 campaign-18,AA00-00018,"Lorem ipsum dolor sit amet, consectetu","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut*",2201/01/01 00:00,2200/12/31 23:59,http://lorem.com/ipsum,TRUE,spokesperson-01
 # start-moment - no singular values
-# end-moment - standard variations
+# end-moment - standard variations,"","","",""
 campaign-19,AA00-00019,"Lorem ipsum dolor sit amet, consectetu","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut*",2025/01/08 0:00,,http://lorem.com/ipsum,TRUE,spokesperson-01
-campaign-20,AA00-00020,"Lorem ipsum dolor sit amet, consectetu","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut*",2025/01/08 0:00,2025/01/07 23:59,http://lorem.com/ipsum,TRUE,spokesperson-01
+campaign-20,AA00-00020,"Lorem ipsum dolor sit amet, consectetu","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut*",2025/01/08 0:00,1999/12/31 23:59,http://lorem.com/ipsum,TRUE,spokesperson-01
 campaign-21,AA00-00021,"Lorem ipsum dolor sit amet, consectetu","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut*",2025/01/08 0:00,2201/01/01 00:00,http://lorem.com/ipsum,TRUE,spokesperson-01
 # end-moment - no singular values
 # more-info - standard variations

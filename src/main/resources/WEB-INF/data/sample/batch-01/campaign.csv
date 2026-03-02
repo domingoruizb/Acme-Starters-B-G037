@@ -31,15 +31,15 @@ campaign-22,AA00-00022,"Lorem ipsum dolor sit amet, consectetu",<marquee>Hacked<
 campaign-23,AA00-00023,"Lorem ipsum dolor sit amet, consectetu",<script>alert(‘Hacked!’);</script>,2025/01/08 0:00,2200/12/31 23:59,http://lorem.com/ipsum,TRUE,spokesperson-01
 campaign-24,AA00-00024,"Lorem ipsum dolor sit amet, consectetu",' or 'A' = 'A,2025/01/08 0:00,2200/12/31 23:59,http://lorem.com/ipsum,TRUE,spokesperson-01
 # description - no singular values
-# start-moment - standard variations
-campaign-25,AA00-00025,"Lorem ipsum dolor sit amet, consectetu","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut*",2025/01/08 0:00,2200/12/31 23:59,http://lorem.com/ipsum,TRUE,spokesperson-01
-campaign-26,AA00-00026,"Lorem ipsum dolor sit amet, consectetu","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut*",2025/01/08 0:01,2200/12/31 23:59,http://lorem.com/ipsum,TRUE,spokesperson-01
+# start-moment - standard variations,"","","",""
+campaign-25,AA00-00025,"Lorem ipsum dolor sit amet, consectetu","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut*",2000/01/01 0:00,2200/12/31 23:59,http://lorem.com/ipsum,TRUE,spokesperson-01
+campaign-26,AA00-00026,"Lorem ipsum dolor sit amet, consectetu","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut*",2000/01/01 0:01,2200/12/31 23:59,http://lorem.com/ipsum,TRUE,spokesperson-01
 campaign-27,AA00-00027,"Lorem ipsum dolor sit amet, consectetu","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut*",2200/12/31 23:58,2200/12/31 23:59,http://lorem.com/ipsum,TRUE,spokesperson-01
 campaign-28,AA00-00028,"Lorem ipsum dolor sit amet, consectetu","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut*",2200/12/31 23:59,2200/12/31 23:59,http://lorem.com/ipsum,TRUE,spokesperson-01
-# start-moment - no singular values
-# end-moment - standard variations
-campaign-29,AA00-00029,"Lorem ipsum dolor sit amet, consectetu","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut*",2025/01/08 0:00,2025/01/08 0:00,http://lorem.com/ipsum,TRUE,spokesperson-01
-campaign-30,AA00-00030,"Lorem ipsum dolor sit amet, consectetu","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut*",2025/01/08 0:00,2025/01/08 0:01,http://lorem.com/ipsum,TRUE,spokesperson-01
+# start-moment - no singular values,"","","",""
+# end-moment - standard variations,"","","",""
+campaign-29,AA00-00029,"Lorem ipsum dolor sit amet, consectetu","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut*",2025/01/08 0:00,2000/01/01 0:00,http://lorem.com/ipsum,TRUE,spokesperson-01
+campaign-30,AA00-00030,"Lorem ipsum dolor sit amet, consectetu","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut*",2025/01/08 0:00,2000/01/01 0:01,http://lorem.com/ipsum,TRUE,spokesperson-01
 campaign-31,AA00-00031,"Lorem ipsum dolor sit amet, consectetu","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut*",2025/01/08 0:00,2200/12/31 23:58,http://lorem.com/ipsum,TRUE,spokesperson-01
 campaign-32,AA00-00032,"Lorem ipsum dolor sit amet, consectetu","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut*",2025/01/08 0:00,2200/12/31 23:59,http://lorem.com/ipsum,TRUE,spokesperson-01
 # end-moment - no singular values

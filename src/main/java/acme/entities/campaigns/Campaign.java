@@ -54,12 +54,12 @@ public class Campaign extends AbstractEntity {
 	private String				description;
 
 	@Mandatory
-	@ValidMoment(constraint = ValidMoment.Constraint.ENFORCE_FUTURE)
+	@ValidMoment
 	@Temporal(TemporalType.TIMESTAMP)
 	private Date				startMoment;
 
 	@Mandatory
-	@ValidMoment(constraint = ValidMoment.Constraint.ENFORCE_FUTURE)
+	@ValidMoment
 	@Temporal(TemporalType.TIMESTAMP)
 	private Date				endMoment;
 
@@ -91,7 +91,11 @@ public class Campaign extends AbstractEntity {
 
 	@Transient
 	public Double getEffort() {
-		return this.repository.findTotalOfferByCampaign(this.getId());
+		Double res = this.repository.findTotalOfferByCampaign(this.getId());
+		if (res == null)
+			return 0.0;
+		else
+			return res;
 	}
 
 	// Relationships ----------------------------------------------------------
