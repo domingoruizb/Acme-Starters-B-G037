@@ -2,29 +2,29 @@ key,key:fundraiser,ticker,name,description,startMoment,endMoment,moreInfo,draftM
 # Base
 strategy-01,"","","","","","","",""
 # Ticker
-strategy-02,fundraiser-01,"","Lorem ipsum dolor sit amet, consectetu","Lorem ipsum dolor sit amet, consectetur adipiscing elit.",2026/01/08 0:00,2200/12/31 23:59,"http://lorem.com",1
-strategy-03,fundraiser-01,"A00-abcde","Lorem ipsum dolor sit amet, consectetu","Lorem ipsum dolor sit amet, consectetur adipiscing elit.",2026/01/08 0:00,2200/12/31 23:59,"http://lorem.com",1
-strategy-04,fundraiser-01,"aa00-abcde","Lorem ipsum dolor sit amet, consectetu","Lorem ipsum dolor sit amet, consectetur adipiscing elit.",2026/01/08 0:00,2200/12/31 23:59,"http://lorem.com",1
-strategy-05,fundraiser-01,"aa00-abcdefghijk","Lorem ipsum dolor sit amet, consectetu","Lorem ipsum dolor sit amet, consectetur adipiscing elit.",2026/01/08 0:00,2200/12/31 23:59,"http://lorem.com",1
+strategy-02,fundraiser-01,"","Lorem ipsum dolor sit amet, consectetu","Lorem ipsum dolor sit amet, consectetur adipiscing elit.",2026/01/01 0:00,2200/12/31 23:59,http://lorem.com,1
+strategy-03,fundraiser-01,A00-abcde,"Lorem ipsum dolor sit amet, consectetu","Lorem ipsum dolor sit amet, consectetur adipiscing elit.",2026/01/01 0:00,2200/12/31 23:59,http://lorem.com,1
+strategy-04,fundraiser-01,aa00-abcde,"Lorem ipsum dolor sit amet, consectetu","Lorem ipsum dolor sit amet, consectetur adipiscing elit.",2026/01/01 0:00,2200/12/31 23:59,http://lorem.com,1
+strategy-05,fundraiser-01,aa00-abcdefghijk,"Lorem ipsum dolor sit amet, consectetu","Lorem ipsum dolor sit amet, consectetur adipiscing elit.",2026/01/01 0:00,2200/12/31 23:59,http://lorem.com,1
 # Name
-strategy-06,fundraiser-01,AA01-AAAAAA,"","Lorem ipsum dolor sit amet, consectetur adipiscing elit.",2026/01/08 0:00,2200/12/31 23:59,"http://lorem.com",1
-strategy-07,fundraiser-01,AA02-AAAAAA,"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tem","Lorem ipsum dolor sit amet",2026/01/08 0:00,2200/12/31 23:59,"http://lorem.com",1
+strategy-06,fundraiser-01,AA01-AAAAAA,"","Lorem ipsum dolor sit amet, consectetur adipiscing elit.",2026/01/01 0:00,2200/12/31 23:59,http://lorem.com,1
+strategy-07,fundraiser-01,AA02-AAAAAA,"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tem",Lorem ipsum dolor sit amet,2026/01/01 0:00,2200/12/31 23:59,http://lorem.com,1
 # Description
-strategy-08,fundraiser-01,AA03-AAAAAA,"Lorem ipsum dolor sit amet, consectetu","",2026/01/08 0:00,2200/12/31 23:59,"http://lorem.com",1
-strategy-09,fundraiser-01,AA04-AAAAAA,"Lorem ipsum dolor sit amet, consectetu","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua extra",2026/01/08 0:00,2200/12/31 23:59,"http://lorem.com",1
+strategy-08,fundraiser-01,AA03-AAAAAA,"Lorem ipsum dolor sit amet, consectetu","",2026/01/01 0:00,2200/12/31 23:59,http://lorem.com,1
+strategy-09,fundraiser-01,AA04-AAAAAA,"Lorem ipsum dolor sit amet, consectetu","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua extra",2026/01/01 0:00,2200/12/31 23:59,http://lorem.com,1
 # StartMoment
-strategy-10,fundraiser-01,AA05-AAAAAA,"Lorem ipsum dolor sit amet, consectetu","Lorem ipsum dolor sit amet","",2200/12/31 23:59,"http://lorem.com",1
-strategy-11,fundraiser-01,AA06-AAAAAA,"Lorem ipsum dolor sit amet, consectetu","Lorem ipsum dolor sit amet",2022/09/01 10:00,2200/12/31 23:59,"http://lorem.com",1
-strategy-12,fundraiser-01,AA07-AAAAAA,"Lorem ipsum dolor sit amet, consectetu","Lorem ipsum dolor sit amet",2201/01/01 0:01,2200/12/31 23:59,"http://lorem.com",1
+strategy-10,fundraiser-01,AA05-AAAAAA,"Lorem ipsum dolor sit amet, consectetu",Lorem ipsum dolor sit amet,"",2200/12/31 23:59,http://lorem.com,1
+strategy-11,fundraiser-01,AA06-AAAAAA,"Lorem ipsum dolor sit amet, consectetu",Lorem ipsum dolor sit amet,1999/12/31 23:59,2200/12/31 23:59,http://lorem.com,1
+strategy-12,fundraiser-01,AA07-AAAAAA,"Lorem ipsum dolor sit amet, consectetu",Lorem ipsum dolor sit amet,2201/01/01 0:00,2200/12/31 23:59,http://lorem.com,1
 # EndMoment
-strategy-13,fundraiser-01,AA08-AAAAAA,"Lorem ipsum dolor sit amet, consectetu","Lorem ipsum dolor sit amet",2026/01/08 0:00,"","http://lorem.com",1
-strategy-14,fundraiser-01,AA09-AAAAAA,"Lorem ipsum dolor sit amet, consectetu","Lorem ipsum dolor sit amet",2026/01/08 0:00,2022/09/01 10:00,"http://lorem.com",1
-strategy-15,fundraiser-01,AA10-AAAAAA,"Lorem ipsum dolor sit amet, consectetu","Lorem ipsum dolor sit amet",2026/01/08 0:00,2026/01/07 23:59,"http://lorem.com",1
-# MoreInfo
-strategy-16,fundraiser-01,AA11-AAAAAA,"Lorem ipsum dolor sit amet, consectetu","Lorem ipsum dolor sit amet",2026/01/08 0:00,2200/12/31 23:59,"",1
-strategy-17,fundraiser-01,AA12-AAAAAA,"Lorem ipsum dolor sit amet, consectetu","Lorem ipsum dolor sit amet",2026/01/08 0:00,2200/12/31 23:59,"ftp://",1
-strategy-18,fundraiser-01,AA13-AAAAAA,"Lorem ipsum dolor sit amet, consectetu","Lorem ipsum dolor sit amet",2026/01/08 0:00,2200/12/31 23:59,"http://a",1
+strategy-13,fundraiser-01,AA08-AAAAAA,"Lorem ipsum dolor sit amet, consectetu",Lorem ipsum dolor sit amet,2026/01/01 0:00,"",http://lorem.com,1
+strategy-14,fundraiser-01,AA09-AAAAAA,"Lorem ipsum dolor sit amet, consectetu",Lorem ipsum dolor sit amet,2026/01/01 0:00,1999/12/31 23:59,http://lorem.com,1
+strategy-15,fundraiser-01,AA10-AAAAAA,"Lorem ipsum dolor sit amet, consectetu",Lorem ipsum dolor sit amet,2026/01/01 0:00,2201/01/01 0:00,http://lorem.com,1
+# MoreInfo,"","","","","",""
+strategy-16,fundraiser-01,AA11-AAAAAA,"Lorem ipsum dolor sit amet, consectetu",Lorem ipsum dolor sit amet,2026/01/01 0:00,2200/12/31 23:59,"",1
+strategy-17,fundraiser-01,AA12-AAAAAA,"Lorem ipsum dolor sit amet, consectetu",Lorem ipsum dolor sit amet,2026/01/01 0:00,2200/12/31 23:59,ftp://,1
+strategy-18,fundraiser-01,AA13-AAAAAA,"Lorem ipsum dolor sit amet, consectetu",Lorem ipsum dolor sit amet,2026/01/01 0:00,2200/12/31 23:59,http://a,1
 # DraftMode
-strategy-19,fundraiser-01,AA14-AAAAAA,"Lorem ipsum dolor sit amet, consectetu","Lorem ipsum dolor sit amet",2026/01/08 0:00,2200/12/31 23:59,"http://lorem.com",
+strategy-19,fundraiser-01,AA14-AAAAAA,"Lorem ipsum dolor sit amet, consectetu",Lorem ipsum dolor sit amet,2026/01/01 0:00,2200/12/31 23:59,http://lorem.com,
 # Fundraiser
-strategy-20,fundraiser-01,AA15-AAAAAA,"Lorem ipsum dolor sit amet, consectetu","Lorem ipsum dolor sit amet",2026/01/08 0:00,2200/12/31 23:59,"http://lorem.com",1
+strategy-20,fundraiser-01,AA15-AAAAAA,"Lorem ipsum dolor sit amet, consectetu",Lorem ipsum dolor sit amet,2026/01/01 0:00,2200/12/31 23:59,http://lorem.com,1
