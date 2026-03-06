@@ -1,7 +1,7 @@
 
 package acme.entities.campaigns;
 
-import java.time.Duration;
+import java.time.temporal.ChronoUnit;
 import java.util.Date;
 
 import javax.persistence.Column;
@@ -18,6 +18,7 @@ import acme.client.components.basis.AbstractEntity;
 import acme.client.components.validation.Mandatory;
 import acme.client.components.validation.Optional;
 import acme.client.components.validation.ValidMoment;
+import acme.client.components.validation.ValidNumber;
 import acme.client.components.validation.ValidUrl;
 import acme.client.helpers.MomentHelper;
 import acme.constraints.ValidHeader;
@@ -69,26 +70,30 @@ public class Campaign extends AbstractEntity {
 	private String				moreInfo;
 
 	@Mandatory
-	@Valid
+	// HINT: @Valid by default.
 	@Column
 	private Boolean				draftMode;
 
 	// Derived attributes -----------------------------------------------------
 
+	@Mandatory
+	@Valid
 	@Transient
 	@Autowired
 	private CampaignRepository	repository;
 
 
+	@Mandatory
+	// @Valid // HINT: Eclipse's validator forbids this annotation here.
 	@Transient
 	public Double getMonthsActive() {
 		if (this.startMoment == null || this.endMoment == null)
 			return null;
-		Duration duration = MomentHelper.computeDuration(this.startMoment, this.endMoment);
-		// return (double) duration.get(ChronoUnit.MONTHS);
-		return 0.0;
+		return MomentHelper.computeDifference(this.startMoment, this.endMoment, ChronoUnit.MONTHS);
 	}
 
+	@Mandatory
+	@ValidNumber(min = 0.0)
 	@Transient
 	public Double getEffort() {
 		Double res = this.repository.findTotalOfferByCampaign(this.getId());

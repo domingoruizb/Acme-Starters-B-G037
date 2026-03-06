@@ -1,0 +1,8 @@
+# messages-en.i18n
+
+any.spokesperson.form.title = Perfil del portavoz
+
+any.spokesperson.form.label.fullname = Nombre y Apellidos:
+any.spokesperson.form.label.achievements = Logros:
+any.spokesperson.form.label.cv = Curriculum Vitae:
+any.spokesperson.form.label.licensed = Licenciado:

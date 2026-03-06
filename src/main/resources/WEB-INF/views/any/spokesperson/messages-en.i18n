@@ -1,0 +1,8 @@
+# messages-en.i18n
+
+any.spokesperson.form.title = Spokesperson profile
+
+any.spokesperson.form.label.fullname = Name and Surname:
+any.spokesperson.form.label.achievements = Achievements:
+any.spokesperson.form.label.cv = Curriculum Vitae:
+any.spokesperson.form.label.licensed = Licensed:

@@ -31,6 +31,15 @@ master.menu.provider.favourite-link = Enlace favorito
 master.menu.consumer = Consumidor
 master.menu.consumer.favourite-link = Enlace favorito
 
+# master.menu.spokesperson ##########################################################
+
+master.menu.spokesperson = Portavoz
+master.menu.spokesperson.favourite-link = Enlace favorito
+
+# master.menu.campaigns ##########################################################
+
+master.menu.campaigns = Campañas
+
 # master.menu.user-account ####################################################
 
 master.menu.user-account = Cuenta
