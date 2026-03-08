@@ -1,0 +1,8 @@
+# messages-en.i18n
+
+any.inventor.form.title = Inventor profile
+
+any.inventor.form.label.fullname = Name and Surname:
+any.inventor.form.label.bio = Bio:
+any.inventor.form.label.keyWords = Key words:
+any.inventor.form.label.licensed = Licensed:
