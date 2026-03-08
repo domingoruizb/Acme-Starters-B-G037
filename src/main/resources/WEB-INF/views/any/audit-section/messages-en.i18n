@@ -1,0 +1,14 @@
+# messages-en.i18n
+
+any.audit-section.form.title = Section form
+any.audit-section.list.title = Listing of sections
+
+any.audit-section.form.label.name = Name:
+any.audit-section.form.label.notes = Notes:
+any.audit-section.form.label.hours = Hours:
+any.audit-section.form.label.kind = Kind:
+
+any.audit-section.list.label.name = Name 
+any.audit-section.list.label.notes = Notes
+any.audit-section.list.label.hours = Hours
+any.audit-section.list.label.kind = Kind

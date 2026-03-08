@@ -49,6 +49,15 @@ master.menu.sponsor.favourite-link = Favourite link
 
 master.menu.sponsorships = Sponsorships
 
+# master.menu.auditor ##########################################################
+
+master.menu.auditor = Auditor
+master.menu.auditor.favourite-link = Favourite link
+
+# master.menu.audit-reports ##########################################################
+
+master.menu.audit-reports = Reports
+
 # master.menu.user-account ####################################################
 
 master.menu.user-account = Account
