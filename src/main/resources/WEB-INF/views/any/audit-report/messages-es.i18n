@@ -1,0 +1,20 @@
+# messages-en.i18n
+
+any.audit-report.form.title = Detalles de reporte
+any.audit-report.list.title = Lista de reportes
+
+any.audit-report.form.label.ticker = Referencia:
+any.audit-report.form.label.name = Nombre:
+any.audit-report.form.label.auditor = Auditor:
+any.audit-report.form.label.description = Descripción:
+any.audit-report.form.label.startmoment = Momento de inicio:
+any.audit-report.form.label.endmoment = Momento de fin:
+any.audit-report.form.label.moreinfo = Más información: (Opcional)
+
+any.audit-report.form.button.audit-sections = Secciones
+any.audit-report.form.button.auditor = Auditor
+
+any.audit-report.list.label.ticker = Referencia 
+any.audit-report.list.label.name = Nombre
+any.audit-report.list.label.startmoment = Momento de inicio
+any.audit-report.list.label.endmoment = Momento de fin

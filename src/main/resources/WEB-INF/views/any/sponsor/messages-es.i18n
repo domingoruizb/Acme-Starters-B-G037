@@ -1,0 +1,8 @@
+# messages-en.i18n
+
+any.sponsor.form.title = Perfil del patrocinador
+
+any.sponsor.form.label.fullname = Nombre y Apellidos:
+any.sponsor.form.label.address = Dirección:
+any.sponsor.form.label.im = IM:
+any.sponsor.form.label.gold = Oro:
