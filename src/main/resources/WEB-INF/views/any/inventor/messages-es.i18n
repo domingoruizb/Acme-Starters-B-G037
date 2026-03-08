@@ -4,5 +4,5 @@ any.inventor.form.title = Perfil del inventor
 
 any.inventor.form.label.fullname = Nombre y Apellidos:
 any.inventor.form.label.bio = Biografía:
-any.inventor.form.label.keywords = Palabras clave:
+any.inventor.form.label.key-words = Palabras clave:
 any.inventor.form.label.licensed = Licenciado:

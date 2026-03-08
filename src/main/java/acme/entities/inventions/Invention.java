@@ -2,6 +2,7 @@
 package acme.entities.inventions;
 
 import java.time.Duration;
+import java.time.temporal.ChronoUnit;
 import java.util.Date;
 
 import javax.persistence.Column;
@@ -70,21 +71,21 @@ public class Invention extends AbstractEntity {
 	private String				moreInfo;
 
 	@Mandatory
-	@Valid
+	// HINT: @Valid by default.
 	@Column
 	private Boolean				draftMode;
 
 	// Derived attributes
 
 
+	@Mandatory
+	// @Valid // HINT: Eclipse's validator forbids this annotation here.
 	@Transient
 	public Double getMonthsActive() {
 		if (this.startMoment == null || this.endMoment == null)
 			return null;
 
-		Duration duration = MomentHelper.computeDuration(this.startMoment, this.endMoment);
-		// return (double) duration.get(ChronoUnit.MONTHS);
-		return 0.0;
+		return MomentHelper.computeDifference(this.startMoment, this.endMoment, ChronoUnit.MONTHS);
 	}
 
 

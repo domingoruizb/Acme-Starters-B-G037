@@ -6,6 +6,6 @@
 <acme:form>
 	<acme:form-textbox code="any.inventor.form.label.fullname" path="identity.fullName"/>
 	<acme:form-textbox code="any.inventor.form.label.bio" path="bio"/>
-	<acme:form-textbox code="any.inventor.form.label.keywords" path="keywords"/>
+	<acme:form-textbox code="any.inventor.form.label.key-words" path="key-words"/>
 	<acme:form-textbox code="any.inventor.form.label.licensed" path="licensed"/>
 </acme:form>
