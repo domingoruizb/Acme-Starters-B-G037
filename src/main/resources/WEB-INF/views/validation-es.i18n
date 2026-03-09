@@ -1,3 +1,8 @@
 acme.validation.invalid-header = El header no es válido
 acme.validation.invalid-ticker = El ticker no es válido
 acme.validation.invalid-text = El texto no es válido
+
+acme.validation.campaign.invalidinterval.message = El intervalo de tiempo no es válido
+acme.validation.campaign.hasmilestone.message = La campaña no tiene hitos asociados
+
+acme.validation.campaign.uniqueticker.message = La referencia ya existe
