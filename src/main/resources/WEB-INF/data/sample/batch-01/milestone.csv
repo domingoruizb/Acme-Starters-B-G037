@@ -3,7 +3,7 @@ key,key:campaign,title,achievements,effort,kind
 milestone-00,campaign-00,"Lorem ipsum dolor sit amet, consectetur adipiscing elit","Lorem ipsum dolor sit amet, consectetur adipiscing elit",50.00,TEASER
 # campaign - standard variations
 milestone-01,campaign-01,"Lorem ipsum dolor sit amet, consectetur adipiscing elit","Lorem ipsum dolor sit amet, consectetur adipiscing elit",50.00,TEASER
-milestone-02,campaign-02,"Lorem ipsum dolor sit amet, consectetur adipiscing elit","Lorem ipsum dolor sit amet, consectetur adipiscing elit",50.00,TEASER
+milestone-02,campaign-50,"Lorem ipsum dolor sit amet, consectetur adipiscing elit","Lorem ipsum dolor sit amet, consectetur adipiscing elit",50.00,TEASER
 # campaign - no singular values
 # title - standard variations
 milestone-03,campaign-00,L,"Lorem ipsum dolor sit amet, consectetur adipiscing elit",50.00,TEASER

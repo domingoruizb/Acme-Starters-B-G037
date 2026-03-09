@@ -39,6 +39,8 @@ campaign-25,AA00-00025,"Lorem ipsum dolor sit amet, consectetu","Lorem ipsum dol
 campaign-26,AA00-00026,"Lorem ipsum dolor sit amet, consectetu","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut*",2025/01/08 0:00,2200/12/31 23:59,"http://www.lorem-ipsum.org/dolor/sit/amet,/consectetur/adipiscing/elit,/sed/do/eiusmod/tempor/incididunt/ut/labore/et/dolore/magna/aliqua/Ut/enim/ad/minim/veniam/quis/nostrud/exercitation/ullamco/laboris/nisi/ut/aliquip/ex/ea/commodo/consequat/duis/aute/x",TRUE,spokesperson-01
 # more-info - no singular values
 # draft-mode - standard variations
+campaign-27,AA00-00027,"Lorem ipsum dolor sit amet, consectetu","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut*",2025/01/08 0:00,2200/12/31 23:59,http://lorem.com/ipsum,FALSE,spokesperson-01
+campaign-28,AA00-00028,"Lorem ipsum dolor sit amet, consectetu","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut*",2200/12/31 23:59,2025/01/08 0:00,http://lorem.com/ipsum,FALSE,spokesperson-01
 # draft-mode - no singular values
 # spokesperson - standard variations
 # spokesperson - no singular values
