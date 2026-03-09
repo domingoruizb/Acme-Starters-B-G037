@@ -67,16 +67,6 @@
 			<acme:menu-suboption code="master.menu.sponsorships" action="/any/sponsorship/list"/>
 			<acme:menu-suboption code="master.menu.inventions" action="/any/invention/list"/>
 		</acme:menu-option>
-		
-		<acme:menu-option code="master.menu.inventions" action="/any/invention/list">
-		</acme:menu-option>
-		
-		<acme:menu-option code="master.menu.auditor" access="hasRealm('Auditor')">
-					<acme:menu-suboption code="master.menu.auditor.favourite-link" action="http://www.example.com/"/>
-				</acme:menu-option>
-				
-		<acme:menu-option code="master.menu.audit-reports" action="/any/audit-report/list">
-		</acme:menu-option>
 	</acme:menu-left>
 
 	<acme:menu-right>		
