@@ -26,4 +26,8 @@ sponsorship-17,sponsor-01,AA12-AAAAAA,"Lorem ipsum dolor sit amet, consectetu","
 sponsorship-18,sponsor-01,AA13-AAAAAA,"Lorem ipsum dolor sit amet, consectetu","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut*","","","ftp://a",1
 sponsorship-19,sponsor-01,AA14-AAAAAA,"Lorem ipsum dolor sit amet, consectetu","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut*","","","http://www.lorem-ipsum.org/dolor/sit/amet,/consectetur/adipiscing/elit,/sed/do/eiusmod/tempor/incididunt/ut/labore/et/dolore/magna/aliqua/Ut/enim/ad/minim/veniam/quis/nostrud/exercitation/ullamco/laboris/nisi/ut/aliquip/ex/ea/commodo/consequat/duis/aute/x",1
 # DraftMode
+sponsorship-20,sponsor-01,AA15-AAAAAA,"Lorem ipsum dolor sit amet, consectetu","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut*","","","http://lorem.com/ipsum",0
+# DraftMode / StartMoment / EndMoment
+sponsorship-21,sponsor-01,AA16-AAAAAA,"Lorem ipsum dolor sit amet, consectetu","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut*",2000/01/01 0:00,2200/12/31 23:59,"http://lorem.com/ipsum",0
+sponsorship-22,sponsor-01,AA17-AAAAAA,"Lorem ipsum dolor sit amet, consectetu","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut*",2200/12/31 23:59,2025/01/01 0:00,"http://lorem.com/ipsum",0
 # Sponsor

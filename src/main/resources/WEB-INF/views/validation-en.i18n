@@ -5,4 +5,8 @@ acme.validation.invalid-text = The text is not valid
 acme.validation.campaign.invalidinterval.message = The time interval is not valid
 acme.validation.campaign.hasmilestone.message = The campaign has no milestones associated
 
+acme.validation.sponsorship.invalidinterval.message = The time interval is not valid
+acme.validation.sponsorship.hasdonation.message = The sponsorship has no donations associated
+
 acme.validation.campaign.uniqueticker.message = The ticker already exists
+acme.validation.sponsorship.uniqueticker.message = The ticker already exists
