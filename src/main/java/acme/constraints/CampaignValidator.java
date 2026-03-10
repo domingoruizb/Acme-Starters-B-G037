@@ -58,7 +58,7 @@ public class CampaignValidator extends AbstractValidator<ValidCampaign, Campaign
 				boolean validInterval;
 
 				if (campaign.getStartMoment() != null && campaign.getEndMoment() != null)
-					validInterval = MomentHelper.isAfter(campaign.getEndMoment(), campaign.getStartMoment());
+					validInterval = MomentHelper.isAfterOrEqual(campaign.getEndMoment(), campaign.getStartMoment());
 				else
 					validInterval = false;
 
