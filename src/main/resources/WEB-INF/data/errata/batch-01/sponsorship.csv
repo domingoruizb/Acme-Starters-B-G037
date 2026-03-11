@@ -1,6 +1,6 @@
 key,key:sponsor,ticker,name,description,startMoment,endMoment,moreInfo,draftMode
 # Base
-sponsorship-01,"","","","","","","",""
+sponsorship-01,"","","","","","","",1
 # Ticker
 sponsorship-02,sponsor-01,"","Lorem ipsum dolor sit amet, consectetu","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut*","","","http://lorem.com/ipsum",1
 sponsorship-03,sponsor-01,"A00-abcde","Lorem ipsum dolor sit amet, consectetu","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut*","","","http://lorem.com/ipsum",1
