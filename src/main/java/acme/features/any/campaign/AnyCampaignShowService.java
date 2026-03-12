@@ -44,7 +44,7 @@ public class AnyCampaignShowService extends AbstractService<Any, Campaign> {
 	public void authorise() {
 		boolean status;
 
-		status = this.campaign != null;
+		status = this.campaign != null && this.campaign.getDraftMode() == false;
 
 		super.setAuthorised(status);
 	}

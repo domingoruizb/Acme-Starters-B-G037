@@ -49,7 +49,7 @@ public class AnyMilestoneListService extends AbstractService<Any, Milestone> {
 	public void authorise() {
 		boolean status;
 
-		status = this.campaign != null && this.milestones != null;
+		status = this.campaign != null && this.milestones != null && !this.campaign.getDraftMode();
 
 		super.setAuthorised(status);
 	}

@@ -47,7 +47,7 @@ public class AnySpokespersonShowService extends AbstractService<Any, Spokesperso
 	public void authorise() {
 		boolean status;
 
-		status = this.spokesperson != null;
+		status = this.spokesperson != null && this.campaign != null && !this.campaign.getDraftMode();
 
 		super.setAuthorised(status);
 	}

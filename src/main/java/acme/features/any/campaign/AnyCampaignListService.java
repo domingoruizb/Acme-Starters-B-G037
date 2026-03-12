@@ -36,7 +36,7 @@ public class AnyCampaignListService extends AbstractService<Any, Campaign> {
 
 	@Override
 	public void load() {
-		this.campaigns = this.repository.findAllCampaigns();
+		this.campaigns = this.repository.findAllCampaignsPublished();
 	}
 
 	@Override

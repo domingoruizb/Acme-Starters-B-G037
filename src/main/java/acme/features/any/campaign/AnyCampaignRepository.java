@@ -23,8 +23,8 @@ import acme.entities.campaigns.Campaign;
 @Repository
 public interface AnyCampaignRepository extends AbstractRepository {
 
-	@Query("select c from Campaign c")
-	Collection<Campaign> findAllCampaigns();
+	@Query("select c from Campaign c where c.draftMode = false")
+	Collection<Campaign> findAllCampaignsPublished();
 
 	@Query("select c from Campaign c where c.id = :id")
 	Campaign findCampaignById(int id);
