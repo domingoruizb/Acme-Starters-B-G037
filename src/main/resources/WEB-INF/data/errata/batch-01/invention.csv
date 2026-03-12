@@ -1,6 +1,6 @@
 key,key:inventor,ticker,name,description,startMoment,endMoment,moreInfo,draftMode
 # Base
-invention-01,"","","","","","","",""
+invention-01,"","","","","","","",1
 # Ticker
 invention-02,inventor-01,"","Lorem ipsum dolor sit amet, consectetu","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut*",2025/01/08 0:00,2200/12/31 23:59,"http://lorem.com/ipsum",1
 invention-03,inventor-01,"A00-abcde","Lorem ipsum dolor sit amet, consectetu","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut*",2025/01/08 0:00,2200/12/31 23:59,"http://lorem.com/ipsum",1
