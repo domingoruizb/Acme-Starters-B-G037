@@ -62,6 +62,7 @@
 		<acme:menu-option code="master.menu.sponsor" access="hasRealm('Sponsor')">
 			<acme:menu-suboption code="master.menu.sponsor.favourite-link" action="http://www.example.com/"/>
 			<acme:menu-separator/>
+			<acme:menu-suboption code="master.menu.sponsor.sponsorships" action="/sponsor/sponsorship/list"/>
 		</acme:menu-option>
 
 		<acme:menu-option code="master.menu.inventor" access="hasRealm('Inventor')">

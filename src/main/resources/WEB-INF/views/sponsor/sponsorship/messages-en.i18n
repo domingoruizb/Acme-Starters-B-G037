@@ -1,0 +1,24 @@
+# messages-en.i18n
+
+sponsor.sponsorship.form.title = Sponsorship form
+sponsor.sponsorship.list.title = Listing of sponsorships
+
+sponsor.sponsorship.form.label.ticker = Ticker:
+sponsor.sponsorship.form.label.name = Name:
+sponsor.sponsorship.form.label.sponsor = Sponsor:
+sponsor.sponsorship.form.label.description = Description:
+sponsor.sponsorship.form.label.startmoment = Start Moment:
+sponsor.sponsorship.form.label.endmoment = End Moment:
+sponsor.sponsorship.form.label.moreinfo = More info: (Optional)
+sponsor.sponsorship.form.label.draftmode = Draft:
+sponsor.sponsorship.form.label.monthsactive = Months active:
+sponsor.sponsorship.form.label.totalmoney = Total money:
+
+sponsor.sponsorship.form.button.donations = Donations
+sponsor.sponsorship.form.button.sponsor = Sponsor
+
+sponsor.sponsorship.list.label.ticker = Ticker 
+sponsor.sponsorship.list.label.name = Name
+sponsor.sponsorship.list.label.startmoment = Start Moment
+sponsor.sponsorship.list.label.endmoment = End Moment
+sponsor.sponsorship.list.label.draftmode = Draft

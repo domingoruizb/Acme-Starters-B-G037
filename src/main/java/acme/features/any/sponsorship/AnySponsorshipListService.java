@@ -21,7 +21,7 @@ public class AnySponsorshipListService extends AbstractService<Any, Sponsorship>
 
 	@Override
 	public void load() {
-		this.sponsorships = this.repository.findAllSponsorships();
+		this.sponsorships = this.repository.findPublishedSponsorships();
 	}
 
 	@Override

@@ -1,21 +1,21 @@
 
-package acme.features.any.donation;
+package acme.features.sponsor.donation;
 
 import java.util.Collection;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import acme.client.components.principals.Any;
 import acme.client.services.AbstractService;
 import acme.entities.sponsors.Donation;
 import acme.entities.sponsors.Sponsorship;
+import acme.realms.Sponsor;
 
 @Service
-public class AnyDonationListService extends AbstractService<Any, Donation> {
+public class SponsorDonationListService extends AbstractService<Sponsor, Donation> {
 
 	@Autowired
-	private AnyDonationRepository	repository;
+	SponsorDonationRepository		repository;
 
 	private Sponsorship				sponsorship;
 	private Collection<Donation>	donations;
@@ -34,7 +34,7 @@ public class AnyDonationListService extends AbstractService<Any, Donation> {
 	public void authorise() {
 		boolean status;
 
-		status = this.sponsorship != null && !this.sponsorship.getDraftMode();
+		status = this.sponsorship != null && (this.sponsorship.getSponsor().isPrincipal() || !this.sponsorship.getDraftMode());
 
 		super.setAuthorised(status);
 	}
@@ -43,4 +43,5 @@ public class AnyDonationListService extends AbstractService<Any, Donation> {
 	public void unbind() {
 		super.unbindObjects(this.donations, "name", "notes", "money", "kind");
 	}
+
 }

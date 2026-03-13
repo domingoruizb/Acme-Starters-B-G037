@@ -1,5 +1,5 @@
 
-package acme.features.any.sponsorship;
+package acme.features.sponsor.sponsorship;
 
 import java.util.Collection;
 
@@ -10,10 +10,10 @@ import acme.client.repositories.AbstractRepository;
 import acme.entities.sponsors.Sponsorship;
 
 @Repository
-public interface AnySponsorshipRepository extends AbstractRepository {
+public interface SponsorSponsorshipRepository extends AbstractRepository {
 
-	@Query("SELECT s FROM Sponsorship s WHERE s.draftMode = FALSE")
-	Collection<Sponsorship> findPublishedSponsorships();
+	@Query("SELECT s FROM Sponsorship s WHERE s.sponsor.id = :sponsorId")
+	Collection<Sponsorship> findSponsorshipsBySponsorId(int sponsorId);
 
 	@Query("SELECT s FROM Sponsorship s WHERE s.id = :id")
 	Sponsorship findSponsorshipById(int id);
