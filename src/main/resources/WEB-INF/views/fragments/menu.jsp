@@ -19,11 +19,19 @@
 <acme:menu-bar>
 	<acme:menu-left>
 		<acme:menu-option code="master.menu.anonymous" access="isAnonymous()">
-			<acme:menu-suboption code="master.menu.audit-reports" action="/any/audit-report/list"/>
-			<acme:menu-suboption code="master.menu.campaigns" action="/any/campaign/list"/>
-			<acme:menu-suboption code="master.menu.sponsorships" action="/any/sponsorship/list"/>
-			<acme:menu-suboption code="master.menu.inventions" action="/any/invention/list"/>
+			<acme:menu-suboption code="master.menu.any.list-audit-reports" action="/any/audit-report/list" access="!hasRealm('Auditor')"/>
+			<acme:menu-suboption code="master.menu.any.list-campaigns" action="/any/campaign/list" access="!hasRealm('Spokesperson')"/>
+			<acme:menu-suboption code="master.menu.any.list-sponsorships" action="/any/sponsorship/list" access="!hasRealm('Sponsor')"/>
+			<acme:menu-suboption code="master.menu.any.list-inventions" action="/any/invention/list" access="!hasRealm('Inventor')"/>
 		</acme:menu-option>
+
+		<acme:menu-option code="master.menu.authenticated" access="isAuthenticated()">
+			<acme:menu-suboption code="master.menu.any.list-audit-reports" action="/any/audit-report/list" access="!hasRealm('Auditor')"/>
+			<acme:menu-suboption code="master.menu.any.list-campaigns" action="/any/campaign/list" access="!hasRealm('Spokesperson')"/>
+			<acme:menu-suboption code="master.menu.any.list-sponsorships" action="/any/sponsorship/list" access="!hasRealm('Sponsor')"/>
+			<acme:menu-suboption code="master.menu.any.list-inventions" action="/any/invention/list" access="!hasRealm('Inventor')"/>
+		</acme:menu-option>
+
 		<acme:menu-option code="master.menu.administrator" access="hasRealm('Administrator')">
 			<acme:menu-suboption code="master.menu.administrator.list-user-accounts" action="/administrator/user-account/list"/>
 			<acme:menu-separator/>
@@ -32,60 +40,42 @@
 			<acme:menu-separator/>
 			<acme:menu-suboption code="master.menu.administrator.shut-system-down" action="/administrator/system/shut-down"/>
 			<acme:menu-separator/>
-			<acme:menu-suboption code="master.menu.audit-reports" action="/any/audit-report/list"/>
-			<acme:menu-suboption code="master.menu.campaigns" action="/any/campaign/list"/>
-			<acme:menu-suboption code="master.menu.sponsorships" action="/any/sponsorship/list"/>
-			<acme:menu-suboption code="master.menu.inventions" action="/any/invention/list"/>
+			<acme:menu-suboption code="master.menu.any.list-audit-reports" action="/any/audit-report/list"/>
+			<acme:menu-suboption code="master.menu.any.list-campaigns" action="/any/campaign/list"/>
+			<acme:menu-suboption code="master.menu.any.list-sponsorships" action="/any/sponsorship/list"/>
+			<acme:menu-suboption code="master.menu.any.list-inventions" action="/any/invention/list"/>
 		</acme:menu-option>
+
 		<acme:menu-option code="master.menu.provider" access="hasRealm('Provider')">
 			<acme:menu-suboption code="master.menu.provider.favourite-link" action="http://www.example.com/"/>
-			<acme:menu-separator/>
-			<acme:menu-suboption code="master.menu.audit-reports" action="/any/audit-report/list"/>
-			<acme:menu-suboption code="master.menu.campaigns" action="/any/campaign/list"/>
-			<acme:menu-suboption code="master.menu.sponsorships" action="/any/sponsorship/list"/>
-			<acme:menu-suboption code="master.menu.inventions" action="/any/invention/list"/>
-			
 		</acme:menu-option>
+
 		<acme:menu-option code="master.menu.consumer" access="hasRealm('Consumer')">
 			<acme:menu-suboption code="master.menu.consumer.favourite-link" action="http://www.example.com/"/>
-			<acme:menu-separator/>
-			<acme:menu-suboption code="master.menu.audit-reports" action="/any/audit-report/list"/>
-			<acme:menu-suboption code="master.menu.campaigns" action="/any/campaign/list"/>
-			<acme:menu-suboption code="master.menu.sponsorships" action="/any/sponsorship/list"/>
-			<acme:menu-suboption code="master.menu.inventions" action="/any/invention/list"/>
-			
 		</acme:menu-option>
+
 		<acme:menu-option code="master.menu.spokesperson" access="hasRealm('Spokesperson')">
 			<acme:menu-suboption code="master.menu.spokesperson.favourite-link" action="http://www.example.com/"/>
 			<acme:menu-separator/>
-			<acme:menu-suboption code="master.menu.audit-reports" action="/any/audit-report/list"/>
-			<acme:menu-suboption code="master.menu.campaigns" action="/any/campaign/list"/>
-			<acme:menu-suboption code="master.menu.sponsorships" action="/any/sponsorship/list"/>
-			<acme:menu-suboption code="master.menu.inventions" action="/any/invention/list"/>
+			<acme:menu-suboption code="master.menu.spokesperson.campaigns" action="/any/campaign/list"/>
 		</acme:menu-option>
+
 		<acme:menu-option code="master.menu.sponsor" access="hasRealm('Sponsor')">
 			<acme:menu-suboption code="master.menu.sponsor.favourite-link" action="http://www.example.com/"/>
 			<acme:menu-separator/>
-			<acme:menu-suboption code="master.menu.audit-reports" action="/any/audit-report/list"/>
-			<acme:menu-suboption code="master.menu.campaigns" action="/any/campaign/list"/>
-			<acme:menu-suboption code="master.menu.sponsorships" action="/any/sponsorship/list"/>
-			<acme:menu-suboption code="master.menu.inventions" action="/any/invention/list"/>
+			<acme:menu-suboption code="master.menu.sponsor.sponsorships" action="/any/sponsorship/list"/>
 		</acme:menu-option>
+
 		<acme:menu-option code="master.menu.inventor" access="hasRealm('Inventor')">
 			<acme:menu-suboption code="master.menu.inventor.favourite-link" action="http://www.example.com/"/>
 			<acme:menu-separator/>
-			<acme:menu-suboption code="master.menu.audit-reports" action="/any/audit-report/list"/>
-			<acme:menu-suboption code="master.menu.campaigns" action="/any/campaign/list"/>
-			<acme:menu-suboption code="master.menu.sponsorships" action="/any/sponsorship/list"/>
-			<acme:menu-suboption code="master.menu.inventions" action="/any/invention/list"/>
+			<acme:menu-suboption code="master.menu.inventor.inventions" action="/any/invention/list"/>
 		</acme:menu-option>
+
 		<acme:menu-option code="master.menu.auditor" access="hasRealm('Auditor')">
 			<acme:menu-suboption code="master.menu.auditor.favourite-link" action="http://www.example.com/"/>
 			<acme:menu-separator/>
-			<acme:menu-suboption code="master.menu.audit-reports" action="/any/audit-report/list"/>
-			<acme:menu-suboption code="master.menu.campaigns" action="/any/campaign/list"/>
-			<acme:menu-suboption code="master.menu.sponsorships" action="/any/sponsorship/list"/>
-			<acme:menu-suboption code="master.menu.inventions" action="/any/invention/list"/>
+			<acme:menu-suboption code="master.menu.auditor.audit-reports" action="/any/audit-report/list"/>
 		</acme:menu-option>
 	</acme:menu-left>
 
