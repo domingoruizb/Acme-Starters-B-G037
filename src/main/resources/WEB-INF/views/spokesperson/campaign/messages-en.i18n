@@ -17,6 +17,8 @@ spokesperson.campaign.form.label.description = Description:
 spokesperson.campaign.form.label.startmoment = Start Moment:
 spokesperson.campaign.form.label.endmoment = End Moment:
 spokesperson.campaign.form.label.moreinfo = More info: (Optional)
+spokesperson.campaign.form.label.monthsactive = Months active: 
+spokesperson.campaign.form.label.effort = Effort:
 		
 spokesperson.campaign.form.button.milestones = Milestones
 spokesperson.campaign.form.button.update = Update
@@ -28,6 +30,7 @@ spokesperson.campaign.list.label.ticker = Ticker
 spokesperson.campaign.list.label.name = Name
 spokesperson.campaign.list.label.startmoment = Start Moment
 spokesperson.campaign.list.label.endmoment = End Moment
+spokesperson.campaign.list.label.draftmode = Draft
 
 spokesperson.campaign.list.button.create = Create
 
