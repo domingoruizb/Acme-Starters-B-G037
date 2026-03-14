@@ -11,3 +11,5 @@
 	<acme:list-column code="sponsor.sponsorship.list.label.draftmode" path="draftMode" width="10%"/>
 	<acme:list-hidden path="description"/>
 </acme:list>
+
+<acme:button code="sponsor.sponsorship.list.button.create" action="/sponsor/sponsorship/create"/>

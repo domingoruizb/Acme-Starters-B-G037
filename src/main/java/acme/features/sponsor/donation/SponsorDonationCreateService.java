@@ -9,10 +9,11 @@ import acme.client.components.views.SelectChoices;
 import acme.client.services.AbstractService;
 import acme.entities.sponsors.Donation;
 import acme.entities.sponsors.DonationKind;
+import acme.entities.sponsors.Sponsorship;
 import acme.realms.Sponsor;
 
 @Service
-public class SponsorDonationShowService extends AbstractService<Sponsor, Donation> {
+public class SponsorDonationCreateService extends AbstractService<Sponsor, Donation> {
 
 	@Autowired
 	private SponsorDonationRepository	repository;
@@ -22,19 +23,38 @@ public class SponsorDonationShowService extends AbstractService<Sponsor, Donatio
 
 	@Override
 	public void load() {
-		int id;
+		int sponsorshipId;
+		Sponsorship sponsorship;
 
-		id = super.getRequest().getData("id", int.class);
-		this.donation = this.repository.findDonationById(id);
+		sponsorshipId = super.getRequest().getData("sponsorshipId", int.class);
+		sponsorship = this.repository.findSponsorshipById(sponsorshipId);
+
+		this.donation = super.newObject(Donation.class);
+		this.donation.setSponsorship(sponsorship);
 	}
 
 	@Override
 	public void authorise() {
 		boolean status;
 
-		status = this.donation != null && (this.donation.getSponsorship().getSponsor().isPrincipal() || !this.donation.getSponsorship().getDraftMode());
+		status = this.donation.getSponsorship() != null && this.donation.getSponsorship().getDraftMode() && this.donation.getSponsorship().getSponsor().isPrincipal();
 
 		super.setAuthorised(status);
+	}
+
+	@Override
+	public void bind() {
+		super.bindObject(this.donation, "name", "notes", "money", "kind");
+	}
+
+	@Override
+	public void validate() {
+		super.validateObject(this.donation);
+	}
+
+	@Override
+	public void execute() {
+		this.repository.save(this.donation);
 	}
 
 	@Override
@@ -44,9 +64,8 @@ public class SponsorDonationShowService extends AbstractService<Sponsor, Donatio
 		choices = SelectChoices.from(DonationKind.class, this.donation.getKind());
 
 		tuple = super.unbindObject(this.donation, "name", "notes", "money", "kind");
-		tuple.put("sponsorshipId", this.donation.getSponsorship().getId());
+		tuple.put("sponsorshipId", super.getRequest().getData("sponsorshipId", int.class));
 		tuple.put("draftMode", this.donation.getSponsorship().getDraftMode());
 		tuple.put("kinds", choices);
 	}
-
 }

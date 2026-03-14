@@ -12,7 +12,7 @@ import acme.entities.sponsors.DonationKind;
 import acme.realms.Sponsor;
 
 @Service
-public class SponsorDonationShowService extends AbstractService<Sponsor, Donation> {
+public class SponsorDonationDeleteService extends AbstractService<Sponsor, Donation> {
 
 	@Autowired
 	private SponsorDonationRepository	repository;
@@ -32,9 +32,23 @@ public class SponsorDonationShowService extends AbstractService<Sponsor, Donatio
 	public void authorise() {
 		boolean status;
 
-		status = this.donation != null && (this.donation.getSponsorship().getSponsor().isPrincipal() || !this.donation.getSponsorship().getDraftMode());
+		status = this.donation != null && this.donation.getSponsorship().getDraftMode() && this.donation.getSponsorship().getSponsor().isPrincipal();
 
 		super.setAuthorised(status);
+	}
+
+	@Override
+	public void bind() {
+		super.bindObject(this.donation, "name", "notes", "money", "kind");
+	}
+
+	@Override
+	public void validate() {
+	}
+
+	@Override
+	public void execute() {
+		this.repository.delete(this.donation);
 	}
 
 	@Override
@@ -47,6 +61,6 @@ public class SponsorDonationShowService extends AbstractService<Sponsor, Donatio
 		tuple.put("sponsorshipId", this.donation.getSponsorship().getId());
 		tuple.put("draftMode", this.donation.getSponsorship().getDraftMode());
 		tuple.put("kinds", choices);
-	}
 
+	}
 }

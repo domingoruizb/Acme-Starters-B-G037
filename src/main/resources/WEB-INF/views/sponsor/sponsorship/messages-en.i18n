@@ -16,9 +16,17 @@ sponsor.sponsorship.form.label.totalmoney = Total money:
 
 sponsor.sponsorship.form.button.donations = Donations
 sponsor.sponsorship.form.button.sponsor = Sponsor
+sponsor.sponsorship.form.button.update = Update
+sponsor.sponsorship.form.button.delete = Delete
+sponsor.sponsorship.form.button.publish = Publish
+sponsor.sponsorship.form.button.create = Create
 
-sponsor.sponsorship.list.label.ticker = Ticker 
+sponsor.sponsorship.list.label.ticker = Ticker
 sponsor.sponsorship.list.label.name = Name
 sponsor.sponsorship.list.label.startmoment = Start Moment
 sponsor.sponsorship.list.label.endmoment = End Moment
 sponsor.sponsorship.list.label.draftmode = Draft
+
+sponsor.sponsorship.list.button.create = Create sponsorship
+
+sponsor.sponsorship.form.placeholder.ticker = AA00-0a1b2c

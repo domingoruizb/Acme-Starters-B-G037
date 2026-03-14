@@ -9,3 +9,7 @@
 	<acme:list-column code="sponsor.donation.list.label.money" path="money" width="10%"/>
 	<acme:list-column code="sponsor.donation.list.label.kind" path="kind" width="25%"/>
 </acme:list>
+
+<jstl:if test="${showCreate}">
+	<acme:button code="sponsor.donation.list.button.create" action="/sponsor/donation/create?sponsorshipId=${sponsorshipId}"/>
+</jstl:if>

@@ -21,3 +21,6 @@ acme.validation.audit-report.uniqueticker.message = La referencia ya existe
 
 acme.validation.campaign.startmomentinfuture.message = El momento de inicio debe ser en el futuro
 acme.validation.campaign.endmomentinfuture.message = El momento de fin debe ser en el futuro
+
+acme.validation.sponsorship.startmomentinfuture.message = El momento de inicio debe ser en el futuro
+acme.validation.sponsorship.endmomentinfuture.message = El momento de fin debe ser en el futuro
