@@ -53,7 +53,7 @@ public class SpokespersonCampaignShowService extends AbstractService<Spokesperso
 	public void unbind() {
 		super.unbindObject(this.campaign, //
 			"ticker", "name", "description", "startMoment", //
-			"endMoment", "moreInfo", "draftMode");
+			"endMoment", "moreInfo", "draftMode", "monthsActive", "effort");
 	}
 
 }

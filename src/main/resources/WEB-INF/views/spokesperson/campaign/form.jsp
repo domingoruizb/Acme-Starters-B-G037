@@ -22,6 +22,8 @@
 	<acme:form-moment code="spokesperson.campaign.form.label.endmoment" path="endMoment"/>
 	<acme:form-url code="spokesperson.campaign.form.label.moreinfo" path="moreInfo"/>
 	<acme:form-textarea code="spokesperson.campaign.form.label.description" path="description"/>
+	<acme:form-double code="spokesperson.campaign.form.label.monthsactive" path="monthsActive" readonly="true"/>
+	<acme:form-double code="spokesperson.campaign.form.label.effort" path="effort" readonly="true"/>
 
 	<jstl:choose>	 
 		<jstl:when test="${_command == 'show' && draftMode == false}">
