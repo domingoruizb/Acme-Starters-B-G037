@@ -5,7 +5,7 @@
 
 <acme:list>
 	<acme:list-column code="inventor.part.list.label.name" path="name" width="25%"/>
-	<acme:list-column code="inventor.part.list.label.description" path="decription" width="40%"/>
+	<acme:list-column code="inventor.part.list.label.description" path="description" width="40%"/>
 	<acme:list-column code="inventor.part.list.label.cost" path="cost" width="10%"/>
 	<acme:list-column code="inventor.part.list.label.kind" path="kind" width="25%"/>
 </acme:list>
