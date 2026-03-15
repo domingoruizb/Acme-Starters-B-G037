@@ -68,6 +68,7 @@
 		<acme:menu-option code="master.menu.inventor" access="hasRealm('Inventor')">
 			<acme:menu-suboption code="master.menu.inventor.favourite-link" action="http://www.example.com/"/>
 			<acme:menu-separator/>
+			<acme:menu-suboption code="master.menu.inventor.inventions" action="/inventor/invention/list"/>
 		</acme:menu-option>
 
 		<acme:menu-option code="master.menu.auditor" access="hasRealm('Auditor')">
