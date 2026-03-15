@@ -12,8 +12,8 @@ import acme.entities.audits.AuditReport;
 @Repository
 public interface AnyAuditReportRepository extends AbstractRepository {
 
-	@Query("select r from AuditReport r")
-	Collection<AuditReport> findAllAuditReports();
+	@Query("select r from AuditReport r where r.draftMode = false")
+	Collection<AuditReport> findAllAuditReportsPublished();
 
 	@Query("select r from AuditReport r where r.id = :id")
 	AuditReport findAuditReportById(int id);

@@ -1,10 +1,12 @@
-<%@page language="java"%>
+<%@page%>
 
+<%@taglib prefix="jstl" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@taglib prefix="acme" uri="http://acme-framework.org/"%>
 
 <acme:list>
-	<acme:list-column path="ticker" code="any.strategy.list.label.ticker"/>
-	<acme:list-column path="name" code="any.strategy.list.label.name"/>
-	<acme:list-column path="startMoment" code="any.strategy.list.label.start"/>
-	<acme:list-column path="endMoment" code="any.strategy.list.label.end"/>
+	<acme:list-column code="any.strategy.list.label.ticker" path="ticker" width="20%"/>
+	<acme:list-column code="any.strategy.list.label.name" path="name" width="30%"/>
+	<acme:list-column code="any.strategy.list.label.startMoment" path="startMoment" width="25%"/>
+	<acme:list-column code="any.strategy.list.label.endMoment" path="endMoment" width="25%"/>
+	<acme:list-hidden path="fundraiser.identity.fullName"/>
 </acme:list>
