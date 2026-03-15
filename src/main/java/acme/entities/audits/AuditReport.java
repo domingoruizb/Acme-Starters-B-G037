@@ -1,7 +1,7 @@
 
 package acme.entities.audits;
 
-import java.time.Duration;
+import java.time.temporal.ChronoUnit;
 import java.util.Date;
 
 import javax.persistence.Column;
@@ -18,9 +18,11 @@ import acme.client.components.basis.AbstractEntity;
 import acme.client.components.validation.Mandatory;
 import acme.client.components.validation.Optional;
 import acme.client.components.validation.ValidMoment;
+import acme.client.components.validation.ValidNumber;
 import acme.client.components.validation.ValidUrl;
 import acme.client.helpers.MomentHelper;
 import acme.constraints.ValidHeader;
+import acme.constraints.ValidReport;
 import acme.constraints.ValidText;
 import acme.constraints.ValidTicker;
 import acme.realms.Auditor;
@@ -30,6 +32,7 @@ import lombok.Setter;
 @Entity
 @Getter
 @Setter
+@ValidReport
 public class AuditReport extends AbstractEntity {
 
 	// Serialisation version
@@ -74,21 +77,25 @@ public class AuditReport extends AbstractEntity {
 	private Boolean				draftMode;
 
 	// Derived attributes
+	@Mandatory
+	@Valid
 	@Transient
 	@Autowired
 	private AuditRepository		repository;
 
 
+	@Mandatory
+	@Valid
 	@Transient
 	public Double getMonthsActive() {
 		if (this.startMoment == null || this.endMoment == null)
-			return null;
+			return 0.;
 
-		Duration duration = MomentHelper.computeDuration(this.startMoment, this.endMoment);
-		// return (double) duration.get(ChronoUnit.MONTHS);
-		return 0.0;
+		return MomentHelper.computeDifference(this.startMoment, this.endMoment, ChronoUnit.MONTHS);
 	}
 
+	@Mandatory
+	@ValidNumber(min = 0)
 	@Transient
 	private Integer getHours() {
 		Integer hours = this.repository.findTotalNumberOfHoursBySection(this.getId());

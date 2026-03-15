@@ -1,6 +1,6 @@
 key,key:auditor,ticker,name,description,startMoment,endMoment,moreInfo,draftMode
 # Base
-report-01,"","","","","","","",""
+report-01,"","","","","","","",1
 # Ticker
 report-02,auditor-01,"","Reporte de prueba","Descripción válida",2025/01/08 0:00,2200/12/31 23:59,"http://lorem.com",1
 report-03,auditor-01,"aa00-abcde","Reporte de prueba","Descripción válida",2025/01/08 0:00,2200/12/31 23:59,"http://lorem.com",1
@@ -23,5 +23,7 @@ report-14,auditor-01,AA01-AAAAAA,"Reporte válido","Descripción válida",2025/0
 report-15,auditor-01,AA01-AAAAAA,"Reporte válido","Descripción válida",2025/01/08 0:00,2200/12/31 23:59,"ftp://archivo.zip",1
 # DraftMode
 report-16,auditor-01,AA01-AAAAAA,"Reporte válido","Descripción válida",2025/01/08 0:00,2200/12/31 23:59,"http://lorem.com",0
+# DraftMode / StartMoment / EndMoment
+report-17,auditor-01,AA01-AAAAAA,"Reporte válido","Descripción válida",2200/12/31 23:59,2025/01/08 0:00,"http://lorem.com",0
 # Auditor
-report-17,"",AA01-AAAAAA,"Reporte válido","Descripción válida",2025/01/08 0:00,2200/12/31 23:59,"http://lorem.com",1
+report-18,"",AA01-AAAAAA,"Reporte válido","Descripción válida",2025/01/08 0:00,2200/12/31 23:59,"http://lorem.com",1

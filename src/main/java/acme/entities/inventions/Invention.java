@@ -1,7 +1,7 @@
 
 package acme.entities.inventions;
 
-import java.time.Duration;
+import java.time.temporal.ChronoUnit;
 import java.util.Date;
 
 import javax.persistence.Column;
@@ -22,6 +22,7 @@ import acme.client.components.validation.ValidMoment;
 import acme.client.components.validation.ValidUrl;
 import acme.client.helpers.MomentHelper;
 import acme.constraints.ValidHeader;
+import acme.constraints.ValidInvention;
 import acme.constraints.ValidText;
 import acme.constraints.ValidTicker;
 import acme.realms.Inventor;
@@ -31,6 +32,7 @@ import lombok.Setter;
 @Entity
 @Getter
 @Setter
+@ValidInvention
 public class Invention extends AbstractEntity {
 
 	// Serialisation version
@@ -70,21 +72,21 @@ public class Invention extends AbstractEntity {
 	private String				moreInfo;
 
 	@Mandatory
-	@Valid
+	// HINT: @Valid by default.
 	@Column
 	private Boolean				draftMode;
 
 	// Derived attributes
 
 
+	@Mandatory
+	// @Valid // HINT: Eclipse's validator forbids this annotation here.
 	@Transient
 	public Double getMonthsActive() {
 		if (this.startMoment == null || this.endMoment == null)
-			return null;
+			return 0.;
 
-		Duration duration = MomentHelper.computeDuration(this.startMoment, this.endMoment);
-		// return (double) duration.get(ChronoUnit.MONTHS);
-		return 0.0;
+		return MomentHelper.computeDifference(this.startMoment, this.endMoment, ChronoUnit.MONTHS);
 	}
 
 

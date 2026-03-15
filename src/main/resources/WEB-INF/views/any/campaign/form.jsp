@@ -9,7 +9,7 @@
 	<acme:form-moment code="any.campaign.form.label.startmoment" path="startMoment"/>
 	<acme:form-moment code="any.campaign.form.label.endmoment" path="endMoment"/>
 	<acme:form-textbox code="any.campaign.form.label.spokesperson" path="spokesperson.identity.fullName"/>
-	<acme:form-url code="any.campaign.form.label.moreInfo" path="moreInfo"/>
+	<acme:form-url code="any.campaign.form.label.moreinfo" path="moreInfo"/>
 	<acme:form-textarea code="any.campaign.form.label.description" path="description"/>
 	
 	<acme:button code="any.campaign.form.button.milestones" action="/any/milestone/list?campaignId=${id}"/>

@@ -1,0 +1,21 @@
+# messages-es.i18n
+
+any.sponsorship.form.title = Detalles de patrocinio
+any.sponsorship.list.title = Lista de patrocinios
+
+any.sponsorship.form.label.ticker = Referencia:
+any.sponsorship.form.label.name = Nombre:
+any.sponsorship.form.label.sponsor = Patrocinador:
+any.sponsorship.form.label.description = Descripción:
+any.sponsorship.form.label.startmoment = Momento de inicio:
+any.sponsorship.form.label.endmoment = Momento de fin:
+any.sponsorship.form.label.moreinfo = Más información: (Opcional)
+any.sponsorship.form.label.draftmode = Borrador:
+
+any.sponsorship.form.button.donations = Donaciones
+any.sponsorship.form.button.sponsor = Patrocinador
+
+any.sponsorship.list.label.ticker = Referencia
+any.sponsorship.list.label.name = Nombre
+any.sponsorship.list.label.startmoment = Momento de inicio
+any.sponsorship.list.label.endmoment = Momento de fin

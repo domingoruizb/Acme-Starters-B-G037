@@ -1,0 +1,37 @@
+# messages-en.i18n
+#
+# Copyright (C) 2012-2026 Rafael Corchuelo.
+#
+# In keeping with the traditional purpose of furthering education and research, it is
+# the policy of the copyright owner to permit non-commercial use and redistribution of
+# this software. It has been tested carefully, but it is not guaranteed for spokesperson particular
+# purposes.  The copyright owner does not offer spokesperson warranties or representations, nor do
+# they accept spokesperson liabilities with respect to them.
+
+spokesperson.campaign.form.title = Campaign form 
+spokesperson.campaign.list.title = Listing of campaigns
+
+spokesperson.campaign.form.label.ticker = Ticker:
+spokesperson.campaign.form.label.name = Name:
+spokesperson.campaign.form.label.description = Description:
+spokesperson.campaign.form.label.startmoment = Start Moment:
+spokesperson.campaign.form.label.endmoment = End Moment:
+spokesperson.campaign.form.label.moreinfo = More info: (Optional)
+spokesperson.campaign.form.label.monthsactive = Months active: 
+spokesperson.campaign.form.label.effort = Effort:
+		
+spokesperson.campaign.form.button.milestones = Milestones
+spokesperson.campaign.form.button.update = Update
+spokesperson.campaign.form.button.delete = Delete
+spokesperson.campaign.form.button.publish = Publish
+spokesperson.campaign.form.button.create = Create
+
+spokesperson.campaign.list.label.ticker = Ticker 
+spokesperson.campaign.list.label.name = Name
+spokesperson.campaign.list.label.startmoment = Start Moment
+spokesperson.campaign.list.label.endmoment = End Moment
+spokesperson.campaign.list.label.draftmode = Draft
+
+spokesperson.campaign.list.button.create = Create
+
+spokesperson.campaign.form.placeholder.ticker = AA01-0a1b2c

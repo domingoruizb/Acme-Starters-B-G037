@@ -9,4 +9,5 @@
 	<acme:list-column code="any.campaign.list.label.startmoment" path="startMoment" width="25%"/>
 	<acme:list-column code="any.campaign.list.label.endmoment" path="endMoment" width="25%"/>
 	<acme:list-hidden path="description"/>
+	<acme:list-hidden path="spokesperson.identity.fullName"/> 
 </acme:list>

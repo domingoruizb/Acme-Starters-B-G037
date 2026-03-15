@@ -1,7 +1,7 @@
 # messages-en.i18n
 
 any.campaign.form.title = Detalles de campaña
-any.campaign.list.title = lista de campañas
+any.campaign.list.title = Lista de campañas
 
 any.campaign.form.label.ticker = Referencia:
 any.campaign.form.label.name = Nombre:
@@ -9,12 +9,12 @@ any.campaign.form.label.spokesperson = Portavoz:
 any.campaign.form.label.description = Descripción:
 any.campaign.form.label.startmoment = Momento de inicio:
 any.campaign.form.label.endmoment = Momento de fin:
-any.campaign.form.label.moreInfo = Más información: (Opcional)
+any.campaign.form.label.moreinfo = Más información: (Opcional)
 
 any.campaign.form.button.milestones = Hitos
 any.campaign.form.button.spokesperson = Portavoz
 
 any.campaign.list.label.ticker = Referencia 
-any.campaign.list.label.Name = Nombre
-any.campaign.list.label.startMoment = Momento de inicio
-any.campaign.list.label.endMoment = Momento de fin
+any.campaign.list.label.name = Nombre
+any.campaign.list.label.startmoment = Momento de inicio
+any.campaign.list.label.endmoment = Momento de fin

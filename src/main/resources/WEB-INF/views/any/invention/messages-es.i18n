@@ -1,0 +1,20 @@
+# messages-en.i18n
+
+any.invention.form.title = Detalles de la invención
+any.invention.list.title = Lista de invenciones
+
+any.invention.form.label.ticker = Referencia:
+any.invention.form.label.name = Nombre:
+any.invention.form.label.inventor = Inventor:
+any.invention.form.label.description = Descripción:
+any.invention.form.label.startmoment = Momento de inicio:
+any.invention.form.label.endmoment = Momento de fin:
+any.invention.form.label.moreinfo = Más información: (Opcional)
+
+any.invention.form.button.parts = Partes
+any.invention.form.button.inventor = Inventor
+
+any.invention.list.label.ticker = Referencia 
+any.invention.list.label.name = Nombre
+any.invention.list.label.startmoment = Momento de inicio
+any.invention.list.label.endmoment = Momento de fin

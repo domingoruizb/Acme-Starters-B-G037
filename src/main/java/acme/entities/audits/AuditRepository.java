@@ -11,4 +11,10 @@ public interface AuditRepository extends AbstractRepository {
 
 	@Query("SELECT sum(a.hours) FROM AuditSection a WHERE a.auditReport.id = :reportId")
 	Integer findTotalNumberOfHoursBySection(int reportId);
+
+	@Query("SELECT count(a) > 0 FROM AuditSection a WHERE a.auditReport.id = :reportId")
+	Boolean existsByReportId(int reportId);
+
+	@Query("select r from AuditReport r where r.ticker = :ticker")
+	AuditReport findReportByTicker(String ticker);
 }

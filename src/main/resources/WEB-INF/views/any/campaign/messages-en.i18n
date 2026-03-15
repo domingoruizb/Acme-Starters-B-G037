@@ -9,8 +9,7 @@ any.campaign.form.label.spokesperson = Spokesperson:
 any.campaign.form.label.description = Description:
 any.campaign.form.label.startmoment = Start Moment:
 any.campaign.form.label.endmoment = End Moment:
-any.campaign.form.label.moreInfo = More info: (Optional)
-any.campaign.form.label.description = Description:
+any.campaign.form.label.moreinfo = More info: (Optional)
 
 any.campaign.form.button.milestones = Milestones
 any.campaign.form.button.spokesperson = Spokesperson
