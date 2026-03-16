@@ -29,7 +29,7 @@ public class AuditorSectionListService extends AbstractService<Auditor, AuditSec
 	public void load() {
 		int reportId;
 
-		reportId = super.getRequest().getData("auditReportId", int.class);
+		reportId = super.getRequest().getData("audit-reportId", int.class);
 		this.report = this.repository.findReportById(reportId);
 		this.sections = this.repository.findSectionsByReportId(reportId);
 	}
