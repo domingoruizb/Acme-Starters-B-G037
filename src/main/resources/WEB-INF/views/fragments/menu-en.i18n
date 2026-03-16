@@ -61,6 +61,11 @@ master.menu.auditor.favourite-link = Favourite link
 master.menu.auditor.audit-reports = My audit reports
 master.menu.any.list-audit-reports = List reports
 
+#Strategy ################################################################
+
+master.menu.any.list-strategies = List strategies
+
+
 # master.menu.user-account ####################################################
 
 master.menu.user-account = Account
@@ -73,5 +78,12 @@ master.menu.user-account.become-spokesperson = Become a spokesperson
 master.menu.user-account.spokesperson-profile = Spokesperson profile
 master.menu.user-account.become-sponsor = Become a sponsor
 master.menu.user-account.sponsor-profile = Sponsor profile
+<<<<<<< HEAD
 master.menu.user-account.become-fundraiser = Become a fundraiser
 master.menu.user-account.fundraiser-profile = Fundraiser profile
+=======
+master.menu.user-account.become-inventor = Become an inventor
+master.menu.user-account.inventor-profile = Inventor profile
+master.menu.user-account.become-auditor = Become an auditor
+master.menu.user-account.auditor-profile = Auditor profile
+>>>>>>> refs/heads/master

@@ -61,6 +61,9 @@ master.menu.auditor.favourite-link = Enlace favorito
 master.menu.auditor.audit-reports = Mis reportes
 master.menu.any.list-audit-reports = Listar reportes
 
+# Strategies ##############################################################
+master.menu.any.list-strategies = Listar estrategias
+
 # master.menu.user-account ####################################################
 
 master.menu.user-account = Cuenta
@@ -73,5 +76,12 @@ master.menu.user-account.become-spokesperson = Hazte portavoz
 master.menu.user-account.spokesperson-profile = Perfil de portavoz
 master.menu.user-account.become-sponsor = Hazte patrocinador
 master.menu.user-account.sponsor-profile = Perfil de patrocinador
+<<<<<<< HEAD
 master.menu.user-account.become-fundraiser = Hazte recaudador
 master.menu.user-account.fundraiser-profile = Perfil de Recaudador
+=======
+master.menu.user-account.become-inventor = Hazte inventor
+master.menu.user-account.inventor-profile = Perfil de inventor
+master.menu.user-account.become-auditor = Hazte auditor
+master.menu.user-account.auditor-profile = Perfil de auditor
+>>>>>>> refs/heads/master

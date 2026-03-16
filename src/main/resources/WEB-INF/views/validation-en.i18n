@@ -24,3 +24,6 @@ acme.validation.campaign.endmomentinfuture.message = The end moment must be in t
 
 acme.validation.sponsorship.startmomentinfuture.message = The start moment must be in the future
 acme.validation.sponsorship.endmomentinfuture.message = The end moment must be in the future
+
+acme.validation.invention.startmomentinfuture.message = The start moment must be in the future
+acme.validation.invention.endmomentinfuture.message = The end moment must be in the future

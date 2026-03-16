@@ -27,13 +27,16 @@ public class AnyStrategyShowService extends AbstractService<Any, Strategy> {
 	@Override
 	public void authorise() {
 
-		boolean authorised = !this.strategy.getDraftMode();
+		boolean authorised = this.strategy != null && !this.strategy.getDraftMode();
 		super.getResponse().setAuthorised(authorised);
 	}
 
 	@Override
 	public void unbind() {
+
 		super.unbindObject(this.strategy, "ticker", "name", "description", "startMoment", "endMoment", "moreInfo");
+
+		super.getResponse().addGlobal("fundraiserId", this.strategy.getFundraiser().getId());
 	}
 
 }
