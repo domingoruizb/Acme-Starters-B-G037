@@ -65,6 +65,8 @@ master.menu.any.list-audit-reports = List reports
 
 master.menu.fundraiser = Fundraiser
 master.menu.fundraiser.list-my-strategies = My strategies
+master.menu.any.list-strategies = List strategies
+
 
 # master.menu.user-account ####################################################
 
@@ -78,3 +80,7 @@ master.menu.user-account.become-spokesperson = Become a spokesperson
 master.menu.user-account.spokesperson-profile = Spokesperson profile
 master.menu.user-account.become-sponsor = Become a sponsor
 master.menu.user-account.sponsor-profile = Sponsor profile
+master.menu.user-account.become-inventor = Become an inventor
+master.menu.user-account.inventor-profile = Inventor profile
+master.menu.user-account.become-auditor = Become an auditor
+master.menu.user-account.auditor-profile = Auditor profile

@@ -38,7 +38,7 @@ public class AnyPartListService extends AbstractService<Any, Part> {
 	public void authorise() {
 		boolean status;
 
-		status = this.invention != null && this.parts != null;
+		status = this.invention != null && !this.invention.getDraftMode();
 
 		super.setAuthorised(status);
 	}
