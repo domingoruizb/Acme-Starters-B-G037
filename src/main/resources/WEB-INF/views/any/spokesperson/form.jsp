@@ -7,5 +7,5 @@
 	<acme:form-textbox code="any.spokesperson.form.label.fullname" path="identity.fullName"/>
 	<acme:form-textbox code="any.spokesperson.form.label.achievements" path="achievements"/>
 	<acme:form-textbox code="any.spokesperson.form.label.cv" path="cv"/>
-	<acme:form-checkbox code="any.spokesperson.form.label.licensed" path="licensed"/>
+	<acme:form-textbox code="any.spokesperson.form.label.licensed" path="licensed"/>
 </acme:form>
