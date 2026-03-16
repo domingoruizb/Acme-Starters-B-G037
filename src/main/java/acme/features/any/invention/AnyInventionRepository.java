@@ -12,10 +12,10 @@ import acme.entities.inventions.Invention;
 @Repository
 public interface AnyInventionRepository extends AbstractRepository {
 
-	@Query("select i from Invention i")
-	Collection<Invention> findAllInventions();
+	@Query("SELECT i FROM Invention i WHERE i.draftMode = FALSE")
+	Collection<Invention> findPublishedInventions();
 
-	@Query("select i from Invention i where i.id = :id")
+	@Query("SELECT i FROM Invention i WHERE i.id = :id")
 	Invention findInventionById(int id);
 
 }

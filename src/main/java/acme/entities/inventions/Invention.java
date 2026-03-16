@@ -96,7 +96,7 @@ public class Invention extends AbstractEntity {
 
 
 	@Transient
-	private Money getCost() {
+	public Money getCost() {
 		Double cost = this.repo.computeCost(this.getId());
 		Money money = new Money();
 
