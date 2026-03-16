@@ -27,5 +27,7 @@ acme.validation.sponsorship.endmomentinfuture.message = El momento de fin debe s
 
 acme.validation.audit-report.startmomentinfuture.message = El momento de inicio debe ser en el futuro
 acme.validation.audit-report.endmomentinfuture.message = El momento de fin debe ser en el futuro
+acme.validation.strategy.duplicated-ticker.message = La Estrategia está duplicada
+acme.validation.strategy.dates.error = Las fechas de inicio y fin deben definir un intervalo válido de tiempo
 acme.validation.invention.startmomentinfuture.message = El momento de inicio debe ser en el futuro
 acme.validation.invention.endmomentinfuture.message = El momento de fin debe ser en el futuro

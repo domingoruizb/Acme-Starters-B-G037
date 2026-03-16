@@ -27,5 +27,7 @@ acme.validation.sponsorship.endmomentinfuture.message = The end moment must be i
 
 acme.validation.audit-report.startmomentinfuture.message = The start moment must be in the future
 acme.validation.audit-report.endmomentinfuture.message = The end moment must be in the future
+acme.validation.strategy.duplicated-ticker.message = The strategy is duplicated
+acme.validation.strategy.dates.error = Start/end moments must define a valid time interval
 acme.validation.invention.startmomentinfuture.message = The start moment must be in the future
 acme.validation.invention.endmomentinfuture.message = The end moment must be in the future
