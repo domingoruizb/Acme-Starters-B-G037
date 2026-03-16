@@ -6,7 +6,7 @@
 	<acme:form-textbox code="fundraiser.tactic.form.label.name" path="name"/>
 	<acme:form-textarea code="fundraiser.tactic.form.label.notes" path="notes"/>
 	<acme:form-double code="fundraiser.tactic.form.label.expectedPercentage" path="expectedPercentage"/>
-	<acme:form-select code="fundraiser.tactic.form.label.tacticKind" path="tacticKind" choices="${kinds}"/>
+	<acme:form-select code="fundraiser.tactic.form.label.tacticKind" path="tacticKind" choices="${tacticKinds}"/>
 
 	<jstl:choose>
 		<jstl:when test="${acme:anyOf(_command, 'show|update|delete') && draftMode == true}">

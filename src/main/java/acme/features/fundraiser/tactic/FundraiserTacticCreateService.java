@@ -77,5 +77,4 @@ public class FundraiserTacticCreateService extends AbstractService<Fundraiser, T
 
 		super.getResponse().addData(tuple);
 	}
-
 }

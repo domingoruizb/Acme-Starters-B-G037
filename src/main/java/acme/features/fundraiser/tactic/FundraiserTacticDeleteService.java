@@ -3,8 +3,11 @@ package acme.features.fundraiser.tactic;
 
 import org.springframework.beans.factory.annotation.Autowired;
 
+import acme.client.components.models.Tuple;
+import acme.client.components.views.SelectChoices;
 import acme.client.services.AbstractService;
 import acme.entities.strategy.Tactic;
+import acme.entities.strategy.TacticKind;
 import acme.realms.Fundraiser;
 
 public class FundraiserTacticDeleteService extends AbstractService<Fundraiser, Tactic> {
@@ -36,7 +39,7 @@ public class FundraiserTacticDeleteService extends AbstractService<Fundraiser, T
 
 	@Override
 	public void bind() {
-		super.bindObject(this.tactic, "name", "notes", "expectedPercentage", "kind");
+		super.bindObject(this.tactic, "name", "notes", "expectedPercentage", "tacticKind");
 	}
 
 	@Override
@@ -51,7 +54,18 @@ public class FundraiserTacticDeleteService extends AbstractService<Fundraiser, T
 
 	@Override
 	public void unbind() {
-		//To-do
+		Tuple tuple;
+		SelectChoices choices;
+
+		choices = SelectChoices.from(TacticKind.class, this.tactic.getTacticKind());
+
+		tuple = super.unbindObject(this.tactic, "name", "notes", "expectedPercentage", "tacticKind");
+
+		tuple.put("tacticKind", choices);
+		tuple.put("strategyId", this.tactic.getStrategy().getId());
+		tuple.put("published", !this.tactic.getStrategy().getDraftMode());
+
+		super.getResponse().addData(tuple);
 	}
 
 }

@@ -41,7 +41,7 @@ public class FundraiserTacticUpdateService extends AbstractService<Fundraiser, T
 
 	@Override
 	public void bind() {
-		super.bindObject(this.tactic, "name", "notes", "expectedPercentage", "kind");
+		super.bindObject(this.tactic, "name", "notes", "expectedPercentage", "tacticKind");
 	}
 
 	@Override
@@ -62,10 +62,10 @@ public class FundraiserTacticUpdateService extends AbstractService<Fundraiser, T
 
 		choices = SelectChoices.from(TacticKind.class, this.tactic.getTacticKind());
 
-		tuple = super.unbindObject(this.tactic, "name", "notes", "expectedPercentage", "kind");
+		tuple = super.unbindObject(this.tactic, "name", "notes", "expectedPercentage", "tacticKind");
 		tuple.put("strategyId", super.getRequest().getData("strategyId", int.class));
 		tuple.put("draftMode", this.tactic.getStrategy().getDraftMode());
-		tuple.put("kinds", choices);
+		tuple.put("tacticKinds", choices);
 	}
 
 }

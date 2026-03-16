@@ -31,9 +31,7 @@ public class FundraiserStrategyDeleteService extends AbstractService<Fundraiser,
 	public void authorise() {
 		boolean status;
 
-		status = this.strategy != null && //
-			this.strategy.getDraftMode() && //
-			this.strategy.getFundraiser().isPrincipal();
+		status = this.strategy != null && this.strategy.getDraftMode() && this.strategy.getFundraiser().isPrincipal();
 
 		super.setAuthorised(status);
 	}

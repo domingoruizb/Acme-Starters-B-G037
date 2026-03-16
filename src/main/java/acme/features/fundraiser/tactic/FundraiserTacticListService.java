@@ -41,7 +41,7 @@ public class FundraiserTacticListService extends AbstractService<Fundraiser, Tac
 	public void unbind() {
 		boolean showCreate;
 
-		super.unbindObjects(this.tactics, "name", "expectedPercentage", "kind");
+		super.unbindObjects(this.tactics, "name", "expectedPercentage", "tacticKind");
 		showCreate = this.strat.getDraftMode() && this.strat.getFundraiser().isPrincipal();
 		super.unbindGlobal("strategyId", this.strat.getId());
 		super.unbindGlobal("showCreate", showCreate);

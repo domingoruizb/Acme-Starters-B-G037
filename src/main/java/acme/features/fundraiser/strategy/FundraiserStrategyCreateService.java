@@ -1,12 +1,9 @@
 
 package acme.features.fundraiser.strategy;
 
-import java.util.Date;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import acme.client.helpers.MomentHelper;
 import acme.client.services.AbstractService;
 import acme.entities.strategy.Strategy;
 import acme.realms.Fundraiser;
@@ -43,43 +40,7 @@ public class FundraiserStrategyCreateService extends AbstractService<Fundraiser,
 
 	@Override
 	public void validate() {
-
 		super.validateObject(this.strategy);
-		{
-			boolean unique;
-
-			unique = !this.repository.existsStrategyByTicker(this.strategy.getTicker());
-			super.state(unique, "ticker", "acme.validation.strategy.ticker.duplicated");
-		}
-		{
-			Date start;
-			Date end;
-			boolean validInterval;
-
-			start = this.strategy.getStartMoment();
-			end = this.strategy.getEndMoment();
-
-			validInterval = start != null && end != null && MomentHelper.isAfter(end, start);
-
-			super.state(validInterval, "startMoment", "acme.validation.strategy.dates.error");
-		}
-		{
-			Date now;
-			Date start;
-			Date end;
-			boolean startInFuture;
-			boolean endInFuture;
-
-			now = MomentHelper.getCurrentMoment();
-			start = this.strategy.getStartMoment();
-			end = this.strategy.getEndMoment();
-
-			startInFuture = start != null && MomentHelper.isAfter(start, now);
-			super.state(startInFuture, "startMoment", "acme.validation.strategy.startMoment.future");
-
-			endInFuture = end != null && MomentHelper.isAfter(end, now);
-			super.state(endInFuture, "endMoment", "acme.validation.strategy.endMoment.future");
-		}
 	}
 
 	@Override

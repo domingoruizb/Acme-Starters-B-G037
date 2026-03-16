@@ -2,7 +2,6 @@
 package acme.features.fundraiser.strategy;
 
 import java.util.Collection;
-import java.util.Date;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -49,47 +48,50 @@ public class FundraiserStrategyPublishService extends AbstractService<Fundraiser
 		super.validateObject(this.strategy);
 
 		{
+			boolean uniqueTicker;
+			Strategy existingStrategy;
+
+			existingStrategy = this.repository.findStrategybyTicker(this.strategy.getTicker());
+			uniqueTicker = existingStrategy == null || existingStrategy.equals(this.strategy);
+
+			super.state(uniqueTicker, "ticker", "acme.validation.strategy.uniqueticker.message");
+		}
+
+		{
+			boolean startMomentInFuture;
+
+			startMomentInFuture = MomentHelper.isFuture(this.strategy.getStartMoment());
+			super.state(startMomentInFuture, "startMoment", "acme.validation.strategy.startmomentinfuture.message");
+		}
+
+		{
+			boolean endMomentInFuture;
+
+			endMomentInFuture = MomentHelper.isFuture(this.strategy.getEndMoment());
+			super.state(endMomentInFuture, "endMoment", "acme.validation.strategy.endmomentinfuture.message");
+		}
+
+		{
+			boolean validInterval;
+
+			if (this.strategy.getStartMoment() != null && this.strategy.getEndMoment() != null)
+				validInterval = MomentHelper.isAfterOrEqual(this.strategy.getEndMoment(), this.strategy.getStartMoment());
+			else
+				validInterval = false;
+
+			super.state(validInterval, "*", "acme.validation.strategy.invalidinterval.message");
+		}
+
+		{
 			Collection<Tactic> tactics;
 			boolean hasTactics;
 
 			tactics = this.repository.findTacticsByStrategyId(this.strategy.getId());
 			hasTactics = tactics != null && !tactics.isEmpty();
 
-			super.state(hasTactics, "*", "acme.validation.strategy.tactics.error.message");
-		}
-
-		{
-			Date start;
-			Date end;
-			boolean validInterval;
-
-			start = this.strategy.getStartMoment();
-			end = this.strategy.getEndMoment();
-
-			validInterval = start != null && end != null && MomentHelper.isAfter(end, start);
-
-			super.state(validInterval, "startMoment", "acme.validation.strategy.dates.error");
-		}
-
-		{
-			Date now;
-			Date start;
-			Date end;
-			boolean startInFuture;
-			boolean endInFuture;
-
-			now = MomentHelper.getCurrentMoment();
-			start = this.strategy.getStartMoment();
-			end = this.strategy.getEndMoment();
-
-			startInFuture = start != null && MomentHelper.isAfter(start, now);
-			super.state(startInFuture, "startMoment", "acme.validation.strategy.startMoment.future");
-
-			endInFuture = end != null && MomentHelper.isAfter(end, now);
-			super.state(endInFuture, "endMoment", "acme.validation.strategy.endMoment.future");
+			super.state(hasTactics, "*", "acme.validation.strategy.hastactic.message");
 		}
 	}
-
 	@Override
 	public void execute() {
 		this.strategy.setDraftMode(false);
