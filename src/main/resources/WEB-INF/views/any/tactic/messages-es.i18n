@@ -3,7 +3,7 @@ any.tactic.list.title = Lista de Tácticas
 any.tactic.list.label.name = Nombre
 any.tactic.list.label.notes = Notas
 any.tactic.list.label.percentage = Porcentaje esperado
-any.tactic.list.label.kind = Tipo
+any.tactic.list.label.tacticKind = Tipo
 
 any.tactic.form.title = Detalles de la Táctica
 any.tactic.form.label.name = Nombre:
