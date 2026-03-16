@@ -27,3 +27,5 @@ acme.validation.sponsorship.endmomentinfuture.message = The end moment must be i
 
 acme.validation.audit-report.startmomentinfuture.message = The start moment must be in the future
 acme.validation.audit-report.endmomentinfuture.message = The end moment must be in the future
+acme.validation.invention.startmomentinfuture.message = The start moment must be in the future
+acme.validation.invention.endmomentinfuture.message = The end moment must be in the future

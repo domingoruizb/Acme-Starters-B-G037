@@ -1,28 +1,24 @@
 
-package acme.features.any.part;
+package acme.features.inventor.part;
 
 import java.util.Collection;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import acme.client.components.principals.Any;
 import acme.client.services.AbstractService;
 import acme.entities.inventions.Invention;
 import acme.entities.inventions.Part;
+import acme.realms.Inventor;
 
 @Service
-public class AnyPartListService extends AbstractService<Any, Part> {
-
-	// Internal state ---------------------------------------------------------
+public class InventorPartListService extends AbstractService<Inventor, Part> {
 
 	@Autowired
-	private AnyPartRepository	repository;
+	private InventorPartRepository	repository;
 
-	private Invention			invention;
-	private Collection<Part>	parts;
-
-	// AbstractService interface -------------------------------------------
+	private Invention				invention;
+	private Collection<Part>		parts;
 
 
 	@Override
@@ -38,14 +34,20 @@ public class AnyPartListService extends AbstractService<Any, Part> {
 	public void authorise() {
 		boolean status;
 
-		status = this.invention != null && !this.invention.getDraftMode();
+		status = this.invention != null && (this.invention.getInventor().isPrincipal() || !this.invention.getDraftMode());
 
 		super.setAuthorised(status);
 	}
 
 	@Override
 	public void unbind() {
+		boolean showCreate;
+
 		super.unbindObjects(this.parts, "name", "description", "cost", "kind");
+
+		showCreate = this.invention.getDraftMode() && this.invention.getInventor().isPrincipal();
+		super.unbindGlobal("inventionId", this.invention.getId());
+		super.unbindGlobal("showCreate", showCreate);
 	}
 
 }
