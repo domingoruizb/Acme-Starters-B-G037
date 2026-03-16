@@ -12,7 +12,7 @@ acme.validation.sponsorship.invalidinterval.message = The time interval is not v
 acme.validation.sponsorship.hasdonation.message = The sponsorship has no donations associated
 
 acme.validation.audit-report.invalidinterval.message = The time interval is not valid
-acme.validation.audit-report.hassection.message = The report has no sections associated
+acme.validation.audit-report.hassections.message = The report has no sections associated
 
 acme.validation.campaign.uniqueticker.message = The ticker already exists
 acme.validation.invention.uniqueticker.message = The ticker already exists
@@ -25,6 +25,8 @@ acme.validation.campaign.endmomentinfuture.message = The end moment must be in t
 acme.validation.sponsorship.startmomentinfuture.message = The start moment must be in the future
 acme.validation.sponsorship.endmomentinfuture.message = The end moment must be in the future
 
+acme.validation.audit-report.startmomentinfuture.message = The start moment must be in the future
+acme.validation.audit-report.endmomentinfuture.message = The end moment must be in the future
 acme.validation.strategy.duplicated-ticker.message = The strategy is duplicated
 acme.validation.strategy.dates.error = Start/end moments must define a valid time interval
 acme.validation.invention.startmomentinfuture.message = The start moment must be in the future

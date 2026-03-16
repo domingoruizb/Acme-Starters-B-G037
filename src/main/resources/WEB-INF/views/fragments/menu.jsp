@@ -76,6 +76,7 @@
 		<acme:menu-option code="master.menu.auditor" access="hasRealm('Auditor')">
 			<acme:menu-suboption code="master.menu.auditor.favourite-link" action="http://www.example.com/"/>
 			<acme:menu-separator/>
+			<acme:menu-suboption code="master.menu.auditor.audit-reports" action="/auditor/audit-report/list"/>
 		</acme:menu-option>
 	</acme:menu-left>
 

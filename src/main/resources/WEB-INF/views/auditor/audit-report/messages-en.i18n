@@ -1,0 +1,27 @@
+auditor.audit-report.form.title = Report form 
+auditor.audit-report.list.title = Listing of reports
+
+auditor.audit-report.form.label.ticker = Ticker:
+auditor.audit-report.form.label.name = Name:
+auditor.audit-report.form.label.description = Description:
+auditor.audit-report.form.label.startmoment = Start Moment:
+auditor.audit-report.form.label.endmoment = End Moment:
+auditor.audit-report.form.label.moreinfo = More info: (Optional)
+auditor.audit-report.form.label.monthsactive = Months active: 
+auditor.audit-report.form.label.hours = Hours:
+		
+auditor.audit-report.form.button.audit-sections = Sections
+auditor.audit-report.form.button.update = Update
+auditor.audit-report.form.button.delete = Delete
+auditor.audit-report.form.button.publish = Publish
+auditor.audit-report.form.button.create = Create
+
+auditor.audit-report.list.label.ticker = Ticker 
+auditor.audit-report.list.label.name = Name
+auditor.audit-report.list.label.startmoment = Start Moment
+auditor.audit-report.list.label.endmoment = End Moment
+auditor.audit-report.list.label.draftmode = Draft
+
+auditor.audit-report.list.button.create = Create
+
+auditor.audit-report.form.placeholder.ticker = AA01-0a1b2c

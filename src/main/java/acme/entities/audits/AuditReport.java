@@ -97,7 +97,7 @@ public class AuditReport extends AbstractEntity {
 	@Mandatory
 	@ValidNumber(min = 0)
 	@Transient
-	private Integer getHours() {
+	public Integer getHours() {
 		Integer hours = this.repository.findTotalNumberOfHoursBySection(this.getId());
 		if (hours == null)
 			return 0;

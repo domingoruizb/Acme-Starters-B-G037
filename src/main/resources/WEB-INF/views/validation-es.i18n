@@ -12,7 +12,7 @@ acme.validation.sponsorship.invalidinterval.message = El intervalo de tiempo no 
 acme.validation.sponsorship.hasdonation.message = El patrocinio no tiene donaciones asociadas
 
 acme.validation.audit-report.invalidinterval.message = El intervalo de tiempo no es válido
-acme.validation.audit-report.hassection.message = El reporte no tiene secciones asociadas
+acme.validation.audit-report.hassections.message = El reporte no tiene secciones asociadas
 
 acme.validation.campaign.uniqueticker.message = La referencia ya existe
 acme.validation.invention.uniqueticker.message = La referencia ya existe
@@ -25,6 +25,8 @@ acme.validation.campaign.endmomentinfuture.message = El momento de fin debe ser 
 acme.validation.sponsorship.startmomentinfuture.message = El momento de inicio debe ser en el futuro
 acme.validation.sponsorship.endmomentinfuture.message = El momento de fin debe ser en el futuro
 
+acme.validation.audit-report.startmomentinfuture.message = El momento de inicio debe ser en el futuro
+acme.validation.audit-report.endmomentinfuture.message = El momento de fin debe ser en el futuro
 acme.validation.strategy.duplicated-ticker.message = La Estrategia está duplicada
 acme.validation.strategy.dates.error = Las fechas de inicio y fin deben definir un intervalo válido de tiempo
 acme.validation.invention.startmomentinfuture.message = El momento de inicio debe ser en el futuro
