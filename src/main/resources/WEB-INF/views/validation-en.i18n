@@ -14,10 +14,14 @@ acme.validation.sponsorship.hasdonation.message = The sponsorship has no donatio
 acme.validation.audit-report.invalidinterval.message = The time interval is not valid
 acme.validation.audit-report.hassections.message = The report has no sections associated
 
+acme.validation.strategy.hastactic.message = A Strategy cannot be published unless they have at least one tactic
+
 acme.validation.campaign.uniqueticker.message = The ticker already exists
 acme.validation.invention.uniqueticker.message = The ticker already exists
 acme.validation.sponsorship.uniqueticker.message = The ticker already exists
 acme.validation.audit-report.uniqueticker.message = The ticker already exists
+acme.validation.strategy.duplicated-ticker.message = The ticker already exists
+acme.validation.strategy.uniqueticker.message = The ticker already exists
 
 acme.validation.campaign.startmomentinfuture.message = The start moment must be in the future
 acme.validation.campaign.endmomentinfuture.message = The end moment must be in the future
@@ -25,13 +29,13 @@ acme.validation.campaign.endmomentinfuture.message = The end moment must be in t
 acme.validation.sponsorship.startmomentinfuture.message = The start moment must be in the future
 acme.validation.sponsorship.endmomentinfuture.message = The end moment must be in the future
 
-acme.validation.strategy.tactics.error.message = A Strategy cannot be published unless they have at least one tactic
-acme.validation.strategy.startMoment.future = Start date must be in the future
-acme.validation.strategy.endMoment.future = End date must be in the future
+acme.validation.strategy.startmomentinfuture.message = Start date must be in the future
+acme.validation.strategy.endmomentinfuture.message = End date must be in the future
+
 acme.validation.audit-report.startmomentinfuture.message = The start moment must be in the future
 acme.validation.audit-report.endmomentinfuture.message = The end moment must be in the future
-acme.validation.strategy.duplicated-ticker.message = The strategy is duplicated
+
 acme.validation.strategy.dates.error = Start/end moments must define a valid time interval
+
 acme.validation.invention.startmomentinfuture.message = The start moment must be in the future
 acme.validation.invention.endmomentinfuture.message = The end moment must be in the future
-acme.validation.strategy.hastactic.message = A Strategy cannot be published unless they have at least one tactic
