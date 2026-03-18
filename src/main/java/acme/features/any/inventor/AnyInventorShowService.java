@@ -36,7 +36,7 @@ public class AnyInventorShowService extends AbstractService<Any, Inventor> {
 	public void authorise() {
 		boolean status;
 
-		status = this.inventor != null;
+		status = this.inventor != null && this.invention != null && !this.invention.getDraftMode();
 
 		super.setAuthorised(status);
 	}
