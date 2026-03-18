@@ -19,7 +19,9 @@ import acme.client.components.datatypes.Money;
 import acme.client.components.validation.Mandatory;
 import acme.client.components.validation.Optional;
 import acme.client.components.validation.ValidMoment;
+import acme.client.components.validation.ValidNumber;
 import acme.client.components.validation.ValidUrl;
+import acme.client.helpers.MathHelper;
 import acme.client.helpers.MomentHelper;
 import acme.constraints.ValidHeader;
 import acme.constraints.ValidSponsorship;
@@ -86,12 +88,15 @@ public class Sponsorship extends AbstractEntity {
 
 	@Mandatory
 	// @Valid // HINT: Eclipse's validator forbids this annotation here.
+	@ValidNumber
 	@Transient
 	public Double getMonthsActive() {
 		if (this.startMoment == null || this.endMoment == null)
 			return 0.0;
 
-		return MomentHelper.computeDifference(this.startMoment, this.endMoment, ChronoUnit.MONTHS);
+		Double months = MomentHelper.computeDifference(this.startMoment, this.endMoment, ChronoUnit.MONTHS);
+
+		return MathHelper.roundOff(months, 1);
 	}
 
 	@Mandatory
@@ -99,7 +104,7 @@ public class Sponsorship extends AbstractEntity {
 	public Money getTotalMoney() {
 		Double total = this.repository.computeTotalMoney(this.getId());
 		Money money = new Money();
-		money.setAmount(total == null ? 0 : total);
+		money.setAmount(total == null ? 0.0 : total);
 		money.setCurrency("EUR");
 		return money;
 	}
