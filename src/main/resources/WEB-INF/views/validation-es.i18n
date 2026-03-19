@@ -14,6 +14,7 @@ acme.validation.sponsorship.hasdonation.message = El patrocinio no tiene donacio
 acme.validation.audit-report.invalidinterval.message = El intervalo de tiempo no es válido
 acme.validation.audit-report.hassections.message = El reporte no tiene secciones asociadas
 
+acme.validation.strategy.dates.error = Las fechas de inicio y fin deben definir un intervalo válido de tiempo
 acme.validation.strategy.invalidinterval.message = El intervalo de tiempo no es válido
 acme.validation.strategy.hastactic.message = La estrategia no tiene tacticas asociadas
 
@@ -21,7 +22,6 @@ acme.validation.campaign.uniqueticker.message = La referencia ya existe
 acme.validation.invention.uniqueticker.message = La referencia ya existe
 acme.validation.sponsorship.uniqueticker.message = La referencia ya existe
 acme.validation.audit-report.uniqueticker.message = La referencia ya existe
-acme.validation.strategy.duplicated-ticker.message = La referencia ya existe
 acme.validation.strategy.uniqueticker.message = La referencia ya existe
 
 acme.validation.campaign.startmomentinfuture.message = El momento de inicio debe ser en el futuro
@@ -32,8 +32,6 @@ acme.validation.sponsorship.endmomentinfuture.message = El momento de fin debe s
 
 acme.validation.audit-report.startmomentinfuture.message = El momento de inicio debe ser en el futuro
 acme.validation.audit-report.endmomentinfuture.message = El momento de fin debe ser en el futuro
-
-acme.validation.strategy.dates.error = Las fechas de inicio y fin deben definir un intervalo válido de tiempo
 
 acme.validation.invention.startmomentinfuture.message = El momento de inicio debe ser en el futuro
 acme.validation.invention.endmomentinfuture.message = El momento de fin debe ser en el futuro

@@ -1,7 +1,7 @@
 
 package acme.entities.strategy;
 
-import java.time.Duration;
+import java.time.temporal.ChronoUnit;
 import java.util.Date;
 
 import javax.persistence.Column;
@@ -18,7 +18,9 @@ import acme.client.components.basis.AbstractEntity;
 import acme.client.components.validation.Mandatory;
 import acme.client.components.validation.Optional;
 import acme.client.components.validation.ValidMoment;
+import acme.client.components.validation.ValidNumber;
 import acme.client.components.validation.ValidUrl;
+import acme.client.helpers.MathHelper;
 import acme.client.helpers.MomentHelper;
 import acme.constraints.ValidHeader;
 import acme.constraints.ValidStrategy;
@@ -67,22 +69,14 @@ public class Strategy extends AbstractEntity {
 	private String				moreInfo;
 
 
-	@Valid
+	@Mandatory
+	@ValidNumber(min = 0)
 	@Transient
 	public Double getMonthsActive() {
-
 		if (this.startMoment == null || this.endMoment == null)
 			return 0.0;
-
-		if (MomentHelper.isAfter(this.startMoment, this.endMoment))
-			return 0.0;
-
-		Duration duration = MomentHelper.computeDuration(this.startMoment, this.endMoment);
-
-		// Double res = (double) duration.get(ChronoUnit.MONTHS);
-
-		return 0.0;
-
+		double duration = MomentHelper.computeDifference(this.startMoment, this.endMoment, ChronoUnit.MONTHS);
+		return MathHelper.roundOff(duration, 2);
 	}
 
 
@@ -102,7 +96,7 @@ public class Strategy extends AbstractEntity {
 
 
 	@Mandatory
-	@Valid
+	// @Valid
 	@Column
 	private Boolean		draftMode;
 

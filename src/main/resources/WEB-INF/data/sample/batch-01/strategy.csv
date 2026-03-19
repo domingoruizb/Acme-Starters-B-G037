@@ -1,44 +1,44 @@
 key,key:fundraiser,ticker,name,description,startMoment,endMoment,moreInfo,draftMode
+
 # Base
-strategy-01,fundraiser-01,AA00-AAAAAA,"Lorem ipsum dolor sit amet, consectetu","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut*",2025/01/01 0:00,2200/12/31 23:59,http://lorem.com/ipsum,1
+strategy-01,fundraiser-01,AA00-AAAAAA,"Lorem ipsum dolor sit amet, consectetu","Lorem ipsum dolor sit amet, consectetur adipiscing elit.",2025/01/01 0:00,2200/12/31 23:59,"http://lorem.com/ipsum",1
+
 # Ticker
-strategy-02,fundraiser-01,CI54-D9PlkQcSF,"Lorem ipsum dolor sit amet, consectetu","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut*",2025/01/01 0:00,2200/12/31 23:59,http://lorem.com/ipsum,1
-strategy-03,fundraiser-01,IM62-R64ZndWNs,"Lorem ipsum dolor sit amet, consectetu","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut*",2025/01/01 0:00,2200/12/31 23:59,http://lorem.com/ipsum,1
-strategy-04,fundraiser-01,TR85-IEEpvJ6_no,"Lorem ipsum dolor sit amet, consectetu","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut*",2025/01/01 0:00,2200/12/31 23:59,http://lorem.com/ipsum,1
-strategy-05,fundraiser-01,QT84-SWWMn,"Lorem ipsum dolor sit amet, consectetu","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut*",2025/01/01 0:00,2200/12/31 23:59,http://lorem.com/ipsum,1
+strategy-02,fundraiser-01,CI54-D9PlkQcSF,"Lorem ipsum","Lorem ipsum dolor sit amet.",2025/01/01 0:00,2200/12/31 23:59,"http://lorem.com/ipsum",1
+strategy-03,fundraiser-01,IM62-R64ZndWNs,"Lorem ipsum","Lorem ipsum dolor sit amet.",2025/01/01 0:00,2200/12/31 23:59,"http://lorem.com/ipsum",1
+
 # Name
-strategy-06,fundraiser-01,AA01-AAAAAA,L,"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut*",2025/01/01 0:00,2200/12/31 23:59,http://lorem.com/ipsum,1
-strategy-07,fundraiser-01,AA02-AAAAAA,Lo,"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut*",2025/01/01 0:00,2200/12/31 23:59,http://lorem.com/ipsum,1
-strategy-08,fundraiser-01,AA03-AAAAAA,"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod t","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut*",2025/01/01 0:00,2200/12/31 23:59,http://lorem.com/ipsum,1
-strategy-09,fundraiser-01,AA04-AAAAAA,โลเร็ม อิปซัม,"Lorem ipsum dolor sit amet, consectetur adipiscing elit.",2025/01/01 0:00,2200/12/31 23:59,http://lorem.com/ipsum,1
-strategy-10,fundraiser-01,AA05-AAAAAA,لوريم إيبسوم,"Lorem ipsum dolor sit amet, consectetur adipiscing elit.",2025/01/01 0:00,2200/12/31 23:59,http://lorem.com/ipsum,1
-strategy-11,fundraiser-01,AA06-AAAAAA,洛伦·伊普森,"Lorem ipsum dolor sit amet, consectetur adipiscing elit.",2025/01/01 0:00,2200/12/31 23:59,http://lorem.com/ipsum,1
-strategy-12,fundraiser-01,AA07-AAAAAA,<marquee>Hacked</marquee>,Lorem ipsum dolor sit amet,2025/01/01 0:00,2200/12/31 23:59,http://lorem.com/ipsum,1
-strategy-13,fundraiser-01,AA08-AAAAAA,<script>alert('Hacked!');</script>,Lorem ipsum dolor sit amet,2025/01/01 0:00,2200/12/31 23:59,http://lorem.com/ipsum,1
-strategy-14,fundraiser-01,AA09-AAAAAA,' or 'A' = 'A,Lorem ipsum dolor sit amet,2025/01/01 0:00,2200/12/31 23:59,http://lorem.com/ipsum,1
+strategy-04,fundraiser-01,AA01-AAAAAA,"L","Lorem ipsum dolor sit amet.",2025/01/01 0:00,2200/12/31 23:59,"http://lorem.com/ipsum",1
+strategy-05,fundraiser-01,AA02-AAAAAA,"Lo","Lorem ipsum dolor sit amet.",2025/01/01 0:00,2200/12/31 23:59,"http://lorem.com/ipsum",1
+strategy-06,fundraiser-01,AA03-AAAAAA,"โลเร็ม อิปซัม","Lorem ipsum dolor sit amet.",2025/01/01 0:00,2200/12/31 23:59,"http://lorem.com/ipsum",1
+strategy-07,fundraiser-01,AA04-AAAAAA,"لوريم إيبسوم","Lorem ipsum dolor sit amet.",2025/01/01 0:00,2200/12/31 23:59,"http://lorem.com/ipsum",1
+strategy-08,fundraiser-01,AA05-AAAAAA,"洛伦·伊普森","Lorem ipsum dolor sit amet.",2025/01/01 0:00,2200/12/31 23:59,"http://lorem.com/ipsum",1
+strategy-09,fundraiser-01,AA06-AAAAAA,"<script>alert('XSS')</script>","Lorem ipsum dolor sit amet.",2025/01/01 0:00,2200/12/31 23:59,"http://lorem.com/ipsum",1
+strategy-10,fundraiser-01,AA07-AAAAAA,"' or 'A'='A","Lorem ipsum dolor sit amet.",2025/01/01 0:00,2200/12/31 23:59,"http://lorem.com/ipsum",1
+
 # Description
-strategy-15,fundraiser-01,AA10-AAAAAA,"Lorem ipsum dolor sit amet, consectetu",L,2025/01/01 0:00,2200/12/31 23:59,http://lorem.com/ipsum,1
-strategy-16,fundraiser-01,AA11-AAAAAA,"Lorem ipsum dolor sit amet, consectetu",Lo,2025/01/01 0:00,2200/12/31 23:59,http://lorem.com/ipsum,1
-strategy-17,fundraiser-01,AA12-AAAAAA,"Lorem ipsum dolor sit amet, consectetu",โลเร็ม อิปซัม,2025/01/01 0:00,2200/12/31 23:59,http://lorem.com/ipsum,1
-strategy-18,fundraiser-01,AA13-AAAAAA,"Lorem ipsum dolor sit amet, consectetu",لوريم إيبسوم,2025/01/01 0:00,2200/12/31 23:59,http://lorem.com/ipsum,1
-strategy-19,fundraiser-01,AA14-AAAAAA,"Lorem ipsum dolor sit amet, consectetu",洛伦·伊普森,2025/01/01 0:00,2200/12/31 23:59,http://lorem.com/ipsum,1
-strategy-20,fundraiser-01,AA15-AAAAAA,"Lorem ipsum dolor sit amet, consectetu",<script>alert('Hacked!');</script>,2025/01/01 0:00,2200/12/31 23:59,http://lorem.com/ipsum,1
-strategy-21,fundraiser-01,AA16-AAAAAA,"Lorem ipsum dolor sit amet, consectetu",' or 'A' = 'A,2025/01/01 0:00,2200/12/31 23:59,http://lorem.com/ipsum,1
+strategy-11,fundraiser-01,AA08-AAAAAA,"Lorem ipsum","L",2025/01/01 0:00,2200/12/31 23:59,"http://lorem.com/ipsum",1
+strategy-12,fundraiser-01,AA09-AAAAAA,"Lorem ipsum","Lo",2025/01/01 0:00,2200/12/31 23:59,"http://lorem.com/ipsum",1
+strategy-13,fundraiser-01,AA10-AAAAAA,"Lorem ipsum","โลเร็ม อิปซัม",2025/01/01 0:00,2200/12/31 23:59,"http://lorem.com/ipsum",1
+strategy-14,fundraiser-01,AA11-AAAAAA,"Lorem ipsum","لوريم إيبسوم",2025/01/01 0:00,2200/12/31 23:59,"http://lorem.com/ipsum",1
+strategy-15,fundraiser-01,AA12-AAAAAA,"Lorem ipsum","<script>alert('XSS')</script>",2025/01/01 0:00,2200/12/31 23:59,"http://lorem.com/ipsum",1
+
 # StartMoment
-strategy-22,fundraiser-01,AA17-AAAAAA,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,2025/01/01 0:00,2200/12/31 23:59,http://lorem.com/ipsum,1
-strategy-23,fundraiser-01,AA18-AAAAAA,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,2025/01/01 0:01,2200/12/31 23:59,http://lorem.com/ipsum,1
-strategy-24,fundraiser-01,AA19-AAAAAA,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,2200/12/31 23:58,2200/12/31 23:59,http://lorem.com/ipsum,1
-strategy-25,fundraiser-01,AA20-AAAAAA,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,2200/12/31 23:59,2200/12/31 23:59,http://lorem.com/ipsum,1
+strategy-16,fundraiser-01,AA13-AAAAAA,"Lorem ipsum","Lorem ipsum",2000/01/01 0:00,2200/12/31 23:59,"http://lorem.com/ipsum",1
+strategy-17,fundraiser-01,AA14-AAAAAA,"Lorem ipsum","Lorem ipsum",2200/12/31 23:59,2200/12/31 23:59,"http://lorem.com/ipsum",1
+
 # EndMoment
-strategy-26,fundraiser-01,AA21-AAAAAA,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,2025/01/01 0:00,2025/01/01 0:00,http://lorem.com/ipsum,1
-strategy-27,fundraiser-01,AA22-AAAAAA,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,2025/01/01 0:00,2025/01/01 0:01,http://lorem.com/ipsum,1
-strategy-28,fundraiser-01,AA23-AAAAAA,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,2025/01/01 0:00,2200/12/31 23:58,http://lorem.com/ipsum,1
-strategy-29,fundraiser-01,AA24-AAAAAA,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,2025/01/01 0:00,2200/12/31 23:59,http://lorem.com/ipsum,1
+strategy-18,fundraiser-01,AA15-AAAAAA,"Lorem ipsum","Lorem ipsum",2025/01/01 0:00,2026/01/01 0:00,"http://lorem.com/ipsum",1
+strategy-19,fundraiser-01,AA16-AAAAAA,"Lorem ipsum","Lorem ipsum",2025/01/01 0:00,2025/01/01 0:01,"http://lorem.com/ipsum",1
+
 # MoreInfo
-strategy-30,fundraiser-01,AA25-AAAAAA,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,2025/01/01 0:00,2200/12/31 23:59,http://a.b,1
-strategy-31,fundraiser-01,AA26-AAAAAA,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,2025/01/01 0:00,2200/12/31 23:59,https://www.lorem-ipsum.org,1
-strategy-32,fundraiser-01,AA27-AAAAAA,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,2025/01/01 0:00,2200/12/31 23:59,null,1
+strategy-20,fundraiser-01,AA17-AAAAAA,"Lorem ipsum","Lorem ipsum",2025/01/01 0:00,2200/12/31 23:59,"http://a.b",1
+strategy-21,fundraiser-01,AA18-AAAAAA,"Lorem ipsum","Lorem ipsum",2025/01/01 0:00,2200/12/31 23:59,"https://www.lorem-ipsum.org",1
+strategy-22,fundraiser-01,AA19-AAAAAA,"Lorem ipsum","Lorem ipsum",2025/01/01 0:00,2200/12/31 23:59,null,1
+strategy-23,fundraiser-01,AA20-AAAAAA,"Lorem ipsum","Lorem ipsum",2025/01/01 0:00,2200/12/31 23:59,"http://example.org?a=1&b=2",1
+
 # DraftMode
-strategy-33,fundraiser-01,AA28-AAAAAA,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,2027/01/01 0:00,2200/12/31 23:59,http://lorem.com/ipsum,0
+strategy-24,fundraiser-01,AA21-AAAAAA,"Lorem ipsum","Lorem ipsum",2027/01/01 0:00,2200/12/31 23:59,"http://lorem.com/ipsum",0
+
 # Fundraiser
-strategy-34,fundraiser-02,AA29-AAAAAA,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,2025/01/01 0:00,2200/12/31 23:59,http://lorem.com/ipsum,1
+strategy-25,fundraiser-02,AA22-AAAAAA,"Lorem ipsum","Lorem ipsum",2025/01/01 0:00,2200/12/31 23:59,"http://lorem.com/ipsum",1

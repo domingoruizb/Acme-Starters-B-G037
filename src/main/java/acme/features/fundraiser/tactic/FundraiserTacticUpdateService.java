@@ -23,8 +23,8 @@ public class FundraiserTacticUpdateService extends AbstractService<Fundraiser, T
 	@Override
 	public void load() {
 		int id;
-		id = super.getRequest().getData("id", int.class);
 
+		id = super.getRequest().getData("id", int.class);
 		this.tactic = this.repository.findTacticById(id);
 	}
 
@@ -32,9 +32,7 @@ public class FundraiserTacticUpdateService extends AbstractService<Fundraiser, T
 	public void authorise() {
 		boolean status;
 
-		status = this.tactic.getStrategy() != null && //
-			this.tactic.getStrategy().getFundraiser().isPrincipal() && //
-			this.tactic.getStrategy().getDraftMode();
+		status = this.tactic != null && this.tactic.getStrategy().getDraftMode() && this.tactic.getStrategy().getFundraiser().isPrincipal();
 
 		super.setAuthorised(status);
 	}
@@ -47,7 +45,6 @@ public class FundraiserTacticUpdateService extends AbstractService<Fundraiser, T
 	@Override
 	public void validate() {
 		super.validateObject(this.tactic);
-		;
 	}
 
 	@Override
@@ -57,15 +54,17 @@ public class FundraiserTacticUpdateService extends AbstractService<Fundraiser, T
 
 	@Override
 	public void unbind() {
-		SelectChoices choices;
 		Tuple tuple;
+		SelectChoices choices;
 
 		choices = SelectChoices.from(TacticKind.class, this.tactic.getTacticKind());
 
 		tuple = super.unbindObject(this.tactic, "name", "notes", "expectedPercentage", "tacticKind");
-		tuple.put("strategyId", super.getRequest().getData("strategyId", int.class));
-		tuple.put("draftMode", this.tactic.getStrategy().getDraftMode());
-		tuple.put("tacticKinds", choices);
-	}
 
+		tuple.put("tacticKinds", choices);
+		tuple.put("strategyId", this.tactic.getStrategy().getId());
+		tuple.put("draftMode", this.tactic.getStrategy().getDraftMode());
+
+		super.getResponse().addData(tuple);
+	}
 }

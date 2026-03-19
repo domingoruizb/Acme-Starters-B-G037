@@ -1,6 +1,6 @@
 key,key:fundraiser,ticker,name,description,startMoment,endMoment,moreInfo,draftMode
 # Base
-strategy-01,"","","","","","","",""
+strategy-01,"","","","","","","",1
 # Ticker
 strategy-02,fundraiser-01,"","Lorem ipsum dolor sit amet, consectetu","Lorem ipsum dolor sit amet, consectetur adipiscing elit.",2026/01/01 0:00,2200/12/31 23:59,http://lorem.com,1
 strategy-03,fundraiser-01,A00-abcde,"Lorem ipsum dolor sit amet, consectetu","Lorem ipsum dolor sit amet, consectetur adipiscing elit.",2026/01/01 0:00,2200/12/31 23:59,http://lorem.com,1
@@ -25,6 +25,6 @@ strategy-16,fundraiser-01,AA11-AAAAAA,"Lorem ipsum dolor sit amet, consectetu",L
 strategy-17,fundraiser-01,AA12-AAAAAA,"Lorem ipsum dolor sit amet, consectetu",Lorem ipsum dolor sit amet,2026/01/01 0:00,2200/12/31 23:59,ftp://,1
 strategy-18,fundraiser-01,AA13-AAAAAA,"Lorem ipsum dolor sit amet, consectetu",Lorem ipsum dolor sit amet,2026/01/01 0:00,2200/12/31 23:59,http://a,1
 # DraftMode
-strategy-19,fundraiser-01,AA14-AAAAAA,"Lorem ipsum dolor sit amet, consectetu",Lorem ipsum dolor sit amet,2026/01/01 0:00,2200/12/31 23:59,http://lorem.com,
+strategy-19,fundraiser-01,AA14-AAAAAA,"Lorem ipsum dolor sit amet, consectetu",Lorem ipsum dolor sit amet,2026/01/01 0:00,2200/12/31 23:59,http://lorem.com,0
 # Fundraiser
 strategy-20,fundraiser-01,AA15-AAAAAA,"Lorem ipsum dolor sit amet, consectetu",Lorem ipsum dolor sit amet,2026/01/01 0:00,2200/12/31 23:59,http://lorem.com,1

@@ -12,11 +12,11 @@ fundraiser.strategy.list.label.draftMode = Borrador
 fundraiser.strategy.form.label.ticker = Código:
 fundraiser.strategy.form.label.name = Nombre:
 fundraiser.strategy.form.label.description = Descripción:
-fundraiser.strategy.form.label.startMoment = Fecha de Inicio:
-fundraiser.strategy.form.label.endMoment = Fecha de Fin:
-fundraiser.strategy.form.label.moreInfo = Más Información: (Opcional)
-fundraiser.strategy.form.label.monthsActive = Meses activo:
-fundraiser.strategy.form.label.expectedPercentage = Porcentaje esperado:
+fundraiser.strategy.form.label.startmoment = Fecha de Inicio:
+fundraiser.strategy.form.label.endmoment = Fecha de Fin:
+fundraiser.strategy.form.label.moreinfo = Más Información: (Opcional)
+fundraiser.strategy.form.label.monthsactive = Meses activo:
+fundraiser.strategy.form.label.expectedpercentage = Porcentaje esperado:
 
 fundraiser.strategy.form.button.delete = Borrar
 fundraiser.strategy.form.button.update = Actualizar
@@ -25,3 +25,4 @@ fundraiser.strategy.form.button.publish = Publicar
 fundraiser.strategy.form.button.tactics = Ver Tácticas
 
 fundraiser.strategy.list.button.create = Crear Estrategia
+fundraiser.strategy.form.placeholder.ticker = AA00-AAAA12
