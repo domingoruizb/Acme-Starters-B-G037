@@ -1,6 +1,6 @@
 key,key:fundraiser,ticker,name,description,startMoment,endMoment,moreInfo,draftMode
 # Base
-strategy-01,"","","","","","","",""
+strategy-01,"","","","","","","",1
 # Ticker
 strategy-02,fundraiser-01,"","Lorem ipsum dolor sit amet, consectetu","Lorem ipsum dolor sit amet, consectetur adipiscing elit.",2026/01/01 0:00,2200/12/31 23:59,http://lorem.com,1
 strategy-03,fundraiser-01,A00-abcde,"Lorem ipsum dolor sit amet, consectetu","Lorem ipsum dolor sit amet, consectetur adipiscing elit.",2026/01/01 0:00,2200/12/31 23:59,http://lorem.com,1

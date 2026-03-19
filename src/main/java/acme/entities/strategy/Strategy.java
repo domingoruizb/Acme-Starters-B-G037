@@ -95,7 +95,7 @@ public class Strategy extends AbstractEntity {
 
 
 	@Mandatory
-	@Valid
+	// @Valid
 	@Column
 	private Boolean		draftMode;
 
