@@ -1,5 +1,5 @@
-acme.validation.invalid-header = El header no es válido
-acme.validation.invalid-ticker = El ticker no es válido
+acme.validation.invalid-header = El encabezado no es válido
+acme.validation.invalid-ticker = La referencia no es válida
 acme.validation.invalid-text = El texto no es válido
 
 acme.validation.campaign.invalidinterval.message = El intervalo de tiempo no es válido
