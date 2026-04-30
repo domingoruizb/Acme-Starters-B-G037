@@ -1,0 +1,5 @@
+key,key:userAccount,position,skills,executive
+#base entity
+manager-01,user-account-manager-01,Engineering Manager - Backend & Infrastructure,"Agile methodology (Scrum/Kanban), cloud infrastructure management, cross-functional leadership, technical mentorship, and strategic roadmap planning.",TRUE
+manager-02,user-account-manager-02,Senior Product Marketing Manager,"Market research and competitive analysis, GTM (Go-to-Market) strategy, stakeholder management, data-driven decision making, and brand positioning.",FALSE
+manager-03,user-account-manager-03,Operations & People Manager,"Change management, process optimization, conflict resolution, performance metrics (KPI/OKR) tracking, and talent acquisition strategy.",TRUE

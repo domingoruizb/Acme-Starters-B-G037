@@ -10,20 +10,20 @@
  * they accept any liabilities with respect to them.
  */
 
-package acme.features.authenticated.spokesperson;
+package acme.features.authenticated.manager;
 
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;
 
 import acme.client.components.principals.UserAccount;
 import acme.client.repositories.AbstractRepository;
-import acme.realms.Spokesperson;
+import acme.realms.Manager;
 
 @Repository
-public interface AuthenticatedSpokespersonRepository extends AbstractRepository {
+public interface AuthenticatedManagerRepository extends AbstractRepository {
 
-	@Query("select p from Spokesperson p where p.userAccount.id = :id")
-	Spokesperson findSpokespersonByUserAccountId(int id);
+	@Query("select p from Manager p where p.userAccount.id = :id")
+	Manager findManagerByUserAccountId(int id);
 
 	@Query("select ua from UserAccount ua where ua.id = :id")
 	UserAccount findUserAccountById(int id);
