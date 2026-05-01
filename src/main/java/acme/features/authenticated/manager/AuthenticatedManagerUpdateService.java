@@ -10,7 +10,7 @@
  * they accept any liabilities with respect to them.
  */
 
-package acme.features.authenticated.spokesperson;
+package acme.features.authenticated.manager;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -18,17 +18,17 @@ import org.springframework.stereotype.Service;
 import acme.client.components.principals.Authenticated;
 import acme.client.helpers.PrincipalHelper;
 import acme.client.services.AbstractService;
-import acme.realms.Spokesperson;
+import acme.realms.Manager;
 
 @Service
-public class AuthenticatedSpokespersonUpdateService extends AbstractService<Authenticated, Spokesperson> {
+public class AuthenticatedManagerUpdateService extends AbstractService<Authenticated, Manager> {
 
 	// Internal state ---------------------------------------------------------
 
 	@Autowired
-	private AuthenticatedSpokespersonRepository	repository;
+	private AuthenticatedManagerRepository	repository;
 
-	private Spokesperson						spokesperson;
+	private Manager							manager;
 
 	// AbstractService interface ----------------------------------------------ç
 
@@ -38,35 +38,35 @@ public class AuthenticatedSpokespersonUpdateService extends AbstractService<Auth
 		int userAccountId;
 
 		userAccountId = super.getRequest().getPrincipal().getAccountId();
-		this.spokesperson = this.repository.findSpokespersonByUserAccountId(userAccountId);
+		this.manager = this.repository.findManagerByUserAccountId(userAccountId);
 	}
 
 	@Override
 	public void authorise() {
 		boolean status;
 
-		status = super.getRequest().getPrincipal().hasRealmOfType(Spokesperson.class);
+		status = super.getRequest().getPrincipal().hasRealmOfType(Manager.class);
 		super.setAuthorised(status);
 	}
 
 	@Override
 	public void bind() {
-		super.bindObject(this.spokesperson, "cv", "achievements", "licensed");
+		super.bindObject(this.manager, "position", "skills", "executive");
 	}
 
 	@Override
 	public void validate() {
-		super.validateObject(this.spokesperson);
+		super.validateObject(this.manager);
 	}
 
 	@Override
 	public void execute() {
-		this.repository.save(this.spokesperson);
+		this.repository.save(this.manager);
 	}
 
 	@Override
 	public void unbind() {
-		super.unbindObject(this.spokesperson, "cv", "achievements", "licensed");
+		super.unbindObject(this.manager, "position", "skills", "executive");
 	}
 
 	@Override
