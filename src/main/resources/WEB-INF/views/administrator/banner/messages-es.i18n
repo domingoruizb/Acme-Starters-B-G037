@@ -1,0 +1,18 @@
+# messages-es.i18n
+
+administrator.banner.form.title = Detalles del banner
+administrator.banner.list.title = Lista de banners
+
+administrator.banner.form.label.slogan = Eslogan:
+administrator.banner.form.label.targetURL = URL de destino:
+administrator.banner.form.label.picture = Imagen:
+
+administrator.banner.form.button.update = Actualizar
+administrator.banner.form.button.delete = Borrar
+administrator.banner.form.button.create = Crear
+
+administrator.banner.list.label.slogan = Eslogan
+administrator.banner.list.label.targetURL = URL de destino
+administrator.banner.list.label.picture = Imagen
+
+administrator.banner.list.button.create = Crear banner
