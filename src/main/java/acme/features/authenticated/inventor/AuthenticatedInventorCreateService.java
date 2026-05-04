@@ -27,7 +27,7 @@ public class AuthenticatedInventorCreateService extends AbstractService<Authenti
 		userAccountId = super.getRequest().getPrincipal().getAccountId();
 		userAccount = this.repository.findUserAccountById(userAccountId);
 
-		this.inventor = new Inventor();
+		this.inventor = super.newObject(Inventor.class);
 		this.inventor.setUserAccount(userAccount);
 	}
 

@@ -42,7 +42,7 @@ public class AuthenticatedSpokespersonCreateService extends AbstractService<Auth
 		userAccountId = super.getRequest().getPrincipal().getAccountId();
 		userAccount = this.repository.findUserAccountById(userAccountId);
 
-		this.spokesperson = new Spokesperson();
+		this.spokesperson = super.newObject(Spokesperson.class);
 		this.spokesperson.setUserAccount(userAccount);
 	}
 

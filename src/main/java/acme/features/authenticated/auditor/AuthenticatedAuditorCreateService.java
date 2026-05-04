@@ -30,7 +30,7 @@ public class AuthenticatedAuditorCreateService extends AbstractService<Authentic
 		userAccountId = super.getRequest().getPrincipal().getAccountId();
 		userAccount = this.repository.findUserAccountById(userAccountId);
 
-		this.auditor = new Auditor();
+		this.auditor = super.newObject(Auditor.class);
 		this.auditor.setUserAccount(userAccount);
 	}
 
