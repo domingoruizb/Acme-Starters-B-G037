@@ -67,6 +67,11 @@ master.menu.fundraiser = Fundraiser
 master.menu.fundraiser.list-my-strategies = My strategies
 master.menu.any.list-strategies = List strategies
 
+# Projects #########################################################
+
+master.menu.manager = Manager
+master.menu.manager.list-my-projects = My projects
+
 
 # master.menu.user-account ####################################################
 
