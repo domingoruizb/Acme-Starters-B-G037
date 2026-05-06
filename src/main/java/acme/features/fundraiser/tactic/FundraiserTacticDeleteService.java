@@ -31,7 +31,8 @@ public class FundraiserTacticDeleteService extends AbstractService<Fundraiser, T
 		boolean status;
 
 		//la tactica debe existir, la estrategia es distinta de nula
-		status = this.tactic.getStrategy() != null && //
+		status = this.tactic != null && //
+			this.tactic.getStrategy() != null && //
 			this.tactic.getStrategy().getFundraiser().isPrincipal() && //
 			this.tactic.getStrategy().getDraftMode();
 

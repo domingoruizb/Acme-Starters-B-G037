@@ -44,8 +44,10 @@ public class FundraiserStrategyPublishService extends AbstractService<Fundraiser
 
 		super.validateObject(this.strategy);
 
+		boolean uniqueTicker;
+		boolean hasTactics;
+
 		{
-			boolean uniqueTicker;
 			Strategy existingStrategy;
 
 			existingStrategy = this.repository.findStrategybyTicker(this.strategy.getTicker());
@@ -55,33 +57,27 @@ public class FundraiserStrategyPublishService extends AbstractService<Fundraiser
 		}
 
 		{
-			boolean startMomentInFuture;
-
-			startMomentInFuture = this.strategy.getStartMoment() != null && MomentHelper.isFuture(this.strategy.getStartMoment());
-			super.state(startMomentInFuture, "startMoment", "acme.validation.strategy.startmomentinfuture.message");
+			hasTactics = this.repository.countTacticsByStrategyId(this.strategy.getId()) > 0;
+			super.state(hasTactics, "*", "acme.validation.strategy.hastactic.message");
 		}
 
-		{
+		if (hasTactics) {
+			boolean startMomentInFuture;
 			boolean endMomentInFuture;
 
+			startMomentInFuture = this.strategy.getStartMoment() != null && MomentHelper.isFuture(this.strategy.getStartMoment());
 			endMomentInFuture = this.strategy.getEndMoment() != null && MomentHelper.isFuture(this.strategy.getEndMoment());
+
+			super.state(startMomentInFuture, "startMoment", "acme.validation.strategy.startmomentinfuture.message");
 			super.state(endMomentInFuture, "endMoment", "acme.validation.strategy.endmomentinfuture.message");
 		}
 
-		{
+		if (hasTactics || !uniqueTicker) {
 			boolean validInterval;
 
 			validInterval = this.strategy.getStartMoment() != null && this.strategy.getEndMoment() != null && MomentHelper.isAfter(this.strategy.getEndMoment(), this.strategy.getStartMoment());
 
 			super.state(validInterval, "endMoment", "acme.validation.strategy.invalidinterval.message");
-		}
-
-		{
-			boolean hasTactics;
-
-			hasTactics = this.repository.countTacticsByStrategyId(this.strategy.getId()) > 0;
-
-			super.state(hasTactics, "*", "acme.validation.strategy.hastactic.message");
 		}
 	}
 	@Override
