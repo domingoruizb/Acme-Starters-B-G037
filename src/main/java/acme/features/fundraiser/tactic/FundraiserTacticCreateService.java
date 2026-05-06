@@ -68,6 +68,6 @@ public class FundraiserTacticCreateService extends AbstractService<Fundraiser, T
 		tuple.put("strategyId", this.tactic.getStrategy().getId());
 		tuple.put("published", !this.tactic.getStrategy().getDraftMode());
 
-		super.getResponse().addData(tuple);
+		//super.getResponse().addData(tuple);
 	}
 }

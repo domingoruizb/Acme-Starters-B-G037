@@ -1,15 +1,12 @@
 
 package acme.features.fundraiser.strategy;
 
-import java.util.Collection;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import acme.client.helpers.MomentHelper;
 import acme.client.services.AbstractService;
 import acme.entities.strategy.Strategy;
-import acme.entities.strategy.Tactic;
 import acme.realms.Fundraiser;
 
 @Service
@@ -60,34 +57,29 @@ public class FundraiserStrategyPublishService extends AbstractService<Fundraiser
 		{
 			boolean startMomentInFuture;
 
-			startMomentInFuture = MomentHelper.isFuture(this.strategy.getStartMoment());
+			startMomentInFuture = this.strategy.getStartMoment() != null && MomentHelper.isFuture(this.strategy.getStartMoment());
 			super.state(startMomentInFuture, "startMoment", "acme.validation.strategy.startmomentinfuture.message");
 		}
 
 		{
 			boolean endMomentInFuture;
 
-			endMomentInFuture = MomentHelper.isFuture(this.strategy.getEndMoment());
+			endMomentInFuture = this.strategy.getEndMoment() != null && MomentHelper.isFuture(this.strategy.getEndMoment());
 			super.state(endMomentInFuture, "endMoment", "acme.validation.strategy.endmomentinfuture.message");
 		}
 
 		{
 			boolean validInterval;
 
-			if (this.strategy.getStartMoment() != null && this.strategy.getEndMoment() != null)
-				validInterval = MomentHelper.isAfterOrEqual(this.strategy.getEndMoment(), this.strategy.getStartMoment());
-			else
-				validInterval = false;
+			validInterval = this.strategy.getStartMoment() != null && this.strategy.getEndMoment() != null && MomentHelper.isAfter(this.strategy.getEndMoment(), this.strategy.getStartMoment());
 
-			super.state(validInterval, "*", "acme.validation.strategy.invalidinterval.message");
+			super.state(validInterval, "endMoment", "acme.validation.strategy.invalidinterval.message");
 		}
 
 		{
-			Collection<Tactic> tactics;
 			boolean hasTactics;
 
-			tactics = this.repository.findTacticsByStrategyId(this.strategy.getId());
-			hasTactics = tactics != null && !tactics.isEmpty();
+			hasTactics = this.repository.countTacticsByStrategyId(this.strategy.getId()) > 0;
 
 			super.state(hasTactics, "*", "acme.validation.strategy.hastactic.message");
 		}

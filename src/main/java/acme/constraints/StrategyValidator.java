@@ -25,6 +25,9 @@ public class StrategyValidator extends AbstractValidator<ValidStrategy, Strategy
 	public boolean isValid(final Strategy strategy, final ConstraintValidatorContext context) {
 		assert context != null;
 
+		if (strategy == null)
+			return true;
+
 		boolean result;
 
 		{
@@ -37,22 +40,19 @@ public class StrategyValidator extends AbstractValidator<ValidStrategy, Strategy
 			super.state(context, uniqueStrategy, "ticker", "acme.validation.strategy.uniqueticker.message");
 		}
 
-		if (strategy.getDraftMode() != null && strategy.getDraftMode().equals(Boolean.FALSE)) {
+		if (Boolean.FALSE.equals(strategy.getDraftMode())) {
 			{
 				boolean validInterval;
 
-				if (strategy.getStartMoment() != null && strategy.getEndMoment() != null)
-					validInterval = MomentHelper.isAfterOrEqual(strategy.getEndMoment(), strategy.getStartMoment());
-				else
-					validInterval = false;
+				validInterval = strategy.getStartMoment() != null && strategy.getEndMoment() != null && MomentHelper.isAfter(strategy.getEndMoment(), strategy.getStartMoment());
 
-				super.state(context, validInterval, "*", "acme.validation.strategy.invalidinterval.message");
+				super.state(context, validInterval, "endMoment", "acme.validation.strategy.invalidinterval.message");
 			}
 			{
 				boolean hasTactics;
-				hasTactics = this.repository.existsById(strategy.getId());
+				hasTactics = this.repository.countTacticsByStrategy(strategy.getId()) > 0;
 
-				super.state(context, hasTactics, "*", "acme.validation.strategy.hasTactics.message");
+				super.state(context, hasTactics, "*", "acme.validation.strategy.hastactic.message");
 			}
 		}
 		result = !super.hasErrors(context);
