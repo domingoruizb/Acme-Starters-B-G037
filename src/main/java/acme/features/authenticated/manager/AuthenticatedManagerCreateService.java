@@ -31,8 +31,6 @@ public class AuthenticatedManagerCreateService extends AbstractService<Authentic
 
 	private Manager							manager;
 
-	// AbstractService<Authenticated, Provider> ---------------------------
-
 
 	@Override
 	public void load() {
@@ -42,7 +40,7 @@ public class AuthenticatedManagerCreateService extends AbstractService<Authentic
 		userAccountId = super.getRequest().getPrincipal().getAccountId();
 		userAccount = this.repository.findUserAccountById(userAccountId);
 
-		this.manager = new Manager();
+		this.manager = super.newObject(Manager.class);
 		this.manager.setUserAccount(userAccount);
 	}
 
