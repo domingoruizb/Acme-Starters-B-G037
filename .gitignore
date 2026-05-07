@@ -8,6 +8,7 @@ target/
 .factorypath
 #.project
 #.settings
+.settings/org.eclipse.wst.common.component
 .springBeans
 
 ### IntelliJ IDEA ###
