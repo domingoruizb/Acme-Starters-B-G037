@@ -37,5 +37,4 @@ acme.validation.invention.startmomentinfuture.message = El momento de inicio deb
 acme.validation.invention.endmomentinfuture.message = El momento de fin debe ser en el futuro
 
 acme.validation.strategy.startmomentinfuture.message = El momento de inicio debe ser en el futuro
-acme.validation.strategy.endmomentinfuture.message = El momento de inicio debe ser en el futuro
-
+acme.validation.strategy.endmomentinfuture.message = El momento de fin debe ser en el futuro
