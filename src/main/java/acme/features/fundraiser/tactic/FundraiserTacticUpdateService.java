@@ -32,10 +32,7 @@ public class FundraiserTacticUpdateService extends AbstractService<Fundraiser, T
 	public void authorise() {
 		boolean status;
 
-		status = this.tactic != null && //
-			this.tactic.getStrategy() != null && //
-			this.tactic.getStrategy().getDraftMode() && //
-			this.tactic.getStrategy().getFundraiser().isPrincipal();
+		status = this.tactic != null && this.tactic.getStrategy().getDraftMode() && this.tactic.getStrategy().getFundraiser().isPrincipal();
 
 		super.setAuthorised(status);
 	}
@@ -68,7 +65,6 @@ public class FundraiserTacticUpdateService extends AbstractService<Fundraiser, T
 		tuple.put("strategyId", this.tactic.getStrategy().getId());
 		tuple.put("draftMode", this.tactic.getStrategy().getDraftMode());
 
-		//super.getResponse().addData(tuple);
-
+		super.getResponse().addData(tuple);
 	}
 }

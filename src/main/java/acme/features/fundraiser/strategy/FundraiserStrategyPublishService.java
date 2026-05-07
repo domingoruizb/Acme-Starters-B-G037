@@ -1,12 +1,15 @@
 
 package acme.features.fundraiser.strategy;
 
+import java.util.Collection;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import acme.client.helpers.MomentHelper;
 import acme.client.services.AbstractService;
 import acme.entities.strategy.Strategy;
+import acme.entities.strategy.Tactic;
 import acme.realms.Fundraiser;
 
 @Service
@@ -41,6 +44,7 @@ public class FundraiserStrategyPublishService extends AbstractService<Fundraiser
 
 	@Override
 	public void validate() {
+
 		super.validateObject(this.strategy);
 
 		{
@@ -52,18 +56,21 @@ public class FundraiserStrategyPublishService extends AbstractService<Fundraiser
 
 			super.state(uniqueTicker, "ticker", "acme.validation.strategy.uniqueticker.message");
 		}
+
 		{
 			boolean startMomentInFuture;
 
 			startMomentInFuture = MomentHelper.isFuture(this.strategy.getStartMoment());
 			super.state(startMomentInFuture, "startMoment", "acme.validation.strategy.startmomentinfuture.message");
 		}
+
 		{
 			boolean endMomentInFuture;
 
 			endMomentInFuture = MomentHelper.isFuture(this.strategy.getEndMoment());
 			super.state(endMomentInFuture, "endMoment", "acme.validation.strategy.endmomentinfuture.message");
 		}
+
 		{
 			boolean validInterval;
 
@@ -74,10 +81,13 @@ public class FundraiserStrategyPublishService extends AbstractService<Fundraiser
 
 			super.state(validInterval, "*", "acme.validation.strategy.invalidinterval.message");
 		}
+
 		{
+			Collection<Tactic> tactics;
 			boolean hasTactics;
 
-			hasTactics = this.repository.countTacticsByStrategyId(this.strategy.getId()) > 0;
+			tactics = this.repository.findTacticsByStrategyId(this.strategy.getId());
+			hasTactics = tactics != null && !tactics.isEmpty();
 
 			super.state(hasTactics, "*", "acme.validation.strategy.hastactic.message");
 		}
