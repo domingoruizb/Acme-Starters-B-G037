@@ -32,6 +32,7 @@ public class FundraiserTacticShowService extends AbstractService<Fundraiser, Tac
 		boolean status;
 
 		status = this.tactic != null &&//
+			this.tactic.getStrategy() != null && //
 			(this.tactic.getStrategy().getFundraiser().isPrincipal() || !this.tactic.getStrategy().getDraftMode());
 
 		super.setAuthorised(status);

@@ -15,6 +15,7 @@ acme.validation.audit-report.invalidinterval.message = The time interval is not 
 acme.validation.audit-report.hassections.message = The report has no sections associated
 
 acme.validation.strategy.dates.error = Start/end moments must define a valid time interval
+acme.validation.strategy.invalidinterval.message = The time interval is not valid
 acme.validation.strategy.hastactic.message = A Strategy cannot be published unless they have at least one tactic
 
 acme.validation.campaign.uniqueticker.message = The ticker already exists

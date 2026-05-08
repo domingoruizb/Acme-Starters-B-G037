@@ -23,11 +23,15 @@ public class FundraiserTacticCreateService extends AbstractService<Fundraiser, T
 
 	@Override
 	public void load() {
-		int strategyId;
 		Strategy strategy;
 
-		strategyId = super.getRequest().getData("strategyId", int.class);
-		strategy = this.repository.findStrategyById(strategyId);
+		strategy = null;
+		if (super.getRequest().hasData("strategyId", int.class)) {
+			int strategyId;
+
+			strategyId = super.getRequest().getData("strategyId", int.class);
+			strategy = this.repository.findStrategyById(strategyId);
+		}
 
 		this.tactic = super.newObject(Tactic.class);
 		this.tactic.setStrategy(strategy);
@@ -59,15 +63,17 @@ public class FundraiserTacticCreateService extends AbstractService<Fundraiser, T
 	public void unbind() {
 		Tuple tuple;
 		SelectChoices choices;
+		Strategy strategy;
 
 		choices = SelectChoices.from(TacticKind.class, this.tactic.getTacticKind());
+		strategy = this.tactic.getStrategy();
 
 		tuple = super.unbindObject(this.tactic, "name", "notes", "expectedPercentage", "tacticKind");
 
 		tuple.put("tacticKinds", choices);
-		tuple.put("strategyId", this.tactic.getStrategy().getId());
-		tuple.put("published", !this.tactic.getStrategy().getDraftMode());
+		tuple.put("strategyId", strategy == null ? null : strategy.getId());
+		tuple.put("draftMode", strategy != null && strategy.getDraftMode());
+		tuple.put("published", strategy != null && !strategy.getDraftMode());
 
-		super.getResponse().addData(tuple);
 	}
 }
